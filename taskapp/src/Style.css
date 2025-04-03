@@ -1,0 +1,56 @@
+
+
+
+
+#bar{
+    font-size: 2em;
+    font-weight: bold;
+    color: aqua;
+    
+}
+#bar:hover{
+    color: aliceblue;
+}
+.me-auto{
+    margin-left: 25%;
+}
+#nav:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+#nav1{
+    color: aqua;
+    text-decoration: underline;
+}
+
+#row{
+    margin-top: 20px;
+}
+#row button{
+    font-weight: bold;
+    border: none;
+    background-color: darkcyan;
+}
+#row button:hover{
+    background-color:rgba(0, 139, 139, 0.779) ;
+}
+/* .sel h3{
+    color: black;
+}
+.sel p{
+    color: black;
+} */
+
+#div2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#div2 button{
+    font-weight: bold;
+    border: none;
+    background-color: darkcyan;
+}
+#div2 button:hover{
+    background-color:rgba(0, 139, 139, 0.779) ;
+}
