@@ -1,12 +1,8 @@
-
-
-
-
+/*============================================NAVBAR==================================================================================*/
 #bar{
     font-size: 2em;
     font-weight: bold;
     color: aqua;
-    
 }
 #bar:hover{
     color: aliceblue;
@@ -22,7 +18,13 @@
     color: aqua;
     text-decoration: underline;
 }
+/*================================================Carousels==========================================================================*/
+.sel h3 span{
+    color: #101010;
+    font-size: 50px;
 
+}
+/*==============================================ROW-COL==================================================================================*/
 #row{
     margin-top: 20px;
 }
@@ -34,17 +36,21 @@
 #row button:hover{
     background-color:rgba(0, 139, 139, 0.779) ;
 }
-/* .sel h3{
-    color: black;
+#head2{
+    background-color: rgb(34, 35, 36);
+    color: aliceblue;
+    height: 60px;
 }
-.sel p{
-    color: black;
-} */
-
+/*=================================================DIV-CARD===============================================================================*/
+.head{
+    background-color: rgb(34, 35, 36);
+    color: aliceblue;
+    height: 60px;
+}
 #div2{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 #div2 button{
     font-weight: bold;
@@ -53,4 +59,17 @@
 }
 #div2 button:hover{
     background-color:rgba(0, 139, 139, 0.779) ;
+}
+/*================================================FOOTER========================================================================================*/
+#ftr{
+    height: 400px;
+    background-color: rgba(34, 35, 36, 0.461);
+    color: aliceblue;
+    padding: 3rem;
+    margin: 2rem;
+
+}
+#footer{
+    display: flex;
+    gap: 30px;
 }
