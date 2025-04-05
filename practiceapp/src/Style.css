@@ -15,3 +15,13 @@ body{
     font-weight: bold;
     text-decoration: overline;
 }
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem;
+}
