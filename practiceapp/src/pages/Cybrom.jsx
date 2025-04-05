@@ -11,13 +11,22 @@
 //   export default Cybrom;
 
 //====================================PROPS=====================================================================
-const Cybrom=(props)=>{
+// const Cybrom=(props)=>{
+//     return(
+//       <>
+//       <h2> WELCOME TO {props.nm}!!!!</h2>
+//       <h2> This is my {props.ins}!!!!</h2>
+//       <h2> Our fees {props.fee}!!!!</h2>
+//       </>
+//     )
+//   }
+//   export default Cybrom;
+//===========================================STYLING-CSS=======================================================================
+const Cybrom=()=>{
     return(
-      <>
-      <h2> WELCOME TO {props.nm}!!!!</h2>
-      <h2> This is my {props.ins}!!!!</h2>
-      <h2> Our fees {props.fee}!!!!</h2>
-      </>
+        <>
+        <h2 className="cyb">Welcome to cybrom institute</h2>
+        </>
     )
-  }
-  export default Cybrom;
+}
+export default Cybrom;

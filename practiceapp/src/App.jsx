@@ -9,8 +9,6 @@
 // }
 // export default App;
 
-
-
 //=========================================FRAGMENT(<></>)================================================================================
 // const App=()=>{
 //   return(
@@ -211,9 +209,59 @@
 // }
 // export default App;
 
-//==============================================NAVIGATION======================================================================================
+//==============================================NAVIGATION(react-router-dom)======================================================================================
+// import { BrowserRouter,Routes,Route } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Product from "./pages/Product";
+// import Contact from "./pages/Contact";
+// import Layout from "./Layout";
+// import Nofound from "./pages/Nofound";
+// const App=()=>{
+//   return(
+//     <>
+//     <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Layout/>}>
+//             <Route index element={<Home/>}/>
+//             <Route path="home" element={<Home/>}/>
+//             <Route path="about" element={<About/>}/>
+//             <Route path="product" element={<Product/>}/>
+//             <Route path="contact" element={<Contact/>}/>
+//             <Route path="*" element={<Nofound/>}/>
+//           </Route>
+//         </Routes>
+//     </BrowserRouter>
+//     </>
+//   )
+// }
+// export default App;
+
+//=================================================STYLING-CSS-CONNECTED================================================================================================
+import Bhopal from "./pages/Bhopal";
+import Cybrom from "./pages/Cybrom";
+import Student from "./pages/Student";
 
 
+const sty={
+  color:"red",
+  textDecoration:"underline",
+  fontSize:"40px"
+}
+
+const App=()=>{
+  return(
+    <>
+    <h1 style={{color:"red" }}>Welocome to react classes!!!!</h1> {/*inline---*/}
+    <h2 style={sty}>Welcome to bhopal city!!!</h2>  {/*inline-but-from-variable*/}
+    <Bhopal/>
+    <Cybrom/>
+    <Student/>
+
+    </>
+  )
+}
+export default App;
 
 
 

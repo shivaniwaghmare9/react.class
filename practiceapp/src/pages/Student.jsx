@@ -10,12 +10,22 @@
 //   }
 //   export default Student;
 //==========================================PROPS===========================================================================
-const Student=(props)=>{
+// const Student=(props)=>{
+//     return(
+//         <>
+//            <h2>My name is:{props.nm}</h2>
+//            <h2>My city is:{props.ct}</h2>
+//            <h2>My insititue is:{props.ins}</h2>
+//         </>
+//     )
+// }
+// export default Student;
+
+//===========================================STYLING-CSS=======================================================================
+const Student=()=>{
     return(
         <>
-           <h2>My name is:{props.nm}</h2>
-           <h2>My city is:{props.ct}</h2>
-           <h2>My insititue is:{props.ins}</h2>
+        <h2 id="st">Welcome to bhopal</h2>
         </>
     )
 }

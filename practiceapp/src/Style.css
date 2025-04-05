@@ -1,0 +1,17 @@
+
+body{
+    background-color: darkgray;
+}
+#bpl{
+    color: rgb(11, 60, 220);
+}
+.cyb{
+    color: crimson;
+    font-size: large;
+    font-family: cursive;
+}
+#st{
+    color: rgb(141, 4, 36);
+    font-weight: bold;
+    text-decoration: overline;
+}
