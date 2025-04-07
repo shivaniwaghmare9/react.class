@@ -1,1 +1,56 @@
 
+
+#btn1{
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 10px 15px grey,-5px -10px 15px grey;
+}
+#btn2{
+    background-color: rgba(0, 79, 139, 0.82);
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 3px;
+    border: none;
+    box-shadow: 5px 10px 15px grey,-5px -10px 15px grey;
+}
+#btn3{
+    background-color: rgb(139, 0, 0);
+    color: aliceblue;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 3px;
+    border: none;
+    box-shadow: 5px 10px 15px grey,-5px -10px 15px grey;
+}
+/*==============================================MY COUNTER=============================================================================================*/
+#box1{
+    border: 2px solid black;
+    width: 300px;
+    padding: 1.1rem;
+    margin: auto;
+    background-color: rgba(118, 146, 155, 0.703);
+}
+#Btn1{
+    background-color: black;
+    color: aliceblue;
+    padding: 8px;
+    border: none;
+}
+#Btn2{
+    background-color: blue;
+    color: aliceblue;
+    padding: 8px;
+    border: none;
+    margin-left: 4px;
+}
+#Btn3{
+    background-color:red;
+    color: aliceblue;
+    padding: 8px;
+    border: none;
+    margin-left: 4px;
+}
