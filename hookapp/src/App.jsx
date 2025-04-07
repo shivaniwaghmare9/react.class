@@ -63,7 +63,7 @@
 // export default App;
 
 
-//==============================================COUNT========================================================================================
+//==============================================COUNT(USEEFFECT)========================================================================================
 
 // import { useState, useEffect } from "react";
 
@@ -114,30 +114,67 @@
 // export default App;
 
 //================================================================================================================================================
-import { useState } from "react";
+// import { useState } from "react";
+// const App=()=>{
+//   const[cnt,setCnt]=useState(0);
+//   const Dec=()=>{
+//     if(cnt<=0)
+//     {
+//       alert("count less than 0.");
+//     }
+//     else
+//     {
+//       setCnt(cnt-1);
+//     }
+//   }
+//   return(
+//     <>
+//     <h1 align="center">My Counter App</h1>
+//     <div id="box1">
+//       <h2>Count:{cnt}</h2>
+//       <button onClick={()=>{setCnt(cnt+1)}} id="Btn1">Increment</button>
+//       <button onClick={Dec} id="Btn2">Decrement</button>
+//       <button onClick={()=>{setCnt(0)}} id="Btn3">Reset</button>
+ 
+//     </div>
+//     </>
+//   )
+// }
+// export default App;
+
+//==============================================[USEEFFECTS]=================================================================================================
+// import {useState,useEffect} from "react";
+// const App=()=>{
+
+//   const[count, setCount]=useState(0);
+//   useEffect(()=>{
+//     setCount(count+1)
+//   })
+
+//  return(
+//     <>
+//        <h1>Welcome Count:{count}</h1>
+       
+//     </>
+//   )
+// }
+// export default App;
+
+//==============================================USEEFFECT+SETTIMEOUT=============================================================================
+
+import {useState,useEffect} from "react";
 const App=()=>{
-  const[cnt,setCnt]=useState(0);
-  const Dec=()=>{
-    if(cnt<=0)
-    {
-      alert("count less than 0.");
-    }
-    else
-    {
-      setCnt(cnt-1);
-    }
-  }
+  const [count,setcount]=useState(0);
+  useEffect(()=>{
+    setTimeout(()=>{
+      setcount(count+1)
+    },2000)
+    
+  })
   return(
     <>
-    <h1 align="center">My Counter App</h1>
-    <div id="box1">
-      <h2>Count:{cnt}</h2>
-      <button onClick={()=>{setCnt(cnt+1)}} id="Btn1">Increment</button>
-      <button onClick={Dec} id="Btn2">Decrement</button>
-      <button onClick={()=>{setCnt(0)}} id="Btn3">Reset</button>
- 
-    </div>
+      <h1>Welocme to counting:{count}</h1>
     </>
   )
 }
-export default App;
+export  default App;
