@@ -117,17 +117,78 @@
 // }
 // export default App;
 //=======================================[WORK]============================================================================================
-const App=()=>{
+// const App=()=>{
      
-       const display=(nm,e)=>{
-        alert("Name: "+nm+ " Btnname: "+e.target.name+" Value: "+e.target.value);
+//        const display=(nm,e)=>{
 
+//         alert("Name: "+nm+ " Btnname: "+e.target.name+" Value: "+e.target.value);
+// }
+//   return(
+//     <>
+//     <h1>WelCome</h1>
+//     <button name="BTN1" value="Mybtn" onClick={(e)=>{display("shivani",e)}}>Click Me</button>
+//     </>
+//   )
+// }
+// export default App;
 
-       }
+//==========================================work(-08-04-2025)=========================================================================================================
+
+// const App=()=>{
+//   const show=()=>{
+//     alert("this our react class");
+//   }
+
+//   return(
+//     <>
+//       <h2>Welcome to our world </h2>
+//       <button onClick={show}>Click me</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//===========================================================================================================================================
+
+// const App=()=>{
+//   const show=(nm)=>{
+//     alert(`Hello I'M ${nm}`)
+//   }
+//   return(
+//     <>
+//     <h2>Welcome to event class</h2>
+//     <button onClick={()=>{show("shivani")}}>Click</button>
+
+//     </>
+//   )
+// }
+// export default App;
+
+//===============================================================================================================================================
+
+// const App=()=>{
+//   const show=(e)=>{
+//     alert("Type: "+e.type+" Name: "+e.target.name+" Value: "+e.target.value)
+//   }
+//   return(
+//     <>
+//      <h1>Welcome to event</h1>
+//      <button name="Btn" value="mybtn"onClick={show}>click</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//====================================================================================================================
+
+const App=()=>{
+  const show=(nm,e)=>{
+    alert("Type: "+e.type+" Name: "+nm+ " BtnName: "+e.target.name+" Value: "+e.target.value)
+  }
   return(
     <>
-    <h1>WelCome</h1>
-    <button name="BTN1" value="Mybtn" onClick={(e)=>{display("shivani",e)}}>Click Me</button>
+     <h1>Welcome to event</h1>
+     <button name="Btn" value="mybtn"onClick={(e)=>{show("shivani",e)}}>click</button>
     </>
   )
 }
