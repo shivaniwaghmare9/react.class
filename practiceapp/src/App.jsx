@@ -465,7 +465,7 @@
 // export default App;
 
 //===========================================EVENTS================================================================================================
-const App=()=>{
+//const App=()=>{
   // const show=()=>{
   //   alert("this is our react program!!!")
 // }
@@ -481,19 +481,173 @@ const App=()=>{
 
 //}
 
-const show=(nm,e)=>{
-  alert("Name: "+nm+ " Btname: "+e.target.name+" Value: "+e.target.value)
-}
+// const show=(nm,e)=>{
+//   alert("Name: "+nm+ " Btname: "+e.target.name+" Value: "+e.target.value)
+// }
+//   return(
+//     <>
+//         <h1 align="center">Welcome To Events Classes!!!</h1>
+//         {/* <button onClick={show}>Show me</button> */}
+//        {/* <button onClick={()=>{show("Shivani")}}>Show Me</button>  */}   {/*parameterized*/}
+
+//        {/* <button  name="btn" value="Mybtn "onClick={show}>Show me</button> */}
+
+//        <button name="btn" value="mybtn"onClick={(e)=>{show("shivani",e)}}>Click me</button>
+
+
+//     </>
+//   )
+// }
+// export default App;
+
+//==============================================USESTATE===================================================================================================
+
+// import { useState } from "react"
+
+// const App=()=>{
+//   const[name,setName]=useState("Divya");
+//   return(
+//     <>
+//      <h2>Hello I'M {name}</h2>
+//      <button onClick={()=>{setName("Shivani")}}>Click</button>
+//     </>
+// )
+// }
+// export default App;
+
+
+//===============================================color(usestate)=============================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//    const[color,setColor]=useState("blue");
+//   return(
+//     <>
+//       <h2 style={{color:color}}>My Favourite Color iS:{color}</h2>
+//       <button onClick={()=>{setColor("green")}}>Green color</button>
+//       <button onClick={()=>{setColor("red")}}>Red color</button>
+//       <button onClick={()=>{setColor("orange")}}>Orange color</button>
+//       <button onClick={()=>{setColor("yellow")}}>yellow color</button>
+//     </>
+//   )
+// }
+// export default App;
+//=================================================count(I+D+R)=========================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   const Dec=()=>{
+//     if(count<=0)
+//     {
+//       alert("count less than 0.");
+//     }
+//     else
+//     {
+//       setCount(count-1);
+//     }
+//   }
+//   return(
+//     <>
+//      <h2>My Counter App:{count} </h2>
+
+//      <button onClick={()=>{setCount(count+1)}}>Increment</button>
+//      {/* <button onClick={()=>{setCount(count-1)}}>Decrement</button> */} {/*} ye(-value tk Decrement krega isliye -1,-2) ik function banayege jo 0 tk hi decrement krega */}
+//      <button onClick={Dec}>Decrement</button>
+//       <button onClick={()=>{setCount(0)}}>Reset</button>
+//     </>
+//   )
+// }
+// export default App;
+// ========================================USESTATE+USEEFFECT(1)====================================================================================================
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//       setCount(count+1);
+//     },3000)
+//   })
+//   return(
+//     <>
+//      <h2>My Count:{count}</h2>
+//     </>
+//   )
+// }
+// export default App;
+//=========================================useEffect(2-empty Array[])===================================================================================================
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//        setCount(count+1);
+//     },3000)
+//   },[])
+//   return(
+//     <>
+//      <h2>My Count:{count}</h2>
+//     </>
+//   )
+// }
+// export default App;
+
+//==============================================useEffect(3)-first me change tb second me change hoga)===================================================================================================
+// import { useEffect, useState } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   const[multi,setMulti]=useState(0);
+//   useEffect(()=>{
+//       setMulti(count*2);
+//   },[count])
+//   return(
+//     <>
+//       <h2>My count:{count}</h2>
+//       <h3>Multiplication:{multi}</h3>
+//       <button onClick={()=>{setCount(count+1)}}>Click</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//================================================FORM================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//   const[name,setName]=useState("");
+//   const[city,setCity]=useState("");
+//   const[fees,setFees]=useState("");
+//   const handleSubmit=()=>{
+//     alert(`Name: ${name} City: ${city} Fees: ${fees}`)
+//   }
+//   return(
+//     <>
+//       <h2>Application Form</h2>
+//       Name: <input type="text"  value={name} onChange={(e)=>{setName(e.target.value)}}/><br/><br/>
+//       City: <input type="text"  value={city} onChange={(e)=>{setCity(e.target.value)}}/><br/><br/>
+//       Fees: <input type="text"  value={fees} onChange={(e)=>{setFees(e.target.value)}}/><br/><br/>
+//       <button onClick={handleSubmit}>Submit</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//======================================FORM(SPREAD-OPRATOR)============================================================================================
+import { useState } from "react";
+const App=()=>{
+  const[input,setInput]=useState({});
+  const handleSubmit=(e)=>{
+    let name=e.target.name;
+    let value=e.target.value;
+    setInput(values=>({...values,[name]:value}))
+    console.log(input);
+     
+  }
   return(
-    <>
-        <h1 align="center">Welcome To Events Classes!!!</h1>
-        {/* <button onClick={show}>Show me</button> */}
-       {/* <button onClick={()=>{show("Shivani")}}>Show Me</button>  */}   {/*parameterized*/}
-
-       {/* <button  name="btn" value="Mybtn "onClick={show}>Show me</button> */}
-
-       <button name="btn" value="mybtn"onClick={(e)=>{show("shivani",e)}}>Click me</button>
-
+    <> <h2>Application Form</h2>
+    Name: <input type="text" name="name" onChange={handleSubmit}/><br/><br/>
+    Roll: <input type="text" name="rollno" onChange={handleSubmit}/><br/><br/>
+    City: <input type="text" name="city" onChange={handleSubmit}/><br/><br/>
+    Fees: <input type="text" name="fees" onChange={handleSubmit}/><br/><br/>
+    Age: <input type="text" name="age" onChange={handleSubmit}/><br/><br/>
+    <button onClick={handleSubmit}>Submit</button>
 
     </>
   )
