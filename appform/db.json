@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "name": "Shivani",
+      "rollno": 124,
+      "city": "Pune",
+      "fees": 45000,
+      "id": "c754"
+    },
+    {
+      "id": "f6d5",
+      "name": "priyaa",
+      "rollno": "127",
+      "city": "Bhopal",
+      "fees": "56000",
+      "url": "http://localhost:3000/data"
+    },
+    {
+      "id": "7bda",
+      "name": "siya",
+      "rollno": "127",
+      "city": "vidisha",
+      "fees": "68000"
+    },
+    {
+      "id": "14b3",
+      "rollno": "167",
+      "name": "ram",
+      "city": "betul",
+      "fees": "69000"
+    }
+  ]
+}
