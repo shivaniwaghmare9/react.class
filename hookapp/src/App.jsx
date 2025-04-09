@@ -240,7 +240,7 @@
 // export default App;
 
 
-//=============================================(08-04-2025=class)=====================================================================
+//=============================================(08-04-2025=class)(useeffect(1))=====================================================================
 // import { useState,useEffect } from "react";
 // const App=()=>{
 //   const[count,setCount]=useState(0);
@@ -258,7 +258,7 @@
 //   )
 // }
 // export default App;
-//==============================================================================================================
+//========================================================(useeffect(2-empty-array))======================================================
 // import { useState,useEffect } from "react";
 // const App=()=>{
 //   const[count,setCount]=useState(0);
@@ -277,7 +277,7 @@
 // }
 // export default App;
 
-//==========================================================================================================================
+//=====================================================(useeffect(3)jb-first-me change-ho tbhi second me changes ho )=====================================================================
 
 // import { useState,useEffect } from "react";
 // const App=()=>{
@@ -300,7 +300,7 @@
 // }
 // export default App;
 
-//======================================================================================================================
+//================================================FORM======================================================================
 
 // import { useState } from "react";
 // const App=()=>{
@@ -327,25 +327,148 @@
 // export default App;
 
 
-//==============================================================================================================================
+//================================================FORM(use-spreadoprator)==============================================================================
+// import { useState } from "react";
+// const App=()=>{
+//   const[input,setInput]=useState({});
+//   const handleInput=(e)=>{
+//     let name=e.target.name;
+//     let value=e.target.value;
+
+//      setInput(values=>({...values,[name]:value}))
+//      console.log(input);
+// }
+//   return(
+//     <>
+//       <h2>Application form</h2>
+//         Rollno:<input type="text"  name="rollno" onChange={handleInput}/><br/><br/>
+//       Name:<input type="text"  name="name" onChange={handleInput}/><br/><br/>
+//        City:<input type="text"  name="city" onChange={handleInput}/><br/><br/>
+//       Fees:<input type="text"  name="fees" onChange={handleInput}/><br/><br/>
+//       <button onClick={handleInput}>Submit</button>
+
+//     </>
+//   )
+  
+// }
+// export default App; 
+
+//================================================WORK-IN-HOME(08-04-2025(NIGHT)USESTATE)==========================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   const Dec=()=>{
+//     if(count<=0)
+//     {
+//       alert("count less than 0.");
+//     }
+//     else{
+//       setCount(count-1);
+//     }
+//   }
+
+//   return(
+//     <>
+//       <h2>My Counter:{count}</h2>
+//       <button onClick={()=>{setCount(count+1)}}>Increment</button>
+//       <button onClick={Dec}>Decrement</button>
+//       <button onClick={()=>{setCount(0)}}>Reset</button>
+
+//     </>
+//   )
+// }
+// export default App;
+//=================================================(USESTATE-USEEFFECT(1))============================================================================================
+
+
+// import { useEffect, useState } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//       setCount(count+1);
+//     },3000  )
+    
+//   })
+//   return(
+//     <>
+//     <h2>My Count:{count}</h2>
+//     </>
+//   )
+// }
+// export default App;
+
+//===================================================(USESTATE-USEEFFECT(2-an empty array))==================================================================================
+// import { useEffect, useState } from "react";
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//       setCount(count+1);
+//     },3000  )
+    
+//   },[])
+//   return(
+//     <>
+//     <h2>My Count:{count}</h2>
+//     </>
+//   )
+// }
+// export default App;
+
+//=================================================(useeffect(3)first me change ho tbhhi second me chnage ho)=======================================================================================
+
+// import { useEffect, useState } from "react";
+
+// const App=()=>{
+//   const[count,setCount]=useState(0);
+//   const[multi,setMulti]=useState(0);
+
+//   useEffect(()=>{
+//     setMulti(count*2)
+//   },[count])
+
+//   return(
+//     <>
+//      <h2>My count:{count}</h2>
+//      <h3>Multiplication:{multi}</h3>
+//      <button onClick={()=>{setCount(count+1)}}>Click</button>
+     
+//     </>
+//   )
+// }
+// export default App;
+//===========================================(09-04-2025)======================================================================================
+
 import { useState } from "react";
+import axios from "axios";
 const App=()=>{
   const[input,setInput]=useState({});
-  const handleinput=(e)=>{
+  const handleInput=(e)=>{
     let name=e.target.name;
     let value=e.target.value;
 
      setInput(values=>({...values,[name]:value}))
      console.log(input);
 }
+
+const handleSubmit=async()=>{
+      let api="http://localhost:3000/data";
+      const response=await axios.post(api,input);
+      alert("Data successfully save!!!");
+}
   return(
     <>
       <h2>Application form</h2>
-      Rollno:<input type="text"  name="rollno" onChange={handleinput}/><br/><br/>
-      Name:<input type="text"  name="name" onChange={handleinput}/><br/><br/>
-      City:<input type="text"  name="city" onChange={handleinput}/><br/><br/>
-      Fees:<input type="text"  name="fees" onChange={handleinput}/><br/><br/>
-      <button onClick={handleinput}>Submit</button>
+      Enter  Rollno:<input type="text"  name="rollno"
+       onChange={handleInput}/><br/><br/>
+      Enter  Name:<input type="text"  name="name" 
+      onChange={handleInput}/><br/><br/>
+      Enter  City:<input type="text"  name="city" 
+      onChange={handleInput}/><br/><br/>
+      Enter  Fees:<input type="text"  name="fees" 
+      onChange={handleInput}/><br/><br/>
+      <button onClick={handleSubmit}>Save!!!</button>
 
     </>
   )
