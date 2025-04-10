@@ -1,0 +1,25 @@
+{
+  "information": [
+    {
+      "name": "Shivani",
+      "rollno": 167,
+      "city": "Banglore",
+      "fees": 87600,
+      "id": "d9a6"
+    },
+    {
+      "id": "01b6",
+      "name": "rani",
+      "rollno": "345",
+      "city": "bpl",
+      "fees": "56000"
+    },
+    {
+      "id": "7407",
+      "name": "neha",
+      "rollno": "478",
+      "city": "budani",
+      "fees": "47000"
+    }
+  ]
+}
