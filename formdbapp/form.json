@@ -20,6 +20,20 @@
       "rollno": "478",
       "city": "budani",
       "fees": "47000"
+    },
+    {
+      "id": "d9f5",
+      "name": "devika",
+      "rollno": "345",
+      "city": "gujrat",
+      "fees": "39000"
+    },
+    {
+      "id": "a67a",
+      "name": "hema",
+      "rollno": "347",
+      "city": "rajstan",
+      "fees": "63000"
     }
   ]
 }

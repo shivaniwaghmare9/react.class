@@ -17,6 +17,7 @@ const handleSubmit=async()=>{
   let api="http://localhost:3000/information";
   let response=await axios.post(api,input);
   alert("information succesfully saved!!!");
+  console.log(response)
 }
   return(
     <> 
