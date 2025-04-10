@@ -1,0 +1,32 @@
+{
+  "datacollection": [
+    {
+      "name": "Shivani",
+      "empno": 123,
+      "post": "CEO",
+      "salary": 56000,
+      "id": "c447"
+    },
+    {
+      "id": "bb08",
+      "name": "sweta",
+      "empno": "134",
+      "post": "Manager",
+      "salary": "43000"
+    },
+    {
+      "id": "25e4",
+      "name": "preetam",
+      "empno": "346",
+      "post": "CEO",
+      "salary": "68000"
+    },
+    {
+      "id": "bb2a",
+      "name": "ram",
+      "empno": "234",
+      "post": "CEO",
+      "salary": "67000"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+
+#link{
+    
+     color: brown;
+     display: flex;
+     gap: 30px;
+}
+#link1{
+    text-decoration: none;
+}
