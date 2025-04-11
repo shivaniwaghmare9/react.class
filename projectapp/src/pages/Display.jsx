@@ -3,7 +3,7 @@
 const Display=()=>{
     return(
         <>
-        <h1>Display Page!!!</h1>
+        <h1 id="head">Display Page!!!</h1>
         </>
     )
 }
