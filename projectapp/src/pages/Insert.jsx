@@ -17,11 +17,11 @@ const Insert=()=>{
     setInput((values)=>({...values,[name]:value}));
     console.log(input);
   }
-  const handleSubmit=async()=>{
-     
+  const handleSubmit=async(e)=>{
+     e.preventDefault();
     let api="http://localhost:3000/Employee";
     const response=await axios.post(api,input);
-    alert("data saved!!");
+    alert("data succesfully saved!!");
     console.log(response)
   }
     return(
@@ -47,7 +47,7 @@ const Insert=()=>{
       </Form.Group>
 
       
-      <Button variant="primary" type="button" onClick={handleSubmit}>
+      <Button variant="primary" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Form>

@@ -31,10 +31,11 @@ body{
     color: aliceblue;
 }
 #head{
-    background-color: rgb(22, 22, 22);
+    /* background-color: rgb(22, 22, 22); */
     text-align: center;
     height: 70px;
-    color: aliceblue;
+    color: rgb(10, 11, 11);
+    margin-top: 30px;
 }
 /*================================================FOOTER========================================================================================*/
 #ftr{
