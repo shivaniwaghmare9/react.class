@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-//import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 
@@ -18,10 +18,10 @@ const Insert=()=>{
     console.log(input);
   }
   const handleSubmit=async(e)=>{
-     e.preventDefault();
+     e.preventDefault();     //page refresh nhii krta h
     let api="http://localhost:3000/Employee";
     const response=await axios.post(api,input);
-    alert("data succesfully saved!!");
+    toast.success("data succesfully saved!!");
     console.log(response)
   }
     return(
@@ -51,7 +51,7 @@ const Insert=()=>{
         Submit
       </Button>
     </Form>
-    {/* <ToastContainer /> */}
+    <ToastContainer />
 
     </>
     )
