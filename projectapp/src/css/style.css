@@ -55,3 +55,21 @@ body{
     color: rgba(52, 44, 54, 0.674);
     cursor: pointer;
 }
+#box2{
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+#box1 h1 {
+    font-size: larger;
+    color: aliceblue;
+    font-weight: bold;
+}
+#btn{
+    margin-left: 20px;
+    background-color: rgb(78, 176, 179)
+}

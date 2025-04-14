@@ -1,4 +1,4 @@
-import myimg from "../images/myimg6.jpg";
+ import myimg from "../images/myimg6.jpg";
 
 const Home=()=>{
     return(

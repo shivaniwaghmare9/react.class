@@ -29,13 +29,6 @@
       "salary": "57000"
     },
     {
-      "id": "39d0",
-      "name": "tahir",
-      "empno": "234",
-      "designation": "eng",
-      "salary": "57000"
-    },
-    {
       "id": "76c5",
       "name": "tahir",
       "empno": "234",
@@ -48,6 +41,41 @@
       "empno": "125",
       "designation": "developer",
       "salary": "79000"
+    },
+    {
+      "id": "e314",
+      "name": "soniyaa",
+      "empno": "367",
+      "designation": "teacher",
+      "salary": "53000"
+    },
+    {
+      "id": "27cc",
+      "name": "soniyaa",
+      "empno": "367",
+      "designation": "teacher",
+      "salary": "43000"
+    },
+    {
+      "id": "9191",
+      "name": "mahi",
+      "empno": "456",
+      "designation": "developer",
+      "salary": "45000"
+    },
+    {
+      "id": "962d",
+      "name": "jyoti",
+      "empno": "001",
+      "designation": "eng",
+      "salary": "68000"
+    },
+    {
+      "id": "f764",
+      "name": "prinshu",
+      "empno": "234",
+      "designation": "admin",
+      "salary": "30000"
     }
   ]
 }

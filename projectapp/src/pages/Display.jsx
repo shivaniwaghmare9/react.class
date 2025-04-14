@@ -1,3 +1,4 @@
+
 import { useState,useEffect } from "react";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
@@ -31,7 +32,7 @@ const Display=()=>{
     })
     return(
         <>
-          <h1></h1>
+          <h1 id="head">Welcome to display page!!!</h1>
           <Table striped bordered hover>
       <thead>
         <tr>
@@ -50,4 +51,4 @@ const Display=()=>{
         </>
     )
 }
-    export default Display;
+export default Display;

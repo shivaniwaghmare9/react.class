@@ -22,7 +22,13 @@ const Insert=()=>{
     let api="http://localhost:3000/Employee";
     const response=await axios.post(api,input);
     toast.success("data succesfully saved!!");
-    console.log(response)
+    console.log(response);
+    setInput({
+      name:"",
+      empno:"",
+      desigantion:"",
+      salary:""
+    })
   }
     return(
         <>
