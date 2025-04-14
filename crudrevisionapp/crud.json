@@ -1,0 +1,18 @@
+{
+  "cruddata": [
+    {
+      "name": "Shivani",
+      "empno": 123,
+      "designation": "CEO",
+      "salary": 67000,
+      "id": "9ef3"
+    },
+    {
+      "id": "6cfa",
+      "name": "Preetam",
+      "empno": "002",
+      "designation": "Engin",
+      "salary": "65000"
+    }
+  ]
+}
