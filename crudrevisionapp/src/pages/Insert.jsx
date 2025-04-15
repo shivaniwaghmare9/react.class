@@ -32,21 +32,21 @@ const Insert=()=>{
             <h2>Welcome to Insert!!!</h2>
 
     <Form className='insertform'>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" >
         <Form.Label>Enter Name</Form.Label>
-        <Form.Control type="email" name="name"  onChange={handleInput}/>
+        <Form.Control type="text" name="name"  onChange={handleInput}/>
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" >
         <Form.Label>Enter Empno</Form.Label>
-        <Form.Control type="email" name="empno"onChange={handleInput} />
+        <Form.Control type="text" name="empno"onChange={handleInput} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" >
         <Form.Label>Enter Designation</Form.Label>
-        <Form.Control type="email" name="designation" onChange={handleInput} />
+        <Form.Control type="text" name="designation" onChange={handleInput} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" >
         <Form.Label>Enter Salary</Form.Label>
-        <Form.Control type="email" name="salary"onChange={handleInput} />
+        <Form.Control type="text" name="salary"onChange={handleInput} />
       </Form.Group>
       <Button variant="primary" type="submit" onClick={handleSubmit}>
         Submit

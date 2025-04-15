@@ -13,6 +13,13 @@
       "empno": "002",
       "designation": "Engin",
       "salary": "65000"
+    },
+    {
+      "id": "36d8",
+      "name": "swatii",
+      "empno": "007",
+      "designation": "HOD",
+      "salary": "45000"
     }
   ]
 }
