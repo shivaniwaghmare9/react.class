@@ -1,4 +1,6 @@
-import Compo3 from "./Compo3";
+
+
+// import Compo3 from "./Compo3";
 
 
 
@@ -12,12 +14,37 @@ import Compo3 from "./Compo3";
 //     )
 // }
 // export default Compo2;
+//=========================================================================================================================================
+// const Compo2=()=>{
+//     return(
+//         <>
+//          <h1>Component-2</h1>
+         
+//          <Compo3/>
+//         </>
+//     )
+// }
+// export default Compo2;
 
+//======================================WORK===================================================================================================
+
+// import Compo3 from "./Compo3";
+// const Compo2=({user})=>{
+//     return(
+//         <>
+//         <h1>Component-2</h1>
+//         <Compo3 user={user}/>
+//         </>
+//     )
+// }
+// export default Compo2;
+
+//====================================work(context)=============================================================================================
+import Compo3 from "./Compo3";
 const Compo2=()=>{
     return(
         <>
-         <h1>Component-2</h1>
-         
+        <h1>Component-2</h1>
          <Compo3/>
         </>
     )
