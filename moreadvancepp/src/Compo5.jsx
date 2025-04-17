@@ -28,8 +28,7 @@
 // export default Compo5;
 //=========================================WORK==============================================================================================
 
-// const Compo5=({user})=>{
-//     return(
+// const Compo5=    
 //         <>
 //          <h1>Component-5</h1>
 //          <h1>Wlcome :{user}</h1>
@@ -50,7 +49,7 @@ const Compo5=()=>{
     return(
         <>
          <h1>Component-5</h1>
-         <h1>Welcome {user}</h1>
+         <h1>Welcome: {user}</h1>
          <button onClick={()=>{setUser("Sweta")}}>Click Here</button>
         </>
     )
