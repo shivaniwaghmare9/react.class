@@ -86,17 +86,32 @@
 // export default App;
 
 //=======================================context-login-logoutpage====================================================================================================
+// import { useContext } from "react";
+// import { myContext } from "./LoginContext";
+// import AuthApp from "./AuthApp";
+// import UnAuthApp from "./UnAuthApp";
+// const App=()=>{
+//   const{user}=useContext(myContext);
+//   return(
+//     <>
+//      <h1>Login page!!!</h1>
+//       {user.auth ? <AuthApp/>:<UnAuthApp/>}
+//     </>
+//   )
+// }
+// export default App;
+
 import { useContext } from "react";
 import { myContext } from "./LoginContext";
 import AuthApp from "./AuthApp";
-import UnAuthApp from "./UnAuthApp";
+ import UnAuthApp from "./UnAuthApp";
 const App=()=>{
   const{user}=useContext(myContext);
-  return(
-    <>
-     <h1>Login page!!!</h1>
-      {user.auth ? <AuthApp/>:<UnAuthApp/>}
-    </>
-  )
+    return(
+      <>
+       <h1>Login System!!!</h1>
+       {user.auth ? <AuthApp/>:<UnAuthApp/>}
+      </>
+    )
 }
 export default App;
