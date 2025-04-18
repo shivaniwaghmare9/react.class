@@ -94,7 +94,7 @@ const App=()=>{
   const{user}=useContext(myContext);
   return(
     <>
-     <h1>Login page!!</h1>
+     <h1>Login page!!!</h1>
       {user.auth ? <AuthApp/>:<UnAuthApp/>}
     </>
   )
