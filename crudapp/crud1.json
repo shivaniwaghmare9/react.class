@@ -1,0 +1,25 @@
+{
+  "Info": [
+    {
+      "name": "Shivani",
+      "rollno": 123,
+      "subject": "Maths",
+      "university": "BU",
+      "id": "541e"
+    },
+    {
+      "id": "2140",
+      "name": "preetam",
+      "rollno": "125",
+      "subject": "maths",
+      "university": "chhidwara"
+    },
+    {
+      "id": "2dbd",
+      "name": "riyaa",
+      "rollno": "156",
+      "subject": "bio",
+      "university": "BU"
+    }
+  ]
+}
