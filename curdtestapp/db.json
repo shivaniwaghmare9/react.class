@@ -1,0 +1,39 @@
+{
+  "record": [
+    {
+      "name": "Shivani",
+      "age": 23,
+      "city": "Bhopal",
+      "course": "B.tech",
+      "id": "8e64"
+    },
+    {
+      "id": "f6fc",
+      "name": "preetam",
+      "age": "23",
+      "city": "Riva",
+      "course": "b.sc"
+    },
+    {
+      "id": "7173",
+      "name": "priyaa",
+      "age": "24",
+      "city": "pune",
+      "course": "d-farma"
+    },
+    {
+      "id": "c7d1",
+      "name": "riyaa",
+      "age": "23",
+      "city": "banglore",
+      "course": "d-farma"
+    },
+    {
+      "id": "ddfd",
+      "name": "divya",
+      "age": "22",
+      "city": "betul",
+      "course": "farmacy"
+    }
+  ]
+}
