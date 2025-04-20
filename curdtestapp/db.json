@@ -11,21 +11,14 @@
       "id": "f6fc",
       "name": "preetam",
       "age": "23",
-      "city": "Riva",
+      "city": "Satna",
       "course": "b.sc"
     },
     {
       "id": "7173",
       "name": "priyaa",
-      "age": "24",
+      "age": "21",
       "city": "pune",
-      "course": "d-farma"
-    },
-    {
-      "id": "c7d1",
-      "name": "riyaa",
-      "age": "23",
-      "city": "banglore",
       "course": "d-farma"
     },
     {
@@ -34,6 +27,20 @@
       "age": "22",
       "city": "betul",
       "course": "farmacy"
+    },
+    {
+      "id": "779d",
+      "name": "ram",
+      "age": "24",
+      "city": "vidisha",
+      "course": "b.sc Agriculture"
+    },
+    {
+      "id": "1884",
+      "name": "sneha",
+      "age": "24",
+      "city": "indore",
+      "course": "D-Farmacy"
     }
   ]
 }

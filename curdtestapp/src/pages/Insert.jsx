@@ -22,8 +22,8 @@ const Insert=()=>{
     }
     return(
         <>
-          <h1>Insert Page!!!</h1>
-          <Form>
+          <h1 id="compo">Insert Page!!!</h1>
+          <Form className="form">
       <Form.Group className="mb-3" >
         <Form.Label>Enter Name</Form.Label>
         <Form.Control type="text" name="name" onChange={handleInput} />

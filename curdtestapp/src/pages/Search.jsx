@@ -22,17 +22,17 @@ const Search=()=>{
                 <td>{key.age}</td>
                 <td>{key.city}</td>
                 <td>{key.course}</td>
-             </tr>
+             </tr>id="tbl"
             </>
         )
     })
     return(
         <>
-          <h1>Search Page!!!</h1>
+          <h1 id="compo">Search Page!!!</h1>
           Enter Name: <input type="text" value={name}  
           onChange={(e)=>{setName(e.target.value)}}/>
-          <button onClick={handleSubmit}>Search</button>
-          <Table striped bordered hover variant="dark">
+          <button onClick={handleSubmit} id="btn">Search</button>
+          <Table striped bordered hover variant="light" id="tbl">
       <thead>
         <tr>
           <th>Sno</th>

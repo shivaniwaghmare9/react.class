@@ -2,8 +2,8 @@
 const Home=()=>{
     return(
         <>
-          <h1>Home Page!!!</h1>
+          <h1 id="compo">Home Page!!!</h1>
         </>
     )
 }
-export default Home;
+export default Home; 

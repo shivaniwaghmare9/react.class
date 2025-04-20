@@ -34,10 +34,10 @@ const Display=()=>{
     })
     return(
         <>
-          <h1>Display Page!!!</h1>
-          <Table striped bordered hover>
-      <thead>
-        <tr>
+          <h1 id="compo">Display Page!!!</h1>
+          <Table striped bordered hover   id="tbl">
+      <thead >
+        <tr >
           <th>Sno</th>
           <th>Name</th>
           <th>Age</th>

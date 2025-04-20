@@ -7,6 +7,7 @@ import Display from "./pages/Display";
 import Search from "./pages/Search";
 import Update from "./pages/Update";
 import Contact from "./pages/Contact";
+import Edit from "./pages/Edit";
 const App=()=>{
   return(
     <>
@@ -20,6 +21,7 @@ const App=()=>{
           <Route path="search"  element={<Search/>}/>
           <Route path="update"  element={<Update/>}/>
           <Route path="contact"  element={<Contact/>}/>
+          <Route path="myedit/:id" element={<Edit/>}/>
           </Route>
          </Routes>
        </BrowserRouter>
