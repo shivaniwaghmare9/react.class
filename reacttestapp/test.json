@@ -1,0 +1,26 @@
+{
+  "info": [
+    {
+      "name": "Shivani",
+      "designation": "CEO",
+      "department": "A",
+      "salary": 12000,
+      "id": "8064"
+    },
+    
+    {
+      "id": "648b",
+      "name": "shivani makode",
+      "designation": "admin",
+      "department": "d",
+      "salary": "30000"
+    },
+    {
+      "id": "a571",
+      "name": "shivani makode",
+      "designation": "admin",
+      "department": "d",
+      "salary": "30000"
+    }
+  ]
+}
