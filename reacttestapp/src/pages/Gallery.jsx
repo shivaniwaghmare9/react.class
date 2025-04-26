@@ -10,9 +10,11 @@ const Gallery=()=>{
         
     return(
         <>
+        <div className="box2">
          <h1>Counter:{count}</h1>
-         <h1 >Multiplication::{multi}</h1>
-         <button onClick={()=>{setCount(count+1)}}>Click</button>
+         <h1 >Multiplication:{multi}</h1>
+         <button onClick={()=>{setCount(count+1)}} className="btn3">Click</button>
+         </div>
          
         </>
     )

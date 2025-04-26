@@ -13,9 +13,11 @@ const Placement=()=>{
     }
     return(
         <>
-           <h1>My Counter:{count}</h1>
-           <button onClick={()=>{setCount(count+1)}}>Increment</button>
-           <button onClick={dec}>Decrement</button>
+        <div className="box">
+           <h2>My Counter:{count}</h2>
+           <button onClick={()=>{setCount(count+1)}}className="btn1">Increment</button>
+           <button onClick={dec} className="btn2">Decrement</button>
+        </div>
         </>
     )
 }

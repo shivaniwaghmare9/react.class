@@ -31,7 +31,7 @@ const Services=()=>{
     })
     return(
         <>
-       <Table striped bordered hover variant="dark">
+       <Table striped bordered hover variant="dark" id="tbl">
       <thead>
         <tr>
           <th>SNO</th>
