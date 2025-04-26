@@ -28,14 +28,14 @@
 //=============================================with-other-context-componetfiel=============================================================================================
 import { useContext } from "react";
 import { myContext } from "../UserContext";
-const Cybrom=({chidren})=>{
+const Cybrom=({children})=>{
 
-    const {name} =useContext(myContext);
+    const{name,setname}=useContext(myContext);
     return(
 
         <>
-           <h1>Welcome to cybrom {name}</h1>
-           
+           <h1>Hello i am  {name}</h1>
+           <button onClick={()=>{setname("shivani")}}>Change</button>
         </>
     )
 }

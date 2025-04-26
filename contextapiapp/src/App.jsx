@@ -74,16 +74,16 @@
 // export default App;
 
 //================================================with-other-context-componetfiel===========================================================================================
-// import Cybrom from "./pages/Cybrom";
-// const App=()=>{
-//   return(
-//     <>
-//      <h1>Welcome Welcome</h1>
-//      <Cybrom/>
-//     </>
-//   )
-// }
-// export default App;
+import Cybrom from "./pages/Cybrom";
+const App=()=>{
+  return(
+    <>
+     <h1>Welcome to Cybrom</h1>
+     <Cybrom/>
+    </>
+  )
+}
+export default App;
 
 //=======================================context-login-logoutpage====================================================================================================
 // import { useContext } from "react";
@@ -101,17 +101,17 @@
 // }
 // export default App;
 
-import { useContext } from "react";
-import { myContext } from "./LoginContext";
-import AuthApp from "./AuthApp";
- import UnAuthApp from "./UnAuthApp";
-const App=()=>{
-  const{user}=useContext(myContext);
-    return(
-      <>
-       <h1>Login System!!!</h1>
-       {user.auth ? <AuthApp/>:<UnAuthApp/>}
-      </>
-    )
-}
-export default App;
+// import { useContext } from "react";
+// import { myContext } from "./LoginContext";
+// import AuthApp from "./AuthApp";
+//  import UnAuthApp from "./UnAuthApp";
+// const App=()=>{
+//   const{user}=useContext(myContext);
+//     return(
+//       <>
+//        <h1>Login System!!!</h1>
+//        {user.auth ? <AuthApp/>:<UnAuthApp/>}
+//       </>
+//     )
+// }
+// export default App;
