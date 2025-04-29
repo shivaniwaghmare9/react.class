@@ -7,7 +7,7 @@ import { ToastContainer,toast } from "react-toastify";
 
 
 const About=()=>{
-    const[input,setInput]=useState("");
+    const[input,setInput]=useState({});
     const handleInput=(e)=>{
         let name=e.target.name;
         let value=e.target.value;

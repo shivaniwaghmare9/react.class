@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Placement from "./pages/Placement";
 import Gallery from "./pages/Gallery";
+import ContactUs from "./pages/Contact";
 
 const App=()=>{
   return(
@@ -18,6 +19,7 @@ const App=()=>{
             <Route path="services" element={<Services/>}/>
             <Route path="placement" element={<Placement/>}/>
             <Route path="gallery" element={<Gallery/>}/>
+            <Route path="contact" element={<ContactUs/>}/>
             </Route>
           </Routes>
      </BrowserRouter>
