@@ -1,11 +1,21 @@
 
+// import { configureStore } from "@reduxjs/toolkit";
+// import myReducer from "./counterSlice";
+// const store=configureStore({
+//   reducer:{
+//     //your reducer gose here
+//     mycounter:myReducer
+//   }
+// })
+// export default store;
 
-import { configureStore } from "@reduxjs/toolkit";
+//==========================================(work)======================================================================================================================
+import { configureStore } from "@reduxjs/toolkit"
 import myReducer from "./counterSlice";
-const store=configureStore({
-  reducer:{
-    //your reducer gose here
-    mycounter:myReducer
-  }
+const store= configureStore({
+    reducer:{
+      mycounter:myReducer
+
+    }
 })
 export default store;
