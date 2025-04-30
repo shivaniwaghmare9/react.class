@@ -34,15 +34,38 @@
 // export default App;
 
 //============================================(29-04-2025)=====================================================================================
+// import { useSelector,useDispatch } from "react-redux";
+// import { changename } from "./nameSlice";
+// const App=()=>{
+//   const usrname=useSelector(state=>state.myname.user)
+//   const dispatch=useDispatch();
+//   return(
+//     <>
+//      <h1>Welcome : {usrname}</h1>
+//      <button onClick={()=>{dispatch(changename())}}>Change name</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//===============================================(30-04-2025(payload))====================================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { changename } from "./nameSlice";
+import { useState } from "react";
+import { changeColor } from "./colorSlice";
 const App=()=>{
-  const usrname=useSelector(state=>state.myname.user)
+  const myclr=useSelector(state=>state.mycolor.color);
   const dispatch=useDispatch();
+  const[val,setVal]=useState("");
   return(
     <>
-     <h1>Welcome {usrname}</h1>
-     <button onClick={()=>{dispatch(changename())}}>Change name</button>
+       <h1>My change color program</h1>
+       Enter Color: <input type="text"value={val}  
+       onChange={(e)=>{setVal(e.target.value)}}/>
+       <button onClick={()=>{dispatch(changeColor(val))}}>Change</button>
+       <hr />
+       <div style={{width:"200px", height:"200px", backgroundColor:myclr}}>
+
+       </div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-
+//==============================================(29-04-2025)============================================================================================================================================
 import { createSlice } from "@reduxjs/toolkit"
 const nameSlice=createSlice({
     name:"myname",
@@ -12,4 +12,4 @@ const nameSlice=createSlice({
     }
 })
 export const {changename}=nameSlice.actions;
-export default  nameSlice.reducer;
+export default nameSlice.reducer;
