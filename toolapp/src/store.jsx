@@ -32,13 +32,24 @@
 // })
 // export default store;
 
-//=================================================(30-04-2025(payload))==============================================================================
+// //=================================================(30-04-2025(payload))==============================================================================
+
+// import { configureStore } from "@reduxjs/toolkit"
+// import colorReducer from "./colorSlice";
+// const store=configureStore({
+//   reducer:{
+//       mycolor:colorReducer
+//   }
+// })
+// export default store;
+
+//=================================================(30-04-2025(payload)[todo-list])==============================================================================
 
 import { configureStore } from "@reduxjs/toolkit"
-import colorReducer from "./colorSlice";
+import todoReducer from "./todoSlice";
 const store=configureStore({
   reducer:{
-      mycolor:colorReducer
+      todo:todoReducer
   }
 })
 export default store;

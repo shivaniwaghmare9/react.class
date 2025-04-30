@@ -48,25 +48,55 @@
 // }
 // export default App;
 
-//===============================================(30-04-2025(payload))====================================================================================================================
+//===============================================(30-04-2025(payload[todo-list]))====================================================================================================================
 import { useSelector,useDispatch } from "react-redux";
 import { useState } from "react";
-import { changeColor } from "./colorSlice";
+import { addTask } from "./todoSlice";
 const App=()=>{
-  const myclr=useSelector(state=>state.mycolor.color);
+  const work=useSelector(state=>state.todo.task);
   const dispatch=useDispatch();
   const[val,setVal]=useState("");
+  console.log(work)
+  let sno=0;
+  const ans=work.map((key)=>{
+    sno++;
+    return(
+      <>
+       <tr>
+        <td>{sno}</td>
+        <td>{key.task}</td>
+       </tr>
+      </>
+    )
+  })
   return(
     <>
        <h1>My change color program</h1>
-       Enter Color: <input type="text"value={val}  
-       onChange={(e)=>{setVal(e.target.value)}}/>
-       <button onClick={()=>{dispatch(changeColor(val))}}>Change</button>
-       <hr />
-       <div style={{width:"200px", height:"200px", backgroundColor:myclr}}>
-
-       </div>
+       Enter Work: <input type="text"value={val}  
+       onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
+       <button onClick={()=>{dispatch(addTask({task:val}))}}>Add</button>
+         <hr />
+         <table border="1"width="300px">
+          <tr>
+            <th>Sno</th>
+            <th>Task</th>
+          </tr>
+          {ans}
+         </table>
+       
     </>
   )
 }
 export default App;
+
+
+//=================================================================================================================================================================
+
+// const App=()=>{
+//   return(
+//     <>
+//      <h1></h1>
+//     </>
+//   )
+// }
+// export default App;
