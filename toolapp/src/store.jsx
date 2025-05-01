@@ -45,6 +45,17 @@
 
 //=================================================(30-04-2025(payload)[todo-list])==============================================================================
 
+// import { configureStore } from "@reduxjs/toolkit"
+// import todoReducer from "./todoSlice";
+// const store=configureStore({
+//   reducer:{
+//       todo:todoReducer
+//   }
+// })
+// export default store;
+
+//===============================================(01-05-2025(todo App))============================================================================================
+
 import { configureStore } from "@reduxjs/toolkit"
 import todoReducer from "./todoSlice";
 const store=configureStore({
