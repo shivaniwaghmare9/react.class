@@ -142,31 +142,52 @@
 //===============================================(02-05-2025(ToDo))=================================================================================================================================================
 import { useState } from "react";
 import { useSelector,useDispatch } from "react-redux";
-import { addTask,RemoveTask,taskComplete,taskInComplete } from "./todoSlice";
+import { addTask,RemoveTask,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
 const App=()=>{
   const[txtVal,setTxtval]=useState("");
+  const[btnStatus,setbtnStatus]=useState(true);
+  const[myid,setMyid]=useState("");
   const data=useSelector(state=>state.todo.task);
     const dispatch=useDispatch();
     console.log(data);
+    const dataEdit=(id,work)=>{
+      setTxtval(work);
+      setbtnStatus(false);
+      setMyid(id);
+    }
+    const myEditData=()=>{
+      dispatch(myEditSave({id:myid,work:txtVal}));
+      setbtnStatus(true);
+    };
     let sno=0;
+    
     const ans=data.map((key)=>{
               sno++;
               return(
                 <>
                  <tr>
                   <td>{sno}</td>
-                  <td>{key.work}</td>
+                  <td>{key.taskStatus?(
+                    <>
+                    <span style={{color:"red",textDecoration:"line-through"}}>
+                      {key.work}
+                      </span>
+                      </>
+                     ):(
+                    <>{key.work}</>
+                     )}
+                  </td>
                   <td>
                     <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
                   </td>
                   <td>
-                    <button onClick={()=>{dispatch(taskComplete({id:}))}}>Complete</button>
+                    <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
                   </td>
                   <td>
-                    <button onClick={()=>{dispatch(taskInComplete)}}>InComplete</button>
+                    <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
                   </td>
                   <td>
-                    <button>Edit</button>
+                    <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit</button>
                   </td>
                  </tr>
                 </>  
@@ -175,10 +196,20 @@ const App=()=>{
   return(
     <>
      <h1>Welome ToDo App</h1>
-     Enter : <input type="text" value={txtVal} 
+     Enter Your Task : <input type="text" value={txtVal} 
      onChange={(e)=>{setTxtval(e.target.value)}}/><br/><br/>
-     <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txtVal}))}}>Add</button>
+     {btnStatus ?(
+      <>
+   <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txtVal,taskStatus:false}))}}>Add</button>
+     
+      </>
+     ):(
+      <>
+        <button onClick={myEditData}>EditSave</button>
+      </>
+     )}
      <hr />
+     
       <table border="1"width="600px">
             <tr>
               <th>Sno</th>

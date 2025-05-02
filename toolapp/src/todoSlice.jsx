@@ -77,7 +77,7 @@ const todoSlice=createSlice({
             {
                if(state.task[i].id==actions.payload.id)
                {
-                  state.task[i].taskStatus==true;
+                  state.task[i].taskStatus=true;
                }
             }
          },
@@ -86,14 +86,23 @@ const todoSlice=createSlice({
             {
                if(state.task[i].id==actions.payload.id)
                {
-                  state.task[i].taskStatus==false;
+                  state.task[i].taskStatus=false;
                }
             }
          },
+         myEditSave:(state,actions)=>{
+            for(var i=0; i<state.task.length; i++)
+            {
+               if(state.task[i].id==actions.payload.id)
+               {
+                  state.task[i].work=actions.payload.work;
+               }
+            }
+         }
       }
 
 });
- export const {addTask,RemoveTask,taskComplete,taskInComplete}=todoSlice.actions;
+ export const {addTask,RemoveTask,taskComplete,taskInComplete,myEditSave}=todoSlice.actions;
  export default todoSlice.reducer;
 
 
