@@ -101,7 +101,7 @@ const App=()=>{
   const dispatch=useDispatch();
   console.log(data);
    let sno=0;
-   const ans=data.map((key)=>{
+   const ans=data.map((key,index)=>{
         sno++;
         return(
           <>
@@ -111,8 +111,11 @@ const App=()=>{
             <td>
               <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
             </td>
+            <td>
+              <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Remove</button>
+            </td>
            </tr>
-          </>
+          </>  
         )
       })
   return(
@@ -127,6 +130,7 @@ const App=()=>{
              <th>Sno</th>
              <th>Task</th>
              <th>Delete</th>
+             <th>Remove</th>
            </tr>
            {ans}
          </table>

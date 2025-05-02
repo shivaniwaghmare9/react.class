@@ -29,12 +29,24 @@ const todoSlice=createSlice({
             console.log(actions);
             state.task.push(actions.payload);
         },
+         // removeTask:(state,actions)=>{
+         //    //console.log(actions.payload);
+         //    state.task=state.task.filter(item=>item.id!=actions.payload.id)
+         // },
          removeTask:(state,actions)=>{
-            //console.log(actions.payload);
-            state.task=state.task.filter(item=>item.id!=actions.payload.id)
+            console.log(actions.payload.id);
+            state.task=state.task.filter(function(key){
+               if(key.id==actions.payload.id)
+               {
+                  return false;
+               }
+               else{
+                  return true;
+               }
+            })
          },
          remByIndex:(state,actions)=>{
-          state.task=state.splice(actions.payload.id,1)
+          state.task.splice(actions.payload.id,1)
             console.log(actions.payload.id);
          }
      }
