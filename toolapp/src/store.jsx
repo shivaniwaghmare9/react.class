@@ -56,10 +56,22 @@
 
 //===============================================(01-05-2025(todo App))============================================================================================
 
+// import { configureStore } from "@reduxjs/toolkit"
+// import todoReducer from "./todoSlice";
+// const store=configureStore({
+//   reducer:{
+//       todo:todoReducer
+//   }
+// })
+// export default store;
+
+//==============================================(02-05-2025(todo))=============================================================================================================
+
 import { configureStore } from "@reduxjs/toolkit"
 import todoReducer from "./todoSlice";
 const store=configureStore({
   reducer:{
+    //your reducers gose here
       todo:todoReducer
   }
 })

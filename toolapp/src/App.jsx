@@ -91,49 +91,105 @@
 
 
 // //================================================(01-05-2025(todo app))=================================================================================================================
-import { useSelector,useDispatch } from "react-redux";
+// import { useSelector,useDispatch } from "react-redux";
 
+// import { useState } from "react";
+// import { addTask,removeTask,remByIndex } from "./todoSlice";
+// const App=()=>{
+//   const[val,setVal]=useState("");
+//   const data=useSelector(state=>state.todo.task);
+//   const dispatch=useDispatch();
+//   console.log(data);
+//    let sno=0;
+//    const ans=data.map((key,index)=>{
+//         sno++;
+//         return(
+//           <>
+//            <tr>
+//             <td>{sno}</td>
+//             <td>{key.work}</td>
+//             <td>
+//               <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
+//             </td>
+//             <td>
+//               <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Remove</button>
+//             </td>
+//            </tr>
+//           </>  
+//         )
+//       })
+//   return(
+//     <>
+//      <h1>Welcome To To-Do App Class</h1>
+//       Enter Your Task: <input type="text" value={val} 
+//       onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
+//      <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add</button>
+//      <hr />
+//      <table border="1"width="300px">
+//            <tr>
+//              <th>Sno</th>
+//              <th>Task</th>
+//              <th>Delete</th>
+//              <th>Remove</th>
+//            </tr>
+//            {ans}
+//          </table>
+//     </>
+//   )
+// }
+// export default App;
+
+//===============================================(02-05-2025(ToDo))=================================================================================================================================================
 import { useState } from "react";
-import { addTask,removeTask,remByIndex } from "./todoSlice";
+import { useSelector,useDispatch } from "react-redux";
+import { addTask,RemoveTask,taskComplete,taskInComplete } from "./todoSlice";
 const App=()=>{
-  const[val,setVal]=useState("");
+  const[txtVal,setTxtval]=useState("");
   const data=useSelector(state=>state.todo.task);
-  const dispatch=useDispatch();
-  console.log(data);
-   let sno=0;
-   const ans=data.map((key,index)=>{
-        sno++;
-        return(
-          <>
-           <tr>
-            <td>{sno}</td>
-            <td>{key.work}</td>
-            <td>
-              <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
-            </td>
-            <td>
-              <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Remove</button>
-            </td>
-           </tr>
-          </>  
-        )
-      })
+    const dispatch=useDispatch();
+    console.log(data);
+    let sno=0;
+    const ans=data.map((key)=>{
+              sno++;
+              return(
+                <>
+                 <tr>
+                  <td>{sno}</td>
+                  <td>{key.work}</td>
+                  <td>
+                    <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
+                  </td>
+                  <td>
+                    <button onClick={()=>{dispatch(taskComplete({id:}))}}>Complete</button>
+                  </td>
+                  <td>
+                    <button onClick={()=>{dispatch(taskInComplete)}}>InComplete</button>
+                  </td>
+                  <td>
+                    <button>Edit</button>
+                  </td>
+                 </tr>
+                </>  
+              )
+            })
   return(
     <>
-     <h1>Welcome To To-Do App Class</h1>
-      Enter Your Task: <input type="text" value={val} 
-      onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
-     <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add</button>
+     <h1>Welome ToDo App</h1>
+     Enter : <input type="text" value={txtVal} 
+     onChange={(e)=>{setTxtval(e.target.value)}}/><br/><br/>
+     <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txtVal}))}}>Add</button>
      <hr />
-     <table border="1"width="300px">
-           <tr>
-             <th>Sno</th>
-             <th>Task</th>
-             <th>Delete</th>
-             <th>Remove</th>
-           </tr>
-           {ans}
-         </table>
+      <table border="1"width="600px">
+            <tr>
+              <th>Sno</th>
+              <th>Your Task</th>
+              <th>Delete</th>
+              <th>Complete</th>
+              <th>Incomplete</th>
+              <th>Edit</th>
+            </tr>
+            {ans}
+          </table>
     </>
   )
 }
