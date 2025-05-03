@@ -10,12 +10,23 @@
 // export default store;
 
 //====================================COLORSTORE(payload)==================================================================================================
-import { configureStore } from "@reduxjs/toolkit"
-import colorReducer from "./colorSlice"
+// import { configureStore } from "@reduxjs/toolkit"
+// import colorReducer from "./colorSlice"
+// const store=configureStore({
+//     reducer:{
+//         // your reducers gose here
+//        mycolor:colorReducer
+//     }
+// })
+// export default store;
+//=====================================NAMESTORE=========================================================================================
+
+import { configureStore } from "@reduxjs/toolkit";
+import nameReducer from "./nameSlice"
 const store=configureStore({
     reducer:{
-        // your reducers gose here
-       mycolor:colorReducer
+        //your reducers gose here
+        myname:nameReducer
     }
 })
 export default store;
