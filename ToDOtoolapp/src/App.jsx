@@ -218,7 +218,7 @@ const App=()=>{
          )}
          <table border="2" width="700px">
             <tr> 
-                <th>SNO</th>
+               <th>SNO</th>
                <th>YOUR TASK</th>
                <th>DELETE</th>
                <th>REMOVE</th>
