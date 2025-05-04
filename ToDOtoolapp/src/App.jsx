@@ -145,7 +145,7 @@
 
 //============================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { addTask,RemoveTask,removeBYIndex } from "./todoSlice";
+import { addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete } from "./todoSlice";
 import { useState } from "react";
 const App=()=>{
     const data=useSelector(state=>state.todo.task);
@@ -159,12 +159,29 @@ const App=()=>{
             <>
               <tr>
                 <td>{sno}</td>
-                <td>{key.work}</td>
+                <td>
+                    {key.taskStatus?(
+                      <>
+                      <span style={{color:"red",textDecoration:"line-through"}}>
+                        {key.work}
+                      </span>
+                      </>  
+                    ):(
+                        <>{key.work}</>
+                    )}
+                </td>
+                    
                 <td>
                     <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
                 </td>
                 <td>
                     <button onClick={()=>{dispatch(removeBYIndex({id:index}))}}>Remove</button>
+                </td>
+                <td>
+                    <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
+                </td>
+                <td>
+                    <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
                 </td>
               </tr>
             </>
@@ -175,13 +192,15 @@ const App=()=>{
          <h1>ToDo App</h1>
          Enter task: <input type="text" value={val} 
          onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
-         <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!!</button><br/><br/>
-         <table border="2" width="300px">
+         <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val,taskStatus:false}))}}>Add!!!</button><br/><br/>
+         <table border="2" width="700px">
             <tr> 
                 <th>SNO</th>
                <th>YOUR TASK</th>
                <th>DELETE</th>
                <th>REMOVE</th>
+               <th>COMPLETE</th>
+               <th>INCOMPLETE</th>
             </tr> 
             {ans}
          </table>
