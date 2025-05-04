@@ -1,4 +1,4 @@
-// //====================================COUNTERSTORE==================================================================================================
+// ====================================COUNTERSTORE==================================================================================================
 // import { configureStore } from "@reduxjs/toolkit"
 // import myReducer from "./counterSlice"
 // const store=configureStore({
@@ -19,14 +19,27 @@
 //     }
 // })
 // export default store;
-//=====================================NAMESTORE=========================================================================================
+// =====================================NAMESTORE=========================================================================================
+
+// import { configureStore } from "@reduxjs/toolkit";
+// import nameReducer from "./nameSlice"
+// const store=configureStore({
+//     reducer:{
+//         //your reducers gose here
+//         myname:nameReducer
+//     }
+// })
+// export default store;
+
+//==============================================(TODO-APP)=====================================================================================================================
 
 import { configureStore } from "@reduxjs/toolkit";
-import nameReducer from "./nameSlice"
+import todoReducer from "./todoSlice"
 const store=configureStore({
     reducer:{
         //your reducers gose here
-        myname:nameReducer
+        todo:todoReducer
+
     }
 })
 export default store;
