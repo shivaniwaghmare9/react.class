@@ -55,40 +55,89 @@
 // }
 // export default App;
 
-//=================================================================================================================================================================
+// //==============================================TODO-APP===================================================================================================================
+// import { useSelector,useDispatch } from "react-redux";
+// import { addTask } from "./todoSlice";
+// import { useState } from "react";
+// const App=()=>{
+//   const data=useSelector(state=>state.todo.task);
+//   const dispatch=useDispatch();
+//   const[txt,setTxt]=useState("");
+//   console.log(data);
+//   let sno=0;
+//   const ans=data.map((key)=>{
+//     sno++;
+//     return(
+//       <>
+//         <tr>
+//           <td>{sno}</td>
+//           <td>{key.task}</td>
+          
+//         </tr>
+//       </>
+//     )
+//   })
+//   return(
+//     <>
+//        <h1>Welcome to todo app!!!!</h1>
+//        Enter Your Task: <input type="text" value={txt} 
+//        onChange={(e)=>{setTxt(e.target.value)}}/><br/><br/>
+//        <button onClick={()=>{dispatch(addTask({task:txt}))}}>Add</button><br/><br/>
+//        <table border="2" width="400px"> 
+//         <tr>
+//           <th>SNO</th>
+//           <th>TASK</th>
+          
+//         </tr>
+//         {ans}
+//        </table>
+//     </>
+//   )
+// }
+// export default App;
+
+//======================================================(TODO-DELETE FUNCTIONALITY)=======================================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { addTask } from "./todoSlice";
+import { addTask,removeTask,remByIndex} from "./todoSlice";
 import { useState } from "react";
 const App=()=>{
   const data=useSelector(state=>state.todo.task);
   const dispatch=useDispatch();
-  const[txt,setTxt]=useState("");
+  const[val,setval]=useState("");
   console.log(data);
   let sno=0;
-  const ans=data.map((key)=>{
+  const ans=data.map((key,index)=>{
     sno++;
     return(
       <>
-        <tr>
-          <td>{sno}</td>
-          <td>{key.task}</td>
-        </tr>
+       <tr>
+        <td>{sno}</td>
+        <td>{key.work}</td>
+        <td>
+          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Remove</button>
+        </td>
+        <td>
+          <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Delete</button>
+        </td>
+       </tr>
       </>
     )
   })
   return(
     <>
-       <h1>Welcome to todo app!!!!</h1>
-       Enter Your Task: <input type="text" value={txt} 
-       onChange={(e)=>{setTxt(e.target.value)}}/><br/><br/>
-       <button onClick={()=>{dispatch(addTask({task:txt}))}}>Add</button><br/><br/>
-       <table border="2" width="400px"> 
+      <h1>ToDo App</h1>
+      Enter Task: <input type="text" value={val} 
+      onChange={(e)=>{setval(e.target.value)}}/><br/><br/>
+      <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!</button><br/><br/>
+      <table border="2" width="400px">
         <tr>
           <th>SNO</th>
-          <th>TASK</th>
+          <th>YOUR TASK</th>
+          <th>REMOVE</th>
+          <th>DELETE</th>
         </tr>
         {ans}
-       </table>
+      </table>
     </>
   )
 }
