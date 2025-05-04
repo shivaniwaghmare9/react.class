@@ -97,48 +97,96 @@
 // export default App;
 
 //======================================================(TODO-DELETE FUNCTIONALITY)=======================================================================================================================
+// import { useSelector,useDispatch } from "react-redux";
+// import { addTask,removeTask,remByIndex} from "./todoSlice";
+// import { useState } from "react";
+// const App=()=>{
+//   const data=useSelector(state=>state.todo.task);
+//   const dispatch=useDispatch();
+//   const[val,setval]=useState("");
+//   console.log(data);
+//   let sno=0;
+//   const ans=data.map((key,index)=>{
+//     sno++;
+//     return(
+//       <>
+//        <tr>
+//         <td>{sno}</td>
+//         <td>{key.work}</td>
+//         <td>
+//           <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Remove</button>
+//         </td>
+//         <td>
+//           <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Delete</button>
+//         </td>
+//        </tr>
+//       </>
+//     )
+//   })
+//   return(
+//     <>
+//       <h1>ToDo App</h1>
+//       Enter Task: <input type="text" value={val} 
+//       onChange={(e)=>{setval(e.target.value)}}/><br/><br/>
+//       <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!</button><br/><br/>
+//       <table border="2" width="400px">
+//         <tr>
+//           <th>SNO</th>
+//           <th>YOUR TASK</th>
+//           <th>REMOVE</th>
+//           <th>DELETE</th>
+//         </tr>
+//         {ans}
+//       </table>
+//     </>
+//   )
+// }
+// export default App;
+
+//============================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { addTask,removeTask,remByIndex} from "./todoSlice";
+import { addTask,RemoveTask,removeBYIndex } from "./todoSlice";
 import { useState } from "react";
 const App=()=>{
-  const data=useSelector(state=>state.todo.task);
-  const dispatch=useDispatch();
-  const[val,setval]=useState("");
-  console.log(data);
-  let sno=0;
-  const ans=data.map((key,index)=>{
-    sno++;
+    const data=useSelector(state=>state.todo.task);
+    const dispatch=useDispatch();
+    const [val,setVal]=useState("");
+    console.log(data);
+    let sno=0;
+    const ans=data.map((key,index)=>{
+        sno++;
+        return(
+            <>
+              <tr>
+                <td>{sno}</td>
+                <td>{key.work}</td>
+                <td>
+                    <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
+                </td>
+                <td>
+                    <button onClick={()=>{dispatch(removeBYIndex({id:index}))}}>Remove</button>
+                </td>
+              </tr>
+            </>
+        )
+    })
     return(
-      <>
-       <tr>
-        <td>{sno}</td>
-        <td>{key.work}</td>
-        <td>
-          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Remove</button>
-        </td>
-        <td>
-          <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Delete</button>
-        </td>
-       </tr>
-      </>
+        <>
+         <h1>ToDo App</h1>
+         Enter task: <input type="text" value={val} 
+         onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
+         <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!!</button><br/><br/>
+         <table border="2" width="300px">
+            <tr> 
+                <th>SNO</th>
+               <th>YOUR TASK</th>
+               <th>DELETE</th>
+               <th>REMOVE</th>
+            </tr> 
+            {ans}
+         </table>
+
+        </>
     )
-  })
-  return(
-    <>
-      <h1>ToDo App</h1>
-      Enter Task: <input type="text" value={val} 
-      onChange={(e)=>{setval(e.target.value)}}/><br/><br/>
-      <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!</button><br/><br/>
-      <table border="2" width="400px">
-        <tr>
-          <th>SNO</th>
-          <th>YOUR TASK</th>
-          <th>REMOVE</th>
-          <th>DELETE</th>
-        </tr>
-        {ans}
-      </table>
-    </>
-  )
 }
 export default App;

@@ -46,13 +46,23 @@
 
 //==========================================(TODO-APP-DELETE FUNCTIONALITY)==========================================================================================================
 
+// import { configureStore } from "@reduxjs/toolkit";
+// import todoReducer from "./todoSlice"
+// const store=configureStore({
+//     reducer:{
+//         //Your reducers gose here
+//         todo:todoReducer
+
+//     }
+// })
+// export default store;
+
+//====================================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
 import { configureStore } from "@reduxjs/toolkit";
 import todoReducer from "./todoSlice"
 const store=configureStore({
     reducer:{
-        //Your reducers gose here
-        todo:todoReducer
-
+     todo:todoReducer
     }
 })
 export default store;
