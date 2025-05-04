@@ -106,7 +106,16 @@ const todoSlice=createSlice({
                 }
             }
         },
+        myEditSave:(state,actions)=>{
+            for(var i=0; i<state.task.length; i++)
+            {
+               if (state.task[i].id==actions.payload.id)
+               {
+                state.task[i].work=actions.payload.work;
+               }
+            }
+        }
     }
 })
-export const{addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete}=todoSlice.actions;
+export const{addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete,myEditSave}=todoSlice.actions;
 export default todoSlice.reducer;

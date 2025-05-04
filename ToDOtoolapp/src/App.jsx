@@ -145,13 +145,25 @@
 
 //============================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete } from "./todoSlice";
+import { addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
 import { useState } from "react";
 const App=()=>{
     const data=useSelector(state=>state.todo.task);
     const dispatch=useDispatch();
     const [val,setVal]=useState("");
+    const[btn,setBtn]=useState(true);
+    const[myid,setMyid]=useState("");
     console.log(data);
+    
+    const dataEdit=(id,work)=>{
+        setVal(work);
+        setBtn(false);
+        setMyid(id);
+    }
+    const myEditData=()=>{
+        dispatch(myEditSave({id:myid,work:val}))
+        setBtn(true)
+    }
     let sno=0;
     const ans=data.map((key,index)=>{
         sno++;
@@ -183,6 +195,9 @@ const App=()=>{
                 <td>
                     <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
                 </td>
+                <td>
+                    <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit!!</button>
+                </td>
               </tr>
             </>
         )
@@ -192,7 +207,15 @@ const App=()=>{
          <h1>ToDo App</h1>
          Enter task: <input type="text" value={val} 
          onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
+         {btn?(
+         <>
          <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val,taskStatus:false}))}}>Add!!!</button><br/><br/>
+         </>
+         ):(
+            <>
+            <button onClick={myEditData}>EditSave!!</button><br/><br/>
+            </>
+         )}
          <table border="2" width="700px">
             <tr> 
                 <th>SNO</th>
@@ -201,6 +224,7 @@ const App=()=>{
                <th>REMOVE</th>
                <th>COMPLETE</th>
                <th>INCOMPLETE</th>
+               <th>EDIT</th>
             </tr> 
             {ans}
          </table>
