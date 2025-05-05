@@ -132,20 +132,46 @@ const todoSlice=createSlice({
             console.log(actions)
             state.task.push(actions.payload)
         },
+        // RemoveTask:(state,actions)=>{
+        //     console.log(actions.payload.id)
+        //     state.task=state.task.filter(function(key){
+        //         if(key.id==actions.payload.id)
+        //         {
+        //             return false;
+        //         }
+        //         else
+        //         {
+        //             return true;
+        //         }
+        //     })
+        // },
         RemoveTask:(state,actions)=>{
+          console.log(actions.payload)
+          state.task=state.task.filter(item=>item.id!=actions.payload.id)
+        },
+        RemoveByIndex:(state,actions)=>{
+            state.task.splice(actions.payload.id,1)
             console.log(actions.payload.id)
-            state.task=state.task.filter(function(key){
-                if(key.id==actions.payload.id)
+        },
+        taskComplete:(state,actions)=>{
+            for(var i=0; i<state.task.length; i++)
+            {
+                if(state.task[i].id==actions.payload.id)
                 {
-                    return false;
+                    state.task[i].taskStatus=true;
                 }
-                else
+            }
+        },
+        taskInComplete:(state,actions)=>{
+            for(var i=0; i<state.task.length; i++)
+            {
+                if(state.task[i].id==actions.payload.id)
                 {
-                    return true;
+                    state.task[i].taskStatus=false;
                 }
-            })
+            }
         }
     }
 })
-export const {addTask,RemoveTask}=todoSlice.actions;
+export const {addTask,RemoveTask,RemoveByIndex,taskComplete,taskInComplete}=todoSlice.actions;
 export default todoSlice.reducer;
