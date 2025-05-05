@@ -58,11 +58,22 @@
 // export default store;
 
 //====================================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
+// import { configureStore } from "@reduxjs/toolkit";
+// import todoReducer from "./todoSlice"
+// const store=configureStore({
+//     reducer:{
+//      todo:todoReducer
+//     }
+// })
+// export default store;
+
+//=====================================================(work-todo-functionality)=======================================================================================================================================================
+
 import { configureStore } from "@reduxjs/toolkit";
 import todoReducer from "./todoSlice"
 const store=configureStore({
     reducer:{
-     todo:todoReducer
+       todo:todoReducer
     }
 })
 export default store;

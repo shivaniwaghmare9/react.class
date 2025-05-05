@@ -144,91 +144,130 @@
 // export default App;
 
 //============================================(TODO-ADDITIONAL-FUNCTIONALITY)==============================================================================================================
+// import { useSelector,useDispatch } from "react-redux";
+// import { addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
+// import { useState } from "react";
+// const App=()=>{
+//     const data=useSelector(state=>state.todo.task);
+//     const dispatch=useDispatch();
+//     const [val,setVal]=useState("");
+//     const[btn,setBtn]=useState(true);
+//     const[myid,setMyid]=useState("");
+//     console.log(data);
+    
+//     const dataEdit=(id,work)=>{
+//         setVal(work);
+//         setBtn(false);
+//         setMyid(id);
+//     }
+//     const myEditData=()=>{
+//         dispatch(myEditSave({id:myid,work:val}))
+//         setBtn(true)
+//     }
+//     let sno=0;
+//     const ans=data.map((key,index)=>{
+//         sno++;
+//         return(
+//             <>
+//               <tr>
+//                 <td>{sno}</td>
+//                 <td>
+//                     {key.taskStatus?(
+//                       <>
+//                       <span style={{color:"red",textDecoration:"line-through"}}>
+//                         {key.work}
+//                       </span>
+//                       </>  
+//                     ):(
+//                         <>{key.work}</>
+//                     )}
+//                 </td>
+                    
+//                 <td>
+//                     <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
+//                 </td>
+//                 <td>
+//                     <button onClick={()=>{dispatch(removeBYIndex({id:index}))}}>Remove</button>
+//                 </td>
+//                 <td>
+//                     <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
+//                 </td>
+//                 <td>
+//                     <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
+//                 </td>
+//                 <td>
+//                     <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit!!</button>
+//                 </td>
+//               </tr>
+//             </>
+//         )
+//     })
+//     return(
+//         <>
+//          <h1>ToDo App</h1>
+//          Enter task: <input type="text" value={val} 
+//          onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
+//          {btn?(
+//          <>
+//          <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val,taskStatus:false}))}}>Add!!!</button><br/><br/>
+//          </>
+//          ):(
+//             <>
+//             <button onClick={myEditData}>EditSave!!</button><br/><br/>
+//             </>
+//          )}
+//          <table border="2" width="700px">
+//             <tr> 
+//                <th>SNO</th>
+//                <th>YOUR TASK</th>
+//                <th>DELETE</th>
+//                <th>REMOVE</th>
+//                <th>COMPLETE</th>
+//                <th>INCOMPLETE</th>
+//                <th>EDIT</th>
+//             </tr> 
+//             {ans}
+//          </table>
+
+//         </>
+//     )
+// }
+// export default App;
+
+//===================================================(work)====================================================================================================================================
 import { useSelector,useDispatch } from "react-redux";
-import { addTask,RemoveTask,removeBYIndex,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
+import { addTask } from "./todoSlice";
 import { useState } from "react";
 const App=()=>{
+    const [val,setVal]=useState("");
     const data=useSelector(state=>state.todo.task);
     const dispatch=useDispatch();
-    const [val,setVal]=useState("");
-    const[btn,setBtn]=useState(true);
-    const[myid,setMyid]=useState("");
     console.log(data);
-    
-    const dataEdit=(id,work)=>{
-        setVal(work);
-        setBtn(false);
-        setMyid(id);
-    }
-    const myEditData=()=>{
-        dispatch(myEditSave({id:myid,work:val}))
-        setBtn(true)
-    }
     let sno=0;
-    const ans=data.map((key,index)=>{
+    const ans=data.map((key)=>{
         sno++;
         return(
             <>
-              <tr>
+            <tr>
                 <td>{sno}</td>
-                <td>
-                    {key.taskStatus?(
-                      <>
-                      <span style={{color:"red",textDecoration:"line-through"}}>
-                        {key.work}
-                      </span>
-                      </>  
-                    ):(
-                        <>{key.work}</>
-                    )}
-                </td>
-                    
-                <td>
-                    <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
-                </td>
-                <td>
-                    <button onClick={()=>{dispatch(removeBYIndex({id:index}))}}>Remove</button>
-                </td>
-                <td>
-                    <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
-                </td>
-                <td>
-                    <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
-                </td>
-                <td>
-                    <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit!!</button>
-                </td>
-              </tr>
+                <td>{key.task}</td>
+            </tr>
             </>
         )
     })
     return(
         <>
-         <h1>ToDo App</h1>
-         Enter task: <input type="text" value={val} 
+         <h1>Welcome todo app!!!</h1>
+         Enter Your Task: <input type="text" value={val}  
          onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
-         {btn?(
-         <>
-         <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val,taskStatus:false}))}}>Add!!!</button><br/><br/>
-         </>
-         ):(
-            <>
-            <button onClick={myEditData}>EditSave!!</button><br/><br/>
-            </>
-         )}
-         <table border="2" width="700px">
-            <tr> 
-               <th>SNO</th>
-               <th>YOUR TASK</th>
-               <th>DELETE</th>
-               <th>REMOVE</th>
-               <th>COMPLETE</th>
-               <th>INCOMPLETE</th>
-               <th>EDIT</th>
-            </tr> 
+         <button onClick={()=>{dispatch(addTask({task:val}))}}>Add!!!</button><br/><br/>
+         <table border="2" width="400px">
+            <tr>
+                <th>SNO</th>
+                <th>YOUR TASK</th>
+            </tr>
             {ans}
          </table>
-
         </>
     )
 }
