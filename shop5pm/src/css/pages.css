@@ -52,8 +52,14 @@
     /* height: 60px; */
     background-color: rgba(89, 169, 142, 0.447);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 30px;
-    gap: 30px;
+    gap: 20px;
     padding: 7px;
+    
+}
+#items h5{
+    font-size: 15px;
+    text-align: center;
+    
 }

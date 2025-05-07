@@ -46,3 +46,9 @@ padding-right: 10px;
     height: 400px;
     background-color: rgba(82, 141, 121, 0.352);
 }
+#content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+}

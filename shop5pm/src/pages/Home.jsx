@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from "../images/img1.webp";
-import img2 from "../images/hero-bg.jpg";
+import img2 from "../images/img2.webp";
 import img3 from "../images/myimg.avif";
 /*============================================(POLICY IMAGE)===========================================================================================================*/
 
@@ -31,7 +31,7 @@ const Home=()=>{
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      {/* <img src={img2} alt="web" width="100%" height="450px"/> */}
+      <img src={img2} alt="web" width="100%" height="450px"/>
         <Carousel.Caption id="caption1">
         {/* <h3 className="descrip1">Smart Shopping
             <br/>Trusted by Millions
@@ -61,7 +61,7 @@ const Home=()=>{
     <div id="items">
       <h5> <img src={img7} alt="web" />Ethnic Wear</h5>
       <h5> <img src={img8} alt="web" />Western Dresses</h5>
-      <h5> <img src={img9} alt="web" /> Footwear </h5>
+      <h5> <img src={img9} alt="web" /> Foot wear </h5>
       <h5> <img src={img10} alt="web" /> Home Decor  </h5>
       <h5> <img src={img11} alt="web" /> Beauty </h5>
       <h5> <img src={img12} alt="web" /> Accessories</h5>
