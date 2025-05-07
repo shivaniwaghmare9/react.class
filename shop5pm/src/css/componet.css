@@ -6,17 +6,27 @@ body{
 }
 
 /*===================================================header css==============================================================================================*/
+#title{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 #header{
     width: 100%;
     height: 70px;
-    background-color: rgba(111, 141, 131, 0.427);
+    background-color: rgba(4, 4, 4, 0.993);
     display: flex;
     padding-top: 5px;
     justify-content: space-around;
+    color: aliceblue;
 }
 #inp{
     width: 40%;
     margin: 5px;
+    background: rgba(120, 126, 132, 0.747);
+    border: none;
+    border-radius: 10px;
 }
 #Search{
     position: absolute;
@@ -25,7 +35,7 @@ body{
     padding-top: 15px;
 }
 .h6{
-border-right: 1px solid black;
+border-right: 1px solid rgb(167, 157, 157);
 padding-right: 10px;
 }
 /*====================================================================================================================================================*/

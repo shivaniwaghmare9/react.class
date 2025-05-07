@@ -5,7 +5,7 @@ const Header=()=>{
     return(
         <>
          <div id="header">
-            <h1>MEESHO</h1> 
+            <h1 id="title">MEESHO</h1> 
              <input type="text"   id="inp"/>
              <h6 className="h6">Become a<br/> suplier</h6>
              <h6 className="h6">Investor<br/> Relations</h6>
