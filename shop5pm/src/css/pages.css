@@ -1,0 +1,19 @@
+/*==================================================(HOME PAGE)======================================================================================*/
+#caption{
+  margin-bottom: 10%;
+  margin-left: 45%;
+}
+.descrip{
+    
+    font-size: 35px;
+    font-weight: bold;
+}
+.btn1{
+    padding: 10PX;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 2px 5px 7px rgb(185, 49, 185),-2px -5px 7px rgb(190, 30, 190);
+    
+}

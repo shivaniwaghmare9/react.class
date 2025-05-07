@@ -1,0 +1,38 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*===================================================header css==============================================================================================*/
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(111, 141, 131, 0.427);
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+#inp{
+    width: 40%;
+    margin: 5px;
+}
+#Search{
+    position: absolute;
+    margin-right: 55%;
+    font-size: 40px;
+    padding-top: 15px;
+}
+.h6{
+border-right: 1px solid black;
+padding-right: 10px;
+}
+/*====================================================================================================================================================*/
+/*===============================================(Footer Component=======================================================================================================================*/
+#footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(82, 141, 121, 0.352);
+}
