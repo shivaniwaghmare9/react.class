@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from "../images/img1.webp";
-import img2 from "../images/img2.webp";
-import img3 from "../images/myimg.avif";
+import img1 from "../images/online-shopping.jpg";
+import img2 from "../images/online2.webp";
+import img3 from "../images/img1.webp";
 /*============================================(POLICY IMAGE)===========================================================================================================*/
 
 import img4 from "../images/returns.svg";
@@ -32,8 +32,8 @@ const Home=()=>{
             <Carousel fade>
       <Carousel.Item>
        <img src={img1}  width="100%" height="450px"/>
-        <Carousel.Caption id="caption">
-          <h3 className="descrip">Smart Shopping
+        <Carousel.Caption id="caption1">
+          <h3 className="descrip1">Smart Shopping
             <br/>Trusted by Millions
           </h3>
           <button className="btn1">Shop Now</button>
@@ -41,22 +41,22 @@ const Home=()=>{
       </Carousel.Item>
       <Carousel.Item>
       <img src={img2} alt="web" width="100%" height="450px"/>
-        <Carousel.Caption id="caption1">
-        {/* <h3 className="descrip1">Smart Shopping
+        <Carousel.Caption id="caption">
+        <h3 className="descrip">Smart Shopping
             <br/>Trusted by Millions
           </h3>
-          <button className="btn3">Shop Now</button> */}
+          <button className="btn2">Shop Now</button>
         </Carousel.Caption>
       </Carousel.Item>
-      {/* <Carousel.Item>
+      <Carousel.Item>
        <img src={img3} alt="web" width="100%" height="450px"/> 
-        <Carousel.Caption id="caption1">
-          <h3 className="descrip1">Smart Shopping
+        <Carousel.Caption id="caption">
+          <h3 className="descrip">Smart Shopping
             <br/>Trusted by Millions
           </h3>
           <button className="btn3">Shop Now</button> 
         </Carousel.Caption>
-      </Carousel.Item> */}
+      </Carousel.Item>
     </Carousel> 
 
   {/*===========================================(POLICY)=================================================================================================*/}
