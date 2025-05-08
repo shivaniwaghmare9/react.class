@@ -16,6 +16,8 @@ import img10 from "../images/item4.webp";
 import img11 from "../images/item5.webp";
 import img12 from "../images/item6.webp";
 import img13 from "../images/item7.webp";
+//===============================================(TEMPLATE IMAGE)===============================================================================================
+import  img22 from "../images/img2.webp"
 //====================================================(BRANDS IMAGES)==================================================================================================
 import img14 from "../images/brand1.webp";
 import img15 from "../images/brand2.webp";
@@ -81,8 +83,16 @@ const Home=()=>{
       <h5> <img src={img12} alt="web" /> Accessories</h5>
       <h5> <img src={img13} alt="web" /> Menswear </h5>
     </div>
+
     {/*===========================================================================================================================================================================================*/}
-                 <h1 align="center">ORIGINAL BRANDS</h1>
+       
+       <div id="template">
+         <img src={img22} alt="web" />
+       </div>
+
+
+    {/*=======================================================================================================================================================================================================*/}
+                 {/* <h1 align="center">ORIGINAL BRANDS</h1>
     <div class="product">
                     <div>
                       <img src={img14} alt="scent"/><br/><br/>
@@ -108,7 +118,7 @@ const Home=()=>{
                     <div>
                       <img src={img21} alt="scent"/><br/><br/>
                    </div>
-      </div>
+      </div> */}
 
 
             
