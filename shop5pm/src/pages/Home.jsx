@@ -16,6 +16,15 @@ import img10 from "../images/item4.webp";
 import img11 from "../images/item5.webp";
 import img12 from "../images/item6.webp";
 import img13 from "../images/item7.webp";
+//====================================================(BRANDS IMAGES)==================================================================================================
+import img14 from "../images/brand1.webp";
+import img15 from "../images/brand2.webp";
+import img16 from "../images/brand3.webp";
+import img17 from "../images/brand4.webp";
+import img18 from "../images/brand5.webp";
+import img19 from "../images/brand6.webp";
+import img20 from "../images/brand7.webp";
+import img21 from "../images/brand8.webp";
 
 const Home=()=>{
     return(
@@ -39,15 +48,15 @@ const Home=()=>{
           <button className="btn3">Shop Now</button> */}
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-      {/* <img src={img3} alt="web" width="100%" height="450px"/> */}
+      {/* <Carousel.Item>
+       <img src={img3} alt="web" width="100%" height="450px"/> 
         <Carousel.Caption id="caption1">
-        {/* <h3 className="descrip1">Smart Shopping
+          <h3 className="descrip1">Smart Shopping
             <br/>Trusted by Millions
           </h3>
-          <button className="btn3">Shop Now</button> */}
+          <button className="btn3">Shop Now</button> 
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel> 
 
   {/*===========================================(POLICY)=================================================================================================*/}
@@ -67,7 +76,43 @@ const Home=()=>{
       <h5> <img src={img12} alt="web" /> Accessories</h5>
       <h5> <img src={img13} alt="web" /> Menswear </h5>
     </div>
-    
+    {/*===========================================================================================================================================================================================*/}
+                 <h1 align="center">ORIGINAL BRANDS</h1>
+    <div class="product">
+                    <div>
+                      <img src={img14} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img15} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img16} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img17} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img18} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img19} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img20} alt="scent"/><br/><br/>
+                    </div>
+                    <div>
+                      <img src={img21} alt="scent"/><br/><br/>
+                   </div>
+      </div>
+            
+
+
+
+
+
+
+
+
         </>
     )
 }
