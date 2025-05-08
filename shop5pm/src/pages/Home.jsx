@@ -25,8 +25,13 @@ import img18 from "../images/brand5.webp";
 import img19 from "../images/brand6.webp";
 import img20 from "../images/brand7.webp";
 import img21 from "../images/brand8.webp";
+import { useState } from 'react';
 
 const Home=()=>{
+  const [mydata,setMydata]=useState([]);
+  const loadData=()=>{
+    let BackendUrl=""
+  }
     return(
         <>
             <Carousel fade>
@@ -104,6 +109,8 @@ const Home=()=>{
                       <img src={img21} alt="scent"/><br/><br/>
                    </div>
       </div>
+
+
             
 
 

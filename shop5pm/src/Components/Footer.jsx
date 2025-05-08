@@ -2,16 +2,24 @@
 const Footer=()=>{
     return(
         <>
-        <footer id="footer">
-          
-               <div className="content">
-                <h4>Follow Us</h4>
-                <h4>Contact us</h4>
-                <h4> Links</h4>
-                <h4> Brands</h4>
-               </div>
-          
-        </footer>
+        <footer id="delivery">
+        <div class="inform">
+            <div>
+               
+                <p>100% Original
+                    All Products are original and go <br/>through strict quality check.</p>
+            </div>
+            <div>
+                
+                <p>Free Delivery<br/>
+                    Shipping in India is free</p>
+            </div>
+            <div>
+                
+                <p>Dispatched within 24 Hrs</p>
+            </div>
+        </div>
+     </footer>
         </>
     )
 }
