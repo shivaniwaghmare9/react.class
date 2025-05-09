@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const TopMenu=()=>{
     return(
         <>
-        <Navbar bg="dark" data-bs-theme="dark">
+        <Navbar  id="top">
         <Container>
           <Navbar.Brand href="#home"id="bar" ></Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="me-auto" >
             <Nav.Link as={Link} to="home" id="nav1">Home</Nav.Link>
             <Nav.Link as={Link} to="home" id="nav">Beauty & Health</Nav.Link>
             <Nav.Link as={Link} to="home" id="nav">Jewellery & Accessories</Nav.Link>

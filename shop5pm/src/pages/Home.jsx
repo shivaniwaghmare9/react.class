@@ -127,7 +127,7 @@ const Home=()=>{
 
 
     {/*=======================================================================================================================================================================================================*/}
-                  <h1 align="center">ORIGINAL BRANDS</h1>
+                  <h1 align="center" style={{backgroundColor:" rgba(188, 204, 209, 0.735)",marginTop:"20px"}}>ORIGINAL BRANDS</h1>
     <div class="product">
                     <div>
                       <img src={img14} alt="scent"/> <h2>Bags</h2><br/><br/>

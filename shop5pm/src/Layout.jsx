@@ -4,10 +4,12 @@ import TopMenu from "./Components/TopMenu";
 import { Outlet } from "react-router-dom";
 const Layout=()=>{
     return(
-        <>
-          <Header/>
-          <hr/>
-          <TopMenu/>
+        <> 
+         <div id="topHeader">
+         <Header/>
+         <TopMenu/>
+         </div>
+          
           <Outlet/>
           <Footer/>
         </>

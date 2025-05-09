@@ -3,6 +3,14 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#topHeader
+{
+    top: 0;
+    position: sticky;
+    z-index: 3;
+
 }
 
 /*===================================================header css==============================================================================================*/
@@ -10,21 +18,22 @@ body{
     font-size: 2.5em;
     font-weight: bold;
     color: rgb(228, 16, 104);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #header{
     width: 100%;
     height: 70px;
-    background-color: rgba(247, 242, 242, 0.995);
+    background-color: rgba(13, 13, 13, 0.995);
      display: flex;
     padding-top: 5px;
     justify-content: space-around;
-    /* color: aliceblue; */
+    color: aliceblue;
 }
+
 #inp{
     width: 40%;
-    margin: 5px;
-    background-color: rgba(86, 157, 205, 0.221);
+    margin: 4px;
+    background-color:rgb(57, 59, 61);
     border: none;
     border-radius: 10px;
 }
@@ -40,12 +49,21 @@ padding-right: 10px;
 }
 /*====================================================================================================================================================*/
 /*================================================(TOPNAV CSS)===============================================================================================================*/
+#top{
+    background-color: azure;
+    
+}
+.me-auto{
+    color: black;
+    font-weight: bold;
+    gap: 20px;
+}
 #nav:hover{
-    color: aqua;
+    color: rgb(28, 134, 179);
     text-decoration: underline;
 }
 #nav1{
-    color: aqua;
+    color: rgb(28, 134, 179);
     text-decoration: underline;
 }
 #bar{
@@ -62,7 +80,7 @@ padding-right: 10px;
    
    /*border: 1px solid black;*/
     margin-top: 40px;
-    background-color: rgb(99, 171, 216);
+    background-color: rgb(106, 170, 210);
     margin: 2rem;
     
 }
