@@ -117,3 +117,9 @@
     gap: 10px;
     justify-content: space-around;
 }
+.card{
+    height: 700px;
+}
+#img{
+    height: 400px;
+}

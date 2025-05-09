@@ -53,18 +53,19 @@ const Home=()=>{
    const ans=mydata.map((key)=>{
     return(
       <>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={key.image} />
+    <Card style={{ width: '18rem' }} className="card">
+      <Card.Img variant="top" src={key.image}  id="img"/>
       <Card.Body>
         <Card.Title> {key.Name} </Card.Title>
         <Card.Text>
-         Description :{key.KurtaFabric}
-         Price : {key.BottomwearFabric}
-         Price : {key.SleeveLength}
-         Price : {key.BottomwearFabric}
-         Price : {key.price}
+         KurtaFabric:{key.Fabric}<br/>
+         {key.SleeveLength}<br/>
+         SetType:{key.SetType}<br/>
+          Pattern:{key.Pattern}<br/>
+         Category:{key.category}<br/>
+          Price : {key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, KurtaFabric:key.KurtaFabric, BottomwearFabric:key.BottomwearFabric,  image:key.image, qnty:1,  price:key.price}))}}>Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}}>Add to Cart</Button>
       </Card.Body>
     </Card>
       </>
