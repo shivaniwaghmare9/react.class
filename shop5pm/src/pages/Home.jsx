@@ -19,14 +19,14 @@ import img13 from "../images/item7.webp";
 //===============================================(TEMPLATE IMAGE)===============================================================================================
 import  img22 from "../images/img2.webp"
 //====================================================(BRANDS IMAGES)==================================================================================================
-import img14 from "../images/bag.webp";
-import img15 from "../images/brand2.webp";
-import img16 from "../images/brand3.webp";
-import img17 from "../images/brand4.webp";
-import img18 from "../images/brand5.webp";
-import img19 from "../images/brand6.webp";
-import img20 from "../images/brand7.webp";
-import img21 from "../images/brand8.webp";
+import img14 from "../images/bag2.avif";
+import img15 from "../images/headphone2.jpg";
+import img16 from "../images/loation.webp";
+import img17 from "../images/makeup2.jpg";
+import img18 from "../images/smartphone.avif";
+import img19 from "../images/footwear.avif";
+import img20 from "../images/purfume.avif";
+import img21 from "../images/book2.webp";
 //============================================(CRUD-DATA)=======================================================================================================================
 import { useState,useEffect } from 'react';
 import backendUrl from '../config/BackendUrl';
@@ -130,28 +130,28 @@ const Home=()=>{
                   <h1 align="center">ORIGINAL BRANDS</h1>
     <div class="product">
                     <div>
-                      <img src={img14} alt="scent"/><br/><br/>
+                      <img src={img14} alt="scent"/> <h2>Bags</h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img15} alt="scent"/><br/><br/>
+                      <img src={img15} alt="scent"/> <h2>Electronics</h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img16} alt="scent"/><br/><br/>
+                      <img src={img16} alt="scent"/> <h2>Personal Care</h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img17} alt="scent"/><br/><br/>
+                      <img src={img17} alt="scent"/><h2>Make up </h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img18} alt="scent"/><br/><br/>
+                      <img src={img18} alt="scent"/> <h2>Smart Phones</h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img19} alt="scent"/><br/><br/>
+                      <img src={img19} alt="scent"/> <h2>Foot Wear</h2><br/><br/>
                     </div>
                     <div>
-                      <img src={img20} alt="scent"/><br/><br/>
+                      <img src={img20} alt="scent"/><h2>Purfume</h2> <br/><br/>
                     </div>
                     <div>
-                      <img src={img21} alt="scent"/><br/><br/>
+                      <img src={img21} alt="scent"/><h2> Books</h2><br/><br/>
                    </div>
       </div> 
 
