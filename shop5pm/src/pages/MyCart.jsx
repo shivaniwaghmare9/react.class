@@ -2,12 +2,16 @@ import { useSelector,useDispatch } from "react-redux";
 import Table from 'react-bootstrap/Table';
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
+import { FaIndianRupeeSign } from "react-icons/fa6";
 import { qntyDecr,qntyIncr,remove } from "../cartSlice";
 
 const MyCart=()=>{
     const cartData=useSelector(state=>state.mycart.cart);
     const dispatch=useDispatch();
+
+    let TotAmount=0;
     const ans=cartData.map((key)=>{
+      TotAmount+=key.qnty*key.price;
         return(
             <>
              <tr>
@@ -35,6 +39,8 @@ const MyCart=()=>{
     return(
         <>
             <h1 align="center">My Cart product</h1>
+            <h2 align="center"><FaIndianRupeeSign />  : {TotAmount}</h2> 
+           <hr />
             <Table striped bordered hover>
       <thead>
         <tr>
