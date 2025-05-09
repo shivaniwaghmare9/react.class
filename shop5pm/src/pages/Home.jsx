@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from "../images/online-shopping.jpg";
 import img2 from "../images/online2.webp";
-import img3 from "../images/img1.webp";
+import img3 from "../images/img3.jpg";
 /*============================================(POLICY IMAGE)===========================================================================================================*/
 
 import img4 from "../images/returns.svg";
@@ -19,7 +19,7 @@ import img13 from "../images/item7.webp";
 //===============================================(TEMPLATE IMAGE)===============================================================================================
 import  img22 from "../images/img2.webp"
 //====================================================(BRANDS IMAGES)==================================================================================================
-import img14 from "../images/brand1.webp";
+import img14 from "../images/bag.webp";
 import img15 from "../images/brand2.webp";
 import img16 from "../images/brand3.webp";
 import img17 from "../images/brand4.webp";
@@ -90,15 +90,15 @@ const Home=()=>{
           <button className="btn2">Shop Now</button>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
        <img src={img3} alt="web" width="100%" height="450px"/> 
         <Carousel.Caption id="caption">
           <h3 className="descrip">Smart Shopping
             <br/>Trusted by Millions
           </h3>
           <button className="btn3">Shop Now</button> 
-        </Carousel.Caption>
-      </Carousel.Item>
+        </Carousel.Caption> 
+      </Carousel.Item>*/}
     </Carousel> 
 
   {/*===========================================(POLICY)=================================================================================================*/}
