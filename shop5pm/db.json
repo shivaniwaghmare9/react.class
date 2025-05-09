@@ -3,9 +3,9 @@
     "products":[
         {
             "id":1,
-            " Name" : "Fancy Reyon Slub Kurta Set With Dupatta",
-            "Kurta Fabric" :" Rayon Slub",
-            "Bottomwear Fabric" : "Rayon Slub",
+            "Name" : "Fancy Reyon Slub Kurta Set With Dupatta",
+            "KurtaFabric" :" Rayon Slub",
+            "BottomwearFabric" : "Rayon Slub",
             "Sleeve Length ": "Three-Quarter Sleeves",
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
@@ -14,14 +14,14 @@
         },
         {
             "id":2,
-            " Name" : "Fancy Reyon Slub Kurta Set With Dupatta",
-            "Kurta Fabric" :" Rayon Slub",
+            "Name" : "Fancy Reyon Slub Kurta Set With Dupatta",
+            "KurtaFabric" :" Rayon Slub",
             "Bottomwear Fabric" : "Rayon Slub",
             "Sleeve Length ": "Three-Quarter Sleeves",
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1430
         },
         {
             "id":3,
@@ -43,7 +43,7 @@
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1330
         },
         {
             "id":5,
@@ -54,7 +54,7 @@
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1730
         },
         {
             "id":6,
@@ -65,7 +65,7 @@
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1830
         },
         {
             "id":7,
@@ -76,18 +76,18 @@
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1030
         },
         {
             "id":8,
             " Name" : "Fancy Reyon Slub Kurta Set With Dupatta",
-            "Kurta Fabric" :" Rayon Slub",
-            "Bottomwear Fabric" : "Rayon Slub",
-            "Sleeve Length ": "Three-Quarter Sleeves",
-            "Set Type" : "Kurta With Dupatta And Bottomwear",
-            "Bottom Type" : "Legging",
+            "KurtaFabric" :" Rayon Slub",
+            "BottomwearFabric" : "Rayon Slub",
+            "SleeveLength ": "Three-Quarter Sleeves",
+            "SetType" : "Kurta With Dupatta And Bottomwear",
+            "BottomType" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1330
         },
         {
             "id":9,
@@ -98,7 +98,7 @@
             "Set Type" : "Kurta With Dupatta And Bottomwear",
             "Bottom Type" : "Legging",
             "Pattern" : "Printed",
-            "price":1530
+            "price":1630
         }
     ]
 }

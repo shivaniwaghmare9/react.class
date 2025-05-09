@@ -27,13 +27,48 @@ import img18 from "../images/brand5.webp";
 import img19 from "../images/brand6.webp";
 import img20 from "../images/brand7.webp";
 import img21 from "../images/brand8.webp";
-import { useState } from 'react';
+//============================================(CRUD-DATA)=======================================================================================================================
+import { useState,useEffect } from 'react';
+import backendUrl from '../config/BackendUrl';
+//import { useDispatch } from 'react-redux';
+import axios from 'axios';
+
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const Home=()=>{
   const [mydata,setMydata]=useState([]);
-  const loadData=()=>{
-    let BackendUrl=""
+  // const dispatch=useDispatch();
+  const loadData= async()=>{
+    const response= await axios.get(backendUrl)
+    console.log(response.data);
+    setMydata(response.data);
+    
   }
+   useEffect(()=>{
+    loadData();
+   },[])
+
+   const ans=mydata.map((key)=>{
+    return(
+      <>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={key.image} />
+      <Card.Body>
+        <Card.Title> {key.Name} </Card.Title>
+        <Card.Text>
+         Description :{key.KurtaFabric}
+         Price : {key.BottomwearFabric}
+         Price : {key.SleeveLength}
+         Price : {key.BottomwearFabric}
+         Price : {key.price}
+        </Card.Text>
+        <Button variant="primary" onClick={()=>{dispatch(addToCart({id:key.id, name:key.name, description:key.description, category:key.category,  image:key.image,qnty:1,  price:key.price}))}}>Add to Cart</Button>
+      </Card.Body>
+    </Card>
+      </>
+    )
+   })
     return(
         <>
             <Carousel fade>
@@ -92,7 +127,7 @@ const Home=()=>{
 
 
     {/*=======================================================================================================================================================================================================*/}
-                 {/* <h1 align="center">ORIGINAL BRANDS</h1>
+                  <h1 align="center">ORIGINAL BRANDS</h1>
     <div class="product">
                     <div>
                       <img src={img14} alt="scent"/><br/><br/>
@@ -118,12 +153,14 @@ const Home=()=>{
                     <div>
                       <img src={img21} alt="scent"/><br/><br/>
                    </div>
-      </div> */}
+      </div> 
 
 
             
 
-
+     <div>
+      {ans}
+     </div>
 
 
 
