@@ -62,7 +62,7 @@ const Home=()=>{
          {key.SleeveLength}<br/>
          SetType:{key.SetType}<br/>
           Pattern:{key.Pattern}<br/>
-         Category:{key.category}<br/>
+          Category:{key.category}<br/>
           Price : {key.price}
         </Card.Text>
         <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}}>Add to Cart</Button>
