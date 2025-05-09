@@ -36,6 +36,7 @@ body{
     background-color:rgb(57, 59, 61);
     border: none;
     border-radius: 10px;
+    height: 45px;
 }
 #Search{
     position: absolute;

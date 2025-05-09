@@ -109,3 +109,11 @@
     color: aliceblue;
     padding: 3px;
 }
+/*=========================================================CARD DATA==============================================================================================*/
+#cardData
+{
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}

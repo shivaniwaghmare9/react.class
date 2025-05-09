@@ -5,7 +5,7 @@ const Footer=()=>{
     return(
         <>
         <footer id="delivery">
-        <div class="inform">
+        <div className="inform">
             <div>
             <FaCheckCircle  id="icon"/><br/><br/>
                 <p>100% Original

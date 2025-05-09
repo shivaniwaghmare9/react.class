@@ -30,15 +30,16 @@ import img21 from "../images/book2.webp";
 //============================================(CRUD-DATA)=======================================================================================================================
 import { useState,useEffect } from 'react';
 import backendUrl from '../config/BackendUrl';
-//import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import axios from 'axios';
+import { addCart } from '../cartSlice';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Home=()=>{
   const [mydata,setMydata]=useState([]);
-  // const dispatch=useDispatch();
+ const dispatch=useDispatch();
   const loadData= async()=>{
     const response= await axios.get(backendUrl)
     console.log(response.data);
@@ -63,7 +64,7 @@ const Home=()=>{
          Price : {key.BottomwearFabric}
          Price : {key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addToCart({id:key.id, name:key.name, description:key.description, category:key.category,  image:key.image,qnty:1,  price:key.price}))}}>Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, KurtaFabric:key.KurtaFabric, BottomwearFabric:key.BottomwearFabric,  image:key.image, qnty:1,  price:key.price}))}}>Add to Cart</Button>
       </Card.Body>
     </Card>
       </>
@@ -128,7 +129,7 @@ const Home=()=>{
 
     {/*=======================================================================================================================================================================================================*/}
                   <h1 align="center" style={{backgroundColor:" rgba(188, 204, 209, 0.735)",marginTop:"20px"}}>ORIGINAL BRANDS</h1>
-    <div class="product">
+    <div className="product">
                     <div>
                       <img src={img14} alt="scent"/> <h2>Bags</h2><br/><br/>
                     </div>
@@ -158,7 +159,7 @@ const Home=()=>{
 
             
 
-     <div>
+     <div  id='cardData'>
       {ans}
      </div>
 
