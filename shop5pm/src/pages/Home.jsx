@@ -65,7 +65,7 @@ const Home=()=>{
           Category:{key.category}<br/>
           Price : {key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}}>Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
       </Card.Body>
     </Card>
       </>
@@ -156,11 +156,7 @@ const Home=()=>{
                       <img src={img21} alt="scent"/><h2> Books</h2><br/><br/>
                    </div>
       </div> 
-
-
-            
-
-     <div  id='cardData'>
+   <div  id='cardData'>
       {ans}
      </div>
 

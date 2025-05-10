@@ -8,7 +8,7 @@
             "SleeveLength": "Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
-            "price":1530,
+            "price":1150,
             "category":"women",
             "image":"https://images.meesho.com/images/products/472167325/ermiq_512.webp"
         },
@@ -64,7 +64,7 @@
             "SleeveLength": "Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
-            "price":1530,
+            "price":1299,
             "category":"women",
             "image":"https://images.meesho.com/images/products/107421018/g8oih_512.webp"
         },
@@ -75,7 +75,7 @@
             "SleeveLength": "Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
-            "price":1530,
+            "price":1050,
             "category":"women",
             "image":"https://images.meesho.com/images/products/502160384/kb3bq_512.webp"
         },
@@ -86,9 +86,10 @@
             "SleeveLength": "Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
-            "price":1530,
+            "price":1499,
             "category":"women",
             "image":"https://images.meesho.com/images/products/501056864/aogow_512.webp"
         }
+        
     ]
 }

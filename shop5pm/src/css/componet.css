@@ -78,12 +78,10 @@ padding-right: 10px;
 /*===============================================(Footer Component)=======================================================================================================================*/
 
 #delivery{
-   
-   /*border: 1px solid black;*/
+    /*border: 1px solid black;*/
     margin-top: 40px;
     background-color: rgb(106, 170, 210);
     margin: 2rem;
-    
 }
 #delivery .inform {
     width: 100%;
@@ -107,4 +105,23 @@ padding-right: 10px;
 }
 #icon{
     font-size: 50px;
+}
+.ftr{
+    width: 100%;
+    height: 400px;
+     background-color: azure;
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     padding: 2rem;
+     background-color: rgba(13, 13, 13, 0.995);
+     color: aliceblue;
+     
+}
+.ftr div h3{
+     color: rgb(28, 134, 179);
+}
+.ftr div{
+    display: flex;
+    flex-direction: column;
 }
