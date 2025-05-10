@@ -115,11 +115,11 @@ padding-right: 10px;
      gap: 50px;
      padding: 2rem;
      background-color: rgba(13, 13, 13, 0.995);
-     color: aliceblue;
+     color: rgb(188, 187, 184);
      
 }
 .ftr div h3{
-     color: rgb(28, 134, 179);
+     color: aliceblue;
 }
 .ftr div{
     display: flex;

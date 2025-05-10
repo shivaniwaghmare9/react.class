@@ -26,6 +26,17 @@
         },
         {
             "id":3,
+            "Name":"New Digital Print Kurta Shirt Cottan",
+            "Fabric":"Cotton Blend",
+            "SleeveLength":"Short Sleeves",
+            "SetType":"Tshirt",
+            "Pattern":"Printed",
+            "price":1000,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/516162057/hiccq_512.webp"
+        },
+        {
+            "id":4,
             "Name":"Anarkali Dupatta Set Gown Flared Printed Kurta ",
             "Fabric":"Rayon",
             "SleeveLength": "Three-Quarter Sleeves",
@@ -36,18 +47,19 @@
             "image":"https://images.meesho.com/images/products/276746304/1m2hz_512.webp"
         },
         {
-           "id":4,
-            "Name":"Fancy Cotton Kurta Set With Dupatta",
-            "Fabric":"Cottton",
-            "SleeveLength": "Three-Quarter Sleeves",
-            "SetType":"Kurta with Dupatta and Bottomwear",
-            "Pattern":"Printed",
-            "price":1030,
-            "category":"women",
-            "image":"https://images.meesho.com/images/products/437546097/3nhek_400.webp"
-        },
-        {
             "id":5,
+            "Name":"New Digital Print Kurta Shirt Cottan",
+            "Fabric":"Cotton",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"Shirt",
+            "Pattern":" Printed",
+            "price":1099,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/466648003/boifj_512.webp"
+        },
+        
+        {
+            "id":6,
             "Name":"Women's Anarkali Gown Flared Printed Kurta  ",
             "Fabric":"Rayon",
             "SleeveLength": "Three-Quarter Sleeves",
@@ -58,38 +70,175 @@
             "image":"https://images.meesho.com/images/products/298964920/zpb5k_512.webp"
         },
         {
-            "id":6,
-            "Name":"Womens Rayon Kurti With Duppata And Bottomwear",
-            "Fabric":"Rayon",
+           "id":7,
+            "Name":"Fancy Cotton Kurta Set With Dupatta",
+            "Fabric":"Cottton",
             "SleeveLength": "Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
-            "price":1299,
+            "price":1030,
             "category":"women",
-            "image":"https://images.meesho.com/images/products/107421018/g8oih_512.webp"
+            "image":"https://images.meesho.com/images/products/437546097/3nhek_400.webp"
         },
+        
         {
-           "id":7,
+            "id":8,
+            "Name":"Fit Solid Black Flat-Front Trousers",
+            "Fabric":"Lycra",
+            "SleeveLength":"###",
+            "SetType":"Formal Office Pants ",
+            "Pattern":"Solid",
+            "price":1299,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/438771762/xwxmg_512.webp"
+        },
+         {
+            "id":9,
+            "Name":"Trendivastra Solid Straight Slim Fit Kurta Shirt",
+            "Fabric":"Popcorn",
+            "SleeveLength":"Short Sleeves",
+            "SetType":"Tshirt",
+            "Pattern":"Striped",
+            "price":699,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/525050010/lgzpq_512.webp"
+        },
+        
+        {
+           "id":10,
             "Name":" cotton reyon women kurti pallazo dupatta set",
             "Fabric":"Cotton",
-            "SleeveLength": "Three-Quarter Sleeves",
+            "SleeveLength":"Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
             "price":1050,
             "category":"women",
             "image":"https://images.meesho.com/images/products/502160384/kb3bq_512.webp"
         },
+         {
+            "id":11,
+            "Name":"Realson Stylish Track Pants",
+            "Fabric":"Lycra",
+            "SleeveLength":"###",
+            "SetType":"Daily Wear pants ",
+            "Pattern":"Self-Design",
+            "price":1299,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/371480448/8kfpa_512.webp"
+        },
         {
-           "id":8,
+           "id":12,
             "Name":" Gown pant or dupatta set For Women",
             "Fabric":"Rayon",
-            "SleeveLength": "Three-Quarter Sleeves",
+            "SleeveLength":"Three-Quarter Sleeves",
             "SetType":"Kurta with Dupatta and Bottomwear",
             "Pattern":"Printed",
             "price":1499,
             "category":"women",
             "image":"https://images.meesho.com/images/products/501056864/aogow_512.webp"
+        },
+        {
+            "id":13,
+            "Name":"Trendivastra Solid Straight Slim Fit Kurta Shirt",
+            "Fabric":"Cotton Blend",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"Kurta slim",
+            "Pattern":"Solid",
+            "price":999,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/424708981/im4jb_512.webp"
+        },
+        
+        {
+           "id":14,
+            "Name":"Fancy Cotton Kurta Set With Dupatta",
+            "Fabric":"Cottton",
+            "SleeveLength": "Three-Quarter Sleeves",
+            "SetType":"Kurta with Dupatta and Bottomwear",
+            "Pattern":"Printed",
+            "price":1030,
+            "category":"women",
+            "image":"https://images.meesho.com/images/products/437546097/3nhek_400.webp"
+        },
+        {
+            "id":15,
+            "Name":"KOSAM Classy CREATIVE Formal Shirts For Men - WINE",
+            "Fabric":"Cotton",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"Shirt",
+            "Pattern":"Solid",
+            "price":899,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/397733497/ohjcp_512.webp"
+        },
+        {
+           "id":16,
+            "Name":"Pretty Feminine Women Dresses",
+            "Fabric":"Georgette",
+            "SleeveLength":"Sleeveless",
+            "SetType":"Western Wear",
+            "Pattern":"Solid",
+            "price":1200,
+            "category":"women",
+            "image":"https://images.meesho.com/images/products/394538647/wqkq0_512.webp"
+        },
+        {
+            "id":17,
+            "Name":"Stylish Modern Men Shirts",
+            "Fabric":"Cotton",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"Shirt",
+            "Pattern":"Printed",
+            "price":1170,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/537130634/et1vp_512.webp"
+        },
+        {
+           "id":18,
+            "Name":"Embroidery Design Semi Stitched Gown with Dupatta",
+            "Fabric":"Net",
+            "SleeveLength":"Long Sleeves",
+            "SetType":" Gown",
+            "Pattern":"Embroidered",
+            "price":1090,
+            "category":"women",
+            "image":"https://images.meesho.com/images/products/440965647/yvkje_512.webp"
+        },
+         {
+            "id":19,
+            "Name":"STRIPED MEN'S NIGHTSUIT",
+            "Fabric":" Nylon",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"NIGHTSUIT",
+            "Pattern":"Striped",
+            "price":770,
+            "category":"men",
+            "image":"https://images.meesho.com/images/products/497151997/84cum_512.webp"
+        },
+        {
+           "id":20,
+            "Name":"Women Embordered Stylish Solid Gown",
+            "Fabric":"Rayon",
+            "SleeveLength":"Long Sleeves",
+            "SetType":"Gown",
+            "Pattern":"Embroidered",
+            "price":1090,
+            "category":"women",
+            "image":"https://images.meesho.com/images/products/83033709/d9h5l_512.webp"
+        },
+         {
+           "id":22,
+            "Name":"Classic Feminine Women Dresses",
+            "Fabric":"Crepe",
+            "SleeveLength":"Three-Quarter Sleeves",
+            "SetType":"Western Frock",
+            "Pattern":"Printed",
+            "price":1090,
+            "category":"women",
+            "image":"https://images.meesho.com/images/products/386268948/rxade_512.webp"
         }
+        
+        
         
     ]
 }

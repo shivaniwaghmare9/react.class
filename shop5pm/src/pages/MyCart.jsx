@@ -39,7 +39,7 @@ const MyCart=()=>{
     return(
         <>
             <h1 align="center">My Cart product</h1>
-            <h2 align="center"><FaIndianRupeeSign />  : {TotAmount}</h2> 
+            <h2 align="center" id="rupicon"><FaIndianRupeeSign />  : {TotAmount}</h2> 
            <hr />
             <Table striped bordered hover>
       <thead>

@@ -58,8 +58,8 @@ const Home=()=>{
       <Card.Body>
         <Card.Title> {key.Name} </Card.Title>
         <Card.Text>
-         KurtaFabric:{key.Fabric}<br/>
-         {key.SleeveLength}<br/>
+         Fabric:{key.Fabric}<br/>
+         SleeveLength:{key.SleeveLength}<br/>
          SetType:{key.SetType}<br/>
           Pattern:{key.Pattern}<br/>
           Category:{key.category}<br/>
