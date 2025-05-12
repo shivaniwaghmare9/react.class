@@ -13,7 +13,7 @@ const Header=()=>{
         <>
          <div id="header">
             <div> 
-                <h1 id="title">MEESHO</h1> 
+                <h1 id="title">MINISTORE</h1> 
             </div>
             
             <div>

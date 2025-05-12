@@ -1,0 +1,36 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+    font-family: "Oleo Script", system-ui;
+    scroll-behavior: smooth;
+    
+}
+#caption1{
+   margin-left:35%;
+   margin-top: 50px;
+}
+.descrip{
+    font-weight: bold;
+    font-size: 80px;
+    color: rgba(86, 82, 82, 0.767);
+    flex-direction: column;
+}
+#caption{
+   margin-bottom: 3%;
+   margin-right: 40%;
+}   
+.descrip1{
+     color: rgba(86, 82, 82, 0.767);
+    font-weight: bold;
+    font-size: 80px;
+    color: black;
+}
+.btn1{
+    padding: 5px;
+    font-size: 25px;
+    /* border-radius: 10px; */
+    background: black;
+    color: aliceblue;
+}

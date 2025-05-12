@@ -2,7 +2,7 @@
 
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import MyCart from "./pages/MyCart";
 const App=()=>{
     return(
@@ -10,9 +10,9 @@ const App=()=>{
          <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout/>}>
-              {/* <Route index element={<Home/>}/> */}
-              {/* <Route path="home" element={<Home/>}/>
-              <Route path="mycart" element={<MyCart/>}/> */}
+              <Route index element={<Home/>}/>
+              <Route path="home" element={<Home/>}/>
+              {/* <Route path="mycart" element={<MyCart/>}/> */}
               
 
             </Route>
