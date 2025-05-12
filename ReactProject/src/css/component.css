@@ -10,7 +10,6 @@ body{
     top: 0;
     position: sticky;
     z-index: 3;
-
 }
 
 /*===================================================header css==============================================================================================*/
@@ -20,49 +19,11 @@ body{
     color: rgb(228, 16, 104);
     font-family: cursive;
 }
-#header{
-    width: 100%;
-    height: auto;
-    background-color: azure;
-    display: flex;
-    padding-top: 5px;
-    color: rgb(7, 7, 7);
-    justify-content: space-between;
-}
-#header div{
-    display: flex;
-    gap: 30px;
-    padding: 0.7rem;
-}
-
-#inp{
-    width: 40%;
-    margin: 4px;
-    background-color:rgb(57, 59, 61);
-    border: none;
-    border-radius: 10px;
-    height: 45px;
-}
-#Search{
-    position: absolute;
-    margin-right: 55%;
-    font-size: 40px;
-    padding-top: 15px;
-}
-.h6{
-border-right: 1px solid rgb(167, 157, 157);
-padding-right: 10px;
-}
 /*====================================================================================================================================================*/
 /*================================================(TOPNAV CSS)===============================================================================================================*/
-#top{
-    background-color: azure;
-    
-}
-.me-auto{
-    color: black;
-    font-weight: bold;
-    gap: 20px;
+#navdiv{
+    display: flex;
+    gap: 40px;
 }
 #nav:hover{
     color: rgb(28, 134, 179);
@@ -72,13 +33,8 @@ padding-right: 10px;
     color: rgb(28, 134, 179);
     text-decoration: underline;
 }
-#bar{
-    font-size: 3em;
-    font-weight: bold;
-    color: aqua;
-}
-#bar:hover{
-    color: aliceblue;
+.me-auto{
+    margin-left: 10%;
 }
 /*===============================================(Footer Component)=======================================================================================================================*/
 
@@ -108,7 +64,7 @@ padding-right: 10px;
    flex-direction: column;
    font-size: 15px;
 }
-#icon{
+#icons{
     font-size: 50px;
 }
 .ftr{

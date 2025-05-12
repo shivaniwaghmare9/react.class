@@ -3,7 +3,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box; 
-    font-family: "Oleo Script", system-ui;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
     
 }
@@ -15,14 +15,14 @@
     font-weight: bold;
     font-size: 80px;
     color: rgba(86, 82, 82, 0.767);
-    flex-direction: column;
+    
 }
 #caption{
    margin-bottom: 3%;
    margin-right: 40%;
 }   
 .descrip1{
-     color: rgba(86, 82, 82, 0.767);
+    color: rgba(86, 82, 82, 0.767);
     font-weight: bold;
     font-size: 80px;
     color: black;
@@ -33,4 +33,45 @@
     /* border-radius: 10px; */
     background: black;
     color: aliceblue;
+}
+/*===============================================================================================================================================*/
+#icon{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 10px;
+    background-color: azure;
+    margin-top: 40px;
+}
+#icon div{
+    width: 350px;
+    height: auto;
+    /* border: 1px solid black; */
+}
+#icons{
+    font-size:25px;
+}
+#icon h3{
+    font-size: 20px;
+    
+}
+#icon p{
+    font-size: 18px;
+    padding-left: 15px;
+}
+/*=================================================(CARD)=====================================================================================================*/
+#cardData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#img{
+    height: 300px;
+}
+#cardbtn{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(28, 134, 179);
 }

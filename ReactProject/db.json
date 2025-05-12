@@ -1,0 +1,105 @@
+
+{
+   "products":[
+    {    
+        "productname":"SmartWatch",
+        "name":"NoiseFit Halo ",
+        "operatingsystem":"android& iOS",
+        "price":1499,
+        "BatteryCapacity":"400 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/71NZuTjNqCL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartWatch",
+        "name":"Noise Pulse 4 Max Smart Watch with AI",
+        "operatingsystem":"android",
+        "price":3049,
+        "BatteryCapacity":"350 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/41ge+ug0wdL._SY300_SX300_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"NoiseFit Halo ",
+        "operatingsystem":"android& iOS",
+        "price":1299,
+        "BatteryCapacity":"450 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61rmkmqD5VL._SX522_.jpg"
+    },
+    {    
+        "productname":"SmartWatch",
+        "name":"Noise Diva Smartwatch with Diamond",
+        "operatingsystem":"android",
+        "price":3099,
+        "BatteryCapacity":"350 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/81jVNXMKhEL._SX679_.jpg"
+    },
+    
+    {    
+        "productname":"SmartWatch",
+        "name":"NoiseFit Halo ",
+        "operatingsystem":"android& iOS",
+        "price":13000,
+        "BatteryCapacity":"360 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61RqU14G4ZL._SX679_.jpg"
+    },
+   
+    {    
+        "productname":"SmartWatch",
+        "name":"Noise Pulse 4 Max Smart Watch with AI Create ",
+        "operatingsystem":"android",
+        "price":1599,
+        "BatteryCapacity":"350 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61gvNkugY4L._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartWatch",
+        "name":"Noise Colorfit Pro 5 Smart Watch ",
+        "operatingsystem":"android",
+        "price":3999,
+        "BatteryCapacity":"350 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/618sHIqH+VL._SX522_.jpg"
+    },
+    {    
+        "productname":"SmartWatch",
+        "name":"Noise ColorFit Pro 4 Alpha 1.78",
+        "operatingsystem":"android & ios",
+        "price":12600,
+        "BatteryCapacity":"320 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/41iRj4+m8oL._SY300_SX300_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"iQOO Z9 Lite 5G ",
+        "operatingsystem":"aFuntouch OS 14 Based On Android 14",
+        "price":17600,
+        "BatteryCapacity":"5000mAh Battery ",
+        "image":"https://m.media-amazon.com/images/I/61WZicN+coL._SX679_.jpg"
+    },
+     {    
+        "productname":"SmartPhone",
+        "name":"realme NARZO N61 ",
+        "operatingsystem":"Android 14",
+        "price":13600,
+        "BatteryCapacity":"5000mAh Battery ",
+        "image":"https://m.media-amazon.com/images/I/71r0Ysx+oVL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Vivo Y19e  ",
+        "operatingsystem":"Funtouch OS 14",
+        "price":16999,
+        "BatteryCapacity":"5500mAh Battery ",
+        "image":"https://m.media-amazon.com/images/I/41+2Qgy82KL._SY300_SX300_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Redmi A4 5G",
+        "operatingsystem":"Android 14",
+        "price":16999,
+        "BatteryCapacity":"5160mAh Battery ",
+        "image":"https://m.media-amazon.com/images/I/81BGKLI+cWL._SX679_.jpg"
+    }
+    
+   
+   ]
+}

@@ -8,17 +8,17 @@ const Footer=()=>{
     <div id="delivery">
         <div className="inform">
             <div>
-            <FaCheckCircle  id="icon"/><br/><br/>
+            <FaCheckCircle  id="icons"/><br/><br/>
                 <p>100% Original
                     All Products are original and go <br/>through strict quality check.</p>
             </div>
             <div>
-            <FaTruck id="icon"/><br/><br/>
+            <FaTruck id="icons"/><br/><br/>
                 <p>Free Delivery<br/>
                     Shipping in India is free</p>
             </div>
             <div>
-                <IoTimer   id="icon"/><br/><br/>
+                <IoTimer   id="icons"/><br/><br/>
                 <p>Dispatched within 24 Hrs</p>
             </div>
         </div>
