@@ -41,7 +41,7 @@ body{
 #delivery{
     /*border: 1px solid black;*/
     margin-top: 40px;
-    background-color: rgb(106, 170, 210);
+    background-color: rgba(126, 169, 196, 0.82);
     margin: 2rem;
 }
 #delivery .inform {
@@ -75,8 +75,8 @@ body{
      justify-content: center;
      gap: 50px;
      padding: 2rem;
-     background-color: rgba(13, 13, 13, 0.995);
-     color: rgb(188, 187, 184);
+     background-color: rgba(23, 23, 23, 0.966);
+     color: rgb(130, 130, 124);
      
 }
 .ftr div h3{
