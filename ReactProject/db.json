@@ -9,6 +9,14 @@
         "BatteryCapacity":"400 Milliamp Hours",
         "image":"https://m.media-amazon.com/images/I/71NZuTjNqCL._SX679_.jpg"
     },
+     {    
+        "productname":"SmartPhone",
+        "name":"iQOO Z9 Lite 5G ",
+        "operatingsystem":"aFuntouch OS 14 Based On Android 14",
+        "price":17600,
+        "BatteryCapacity":"5000mAh Battery ",
+        "image":"https://m.media-amazon.com/images/I/61WZicN+coL._SX679_.jpg"
+    },
     {    
         "productname":"SmartWatch",
         "name":"Noise Pulse 4 Max Smart Watch with AI",
@@ -17,13 +25,14 @@
         "BatteryCapacity":"350 Milliamp Hours",
         "image":"https://m.media-amazon.com/images/I/41ge+ug0wdL._SY300_SX300_.jpg"
     },
+    
     {    
-       "productname":"SmartWatch",
-        "name":"NoiseFit Halo ",
-        "operatingsystem":"android& iOS",
-        "price":1299,
-        "BatteryCapacity":"450 Milliamp Hours",
-        "image":"https://m.media-amazon.com/images/I/61rmkmqD5VL._SX522_.jpg"
+        "productname":"SmartPhone",
+        "name":"ALFA URBAN® OnePlus Nord CE4 ",
+        "operatingsystem":"OxygenOS 15",
+        "price":34999,
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/51E80sWvNnL._SX679_.jpg"
     },
     {    
         "productname":"SmartWatch",
@@ -33,15 +42,15 @@
         "BatteryCapacity":"350 Milliamp Hours",
         "image":"https://m.media-amazon.com/images/I/81jVNXMKhEL._SX679_.jpg"
     },
-    
     {    
-        "productname":"SmartWatch",
-        "name":"NoiseFit Halo ",
-        "operatingsystem":"android& iOS",
-        "price":13000,
-        "BatteryCapacity":"360 Milliamp Hours",
-        "image":"https://m.media-amazon.com/images/I/61RqU14G4ZL._SX679_.jpg"
+        "productname":"SmartPhone",
+        "name":"Samsung Galaxy M06 5G ",
+        "operatingsystem":"Android 15.0",
+        "price":16999,
+        "BatteryCapacity":"5000mAh Lithium-ion Battery",
+        "image":"https://m.media-amazon.com/images/I/718tAI-i2uL._SX679_.jpg"
     },
+    
    
     {    
         "productname":"SmartWatch",
@@ -68,14 +77,7 @@
         "BatteryCapacity":"320 Milliamp Hours",
         "image":"https://m.media-amazon.com/images/I/41iRj4+m8oL._SY300_SX300_.jpg"
     },
-    {    
-        "productname":"SmartPhone",
-        "name":"iQOO Z9 Lite 5G ",
-        "operatingsystem":"aFuntouch OS 14 Based On Android 14",
-        "price":17600,
-        "BatteryCapacity":"5000mAh Battery ",
-        "image":"https://m.media-amazon.com/images/I/61WZicN+coL._SX679_.jpg"
-    },
+   
      {    
         "productname":"SmartPhone",
         "name":"realme NARZO N61 ",
@@ -93,6 +95,14 @@
         "image":"https://m.media-amazon.com/images/I/41+2Qgy82KL._SY300_SX300_.jpg"
     },
     {    
+        "productname":"SmartWatch",
+        "name":"NoiseFit Halo ",
+        "operatingsystem":"android& iOS",
+        "price":13000,
+        "BatteryCapacity":"360 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61RqU14G4ZL._SX679_.jpg"
+    },
+    {    
         "productname":"SmartPhone",
         "name":"Redmi A4 5G",
         "operatingsystem":"Android 14",
@@ -100,14 +110,7 @@
         "BatteryCapacity":"5160mAh Battery ",
         "image":"https://m.media-amazon.com/images/I/81BGKLI+cWL._SX679_.jpg"
     },
-    {    
-        "productname":"SmartPhone",
-        "name":"Samsung Galaxy M06 5G ",
-        "operatingsystem":"Android 15.0",
-        "price":16999,
-        "BatteryCapacity":"5000mAh Lithium-ion Battery",
-        "image":"https://m.media-amazon.com/images/I/718tAI-i2uL._SX679_.jpg"
-    },
+    
     {    
         "productname":"SmartPhone",
         "name":"OnePlus Nord 4 5G",
@@ -116,13 +119,13 @@
         "BatteryCapacity":"5500mAh Battery",
         "image":"https://m.media-amazon.com/images/I/61JOYUJbhcL._SX679_.jpg"
     },
-    {    
-        "productname":"SmartPhone",
-        "name":"ALFA URBAN® OnePlus Nord CE4 ",
-        "operatingsystem":"OxygenOS 15",
-        "price":34999,
-        "BatteryCapacity":"5500mAh Battery",
-        "image":"https://m.media-amazon.com/images/I/51E80sWvNnL._SX679_.jpg"
+   {    
+       "productname":"SmartWatch",
+        "name":"NoiseFit Halo ",
+        "operatingsystem":"android& iOS",
+        "price":1299,
+        "BatteryCapacity":"450 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61rmkmqD5VL._SX522_.jpg"
     },
     {    
         "productname":"SmartPhone",
