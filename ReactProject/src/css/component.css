@@ -1,0 +1,132 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#topHeader
+{
+    top: 0;
+    position: sticky;
+    z-index: 3;
+
+}
+
+/*===================================================header css==============================================================================================*/
+#title{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(228, 16, 104);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#header{
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    padding-top: 5px;
+    color: rgb(7, 7, 7);
+    justify-content: space-between;
+}
+#header div{
+    display: flex;
+    gap: 30px;
+    padding: 0.7rem;
+}
+
+#inp{
+    width: 40%;
+    margin: 4px;
+    background-color:rgb(57, 59, 61);
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+}
+#Search{
+    position: absolute;
+    margin-right: 55%;
+    font-size: 40px;
+    padding-top: 15px;
+}
+.h6{
+border-right: 1px solid rgb(167, 157, 157);
+padding-right: 10px;
+}
+/*====================================================================================================================================================*/
+/*================================================(TOPNAV CSS)===============================================================================================================*/
+#top{
+    background-color: azure;
+    
+}
+.me-auto{
+    color: black;
+    font-weight: bold;
+    gap: 20px;
+}
+#nav:hover{
+    color: rgb(28, 134, 179);
+    text-decoration: underline;
+}
+#nav1{
+    color: rgb(28, 134, 179);
+    text-decoration: underline;
+}
+#bar{
+    font-size: 3em;
+    font-weight: bold;
+    color: aqua;
+}
+#bar:hover{
+    color: aliceblue;
+}
+/*===============================================(Footer Component)=======================================================================================================================*/
+
+#delivery{
+    /*border: 1px solid black;*/
+    margin-top: 40px;
+    background-color: rgb(106, 170, 210);
+    margin: 2rem;
+}
+#delivery .inform {
+    width: 100%;
+    height:  60vh;
+   /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 3rem;
+}
+#delivery .inform div{
+    width: 700px;
+    height: 300px;
+    border-right: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   font-size: 15px;
+}
+#icon{
+    font-size: 50px;
+}
+.ftr{
+    width: 100%;
+    height: 400px;
+     background-color: azure;
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     padding: 2rem;
+     background-color: rgba(13, 13, 13, 0.995);
+     color: rgb(188, 187, 184);
+     
+}
+.ftr div h3{
+     color: aliceblue;
+}
+.ftr div{
+    display: flex;
+    flex-direction: column;
+}
