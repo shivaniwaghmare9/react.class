@@ -59,6 +59,7 @@
         "BatteryCapacity":"350 Milliamp Hours",
         "image":"https://m.media-amazon.com/images/I/618sHIqH+VL._SX522_.jpg"
     },
+
     {    
         "productname":"SmartWatch",
         "name":"Noise ColorFit Pro 4 Alpha 1.78",
@@ -98,8 +99,42 @@
         "price":16999,
         "BatteryCapacity":"5160mAh Battery ",
         "image":"https://m.media-amazon.com/images/I/81BGKLI+cWL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Samsung Galaxy M06 5G ",
+        "operatingsystem":"Android 15.0",
+        "price":16999,
+        "BatteryCapacity":"5000mAh Lithium-ion Battery",
+        "image":"https://m.media-amazon.com/images/I/718tAI-i2uL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"OnePlus Nord 4 5G",
+        "operatingsystem":"OxygenOS 15",
+        "price":30999,
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/61JOYUJbhcL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"ALFA URBAN® OnePlus Nord CE4 ",
+        "operatingsystem":"OxygenOS 15",
+        "price":34999,
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/51E80sWvNnL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"iPhone 16 Pro",
+        "operatingsystem":"iOS 17",
+        "price":"99999",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/61qV17Px4NL._SX679_.jpg"
     }
-    
+]
+}  
    
-   ]
-}
+ 
+
+
