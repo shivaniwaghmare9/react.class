@@ -75,12 +75,13 @@ body{
      justify-content: center;
      gap: 50px;
      padding: 2rem;
-     background-color: rgba(23, 23, 23, 0.966);
-     color: rgb(130, 130, 124);
+     background-color: black;
+     color: rgb(228, 228, 225);
      
 }
 .ftr div h3{
      color: aliceblue;
+     font-weight: bold;
 }
 .ftr div{
     display: flex;
