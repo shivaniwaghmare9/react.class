@@ -7,15 +7,16 @@ import Card from 'react-bootstrap/Card';
 import backendUrl from '../config/backendUrl';
 import { useState,useEffect} from 'react';
 import axios from 'axios';
-// import { useDispatch } from 'react-redux';
+ import { useDispatch } from 'react-redux';
 
 import { FaTruck } from "react-icons/fa";
 import { MdHighQuality } from "react-icons/md";
 import { MdLocalOffer } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
+import { addCart } from '../cartSlice';
 const Home=()=>{
   const [mydata,setMydata]=useState([]);
-//  const dispatch=useDispatch();
+  const dispatch=useDispatch();
   const loadData= async()=>{
     const response= await axios.get(backendUrl)
     console.log(response.data);
@@ -39,7 +40,7 @@ const Home=()=>{
          BatteryCapacity:{key.BatteryCapacity}<br/>
          Price:{key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, Name:key.Name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, name:key.name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
       </Card.Body>
     </Card>
       </>

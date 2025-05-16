@@ -6,7 +6,14 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
 
+
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 const TopHead=()=>{
+  const cartData = useSelector(state=>state.mycart.cart);
+const cartLength= cartData.length;
+const navigate= useNavigate();
     return(
         <>
         <Navbar bg="light" data-bs-theme="light" id="top">
@@ -20,7 +27,9 @@ const TopHead=()=>{
          </Container>
          <div id="navdiv">
          <h4><FaRegUserCircle /> <br/>profile</h4>
-          <h4><FaShoppingCart /><br/>cart</h4> 
+
+          <h4> {cartLength}
+          <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/>cart</h4> 
           </div>
       </Navbar>
       
