@@ -40,7 +40,7 @@ const Home=()=>{
          BatteryCapacity:{key.BatteryCapacity}<br/>
          Price:{key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, name:key.name, Fabric:key.Fabric, category:key.category,  image:key.image, qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, name:key.name,category:key.category,  image:key.image, qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
       </Card.Body>
     </Card>
       </>

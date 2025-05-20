@@ -21,8 +21,8 @@ const navigate= useNavigate();
           <Navbar.Brand href="#home" id="title">MINISTORE</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="home" id="nav1">Home</Nav.Link>
-            <Nav.Link href="#features" id="nav">Features</Nav.Link>
-            <Nav.Link href="#pricing" id="nav">Pricing</Nav.Link>
+            <Nav.Link as={Link} to="mycart">Cart</Nav.Link>
+            <Nav.Link as={Link} to="search">Search</Nav.Link>
           </Nav>
          </Container>
          <div id="navdiv">
