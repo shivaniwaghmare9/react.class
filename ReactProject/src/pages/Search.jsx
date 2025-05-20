@@ -55,13 +55,13 @@ const ans=mydata.map((key)=>{
 
     return(
         <> 
-      <h1> Our Latest Products</h1>
+      <h1 align="center"> Our Latest Products</h1>
         
         <center>
 
        
         Enter Product Name : <input type="text" value={product}
-        onChange={handleInput} />
+        onChange={handleInput} id="inpt"/>
        </center>
        <br /> <br /> <br />
       <div id='cardData'>

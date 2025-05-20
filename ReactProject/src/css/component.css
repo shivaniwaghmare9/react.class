@@ -33,6 +33,10 @@ body{
     color: rgb(28, 134, 179);
     text-decoration: underline;
 }
+#nav:hover{
+    color: rgb(28, 134, 179);
+    text-decoration: underline;
+}
 .me-auto{
     margin-left: 10%;
 }
