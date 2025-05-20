@@ -29,7 +29,7 @@ const navigate= useNavigate();
          <h4><FaRegUserCircle /> <br/>profile</h4>
 
           <h4> {cartLength}
-          <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/>cart</h4> 
+          <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/></h4> 
           </div>
       </Navbar>
       
