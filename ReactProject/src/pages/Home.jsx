@@ -14,9 +14,11 @@ import { MdHighQuality } from "react-icons/md";
 import { MdLocalOffer } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { addCart } from '../cartSlice';
+import { useNavigate } from 'react-router-dom';
 const Home=()=>{
   const [mydata,setMydata]=useState([]);
   const dispatch=useDispatch();
+  const navigate = useNavigate();
   const loadData= async()=>{
     const response= await axios.get(backendUrl)
     console.log(response.data);
@@ -31,7 +33,8 @@ const Home=()=>{
     return(
       <>
     <Card style={{ width: '18rem' }} className="card" >
-      <Card.Img variant="top" src={key.image}  id="img"/>
+      <Card.Img variant="top" src={key.image}  id="img"
+      style={{cursor:"pointer"}} onClick={()=>{navigate(`/prodisplay/${key.id}`)}}/>
       <Card.Body>
         <Card.Title> <h2>{key.productname}</h2> </Card.Title>
         <Card.Text className="txt">

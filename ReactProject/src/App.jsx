@@ -6,6 +6,7 @@ import Home from "./pages/Home";
  import MyCart from "./pages/MyCart";
  import Search from "./pages/Search";
 import ProductDisplay from "./pages/ProductDisplay";
+import SmartPhones from "./pages/Smartphones";
 const App=()=>{
     return(
         <>
@@ -14,6 +15,7 @@ const App=()=>{
             <Route path="/" element={<Layout/>}>
               <Route index element={<Home/>}/>
               <Route path="home" element={<Home/>}/>
+              <Route path="smartphones" element={<SmartPhones/>}/>
               <Route path="mycart" element={<MyCart/>}/>
               <Route path="search" element={<Search/>} />
               <Route path="prodisplay/:id" element={<ProductDisplay/>}/>
