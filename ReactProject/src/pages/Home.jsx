@@ -34,7 +34,7 @@ const Home=()=>{
       <Card.Img variant="top" src={key.image}  id="img"/>
       <Card.Body>
         <Card.Title> <h2>{key.productname}</h2> </Card.Title>
-        <Card.Text>
+        <Card.Text className="txt">
          Name:{key.name}<br/>
          OperatingSystem:{key.operatingsystem}<br/>
          BatteryCapacity:{key.BatteryCapacity}<br/>
