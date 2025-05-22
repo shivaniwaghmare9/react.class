@@ -91,3 +91,81 @@ body{
     display: flex;
     flex-direction: column;
 }
+#inp{
+    display: none;
+}
+#bar{
+    display: none;
+}
+/*=========================================================================[MEDIA QUERY STARTS HERE]===========================================================================================================*/
+@media (max-width:450px){
+    #topHeader
+{
+    top: 0;
+    position: sticky;
+    z-index: 3;
+}
+#bar{
+    display: block;
+    margin-right: 20%;
+    font-size: 50px;
+    
+    
+}
+    #inp:checked~ #top .me-auto{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80%;
+        right:7%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        line-height: 8%;
+        z-index: 5;
+    }
+    #top{
+        width: 100%;
+    }
+    .me-auto{
+       display: none;   
+    }
+    #navdiv{
+        display: none;
+    }
+    #delivery .inform {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  #delivery .inform div{
+    width: auto;
+    height: 300px;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   font-size: 15px;
+   }
+  .ftr{
+     width: 100%;
+     height: auto;
+     background-color: azure;
+     display: flex;
+     justify-content: center;
+     gap: 50px;
+     padding: 2rem;
+     background-color: black;
+     color: rgb(228, 228, 225);
+     flex-direction: column;
+     
+   }
+   
+}

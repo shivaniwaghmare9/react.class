@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
-
+import { FaBarsStaggered } from "react-icons/fa6";
 
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -29,6 +29,9 @@ const navigate= useNavigate();
              
           </Nav>
          </Container>
+         <input type="checkbox" id="inp" /> 
+        <label for="inp" id="bar"><FaBarsStaggered /></label>
+          
          <div id="navdiv">
          <h4><FaRegUserCircle /> <br/>profile</h4>
 
