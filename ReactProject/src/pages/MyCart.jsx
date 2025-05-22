@@ -40,7 +40,7 @@ const MyCart =()=>{
     })
     return(
         <>
-           <h1 align="center"> My Cart Products</h1> 
+           <h1 className="heading"> My Cart Products</h1> 
            <h2 align="center"><FaIndianRupeeSign />  : {TotAmount}</h2> 
            <hr />
            <Table striped bordered hover>

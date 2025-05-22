@@ -7,6 +7,7 @@ import Home from "./pages/Home";
  import Search from "./pages/Search";
 import ProductDisplay from "./pages/ProductDisplay";
 import SmartPhones from "./pages/Smartphones";
+import Smartwatch from "./pages/Smartwatches";
 const App=()=>{
     return(
         <>
@@ -16,6 +17,7 @@ const App=()=>{
               <Route index element={<Home/>}/>
               <Route path="home" element={<Home/>}/>
               <Route path="smartphones" element={<SmartPhones/>}/>
+              <Route path="smartwatches" element={<Smartwatch/>}/>
               <Route path="mycart" element={<MyCart/>}/>
               <Route path="search" element={<Search/>} />
               <Route path="prodisplay/:id" element={<ProductDisplay/>}/>

@@ -22,7 +22,7 @@ const Search=()=>{
 
 
 const handleInput=(e)=>{
-      let value= e.target.value;
+      let value=e.target.value;
       setProduct(value);
 }
 const ans=mydata.map((key)=>{
@@ -40,7 +40,7 @@ const ans=mydata.map((key)=>{
       <Card.Img variant="top" src={key.image} />
       <Card.Body>
         <Card.Title> {key.name} </Card.Title>
-        <Card.Text>
+        <Card.Text className="txt">
          OperatingSystem:{key.operatingsystem}<br/>
          BatteryCapacity:{key.BatteryCapacity}
          Price : {key.price}
@@ -55,7 +55,7 @@ const ans=mydata.map((key)=>{
 
     return(
         <> 
-      <h1 align="center"> Our Latest Products</h1>
+      <h1 className="heading"> Our Latest Products</h1>
         
         <center>
 

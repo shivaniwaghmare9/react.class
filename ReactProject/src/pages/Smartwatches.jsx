@@ -7,13 +7,13 @@ import Card from 'react-bootstrap/Card';
 import { addCart } from '../cartSlice';
 import { useDispatch } from 'react-redux';
 
-const SmartPhones=()=>{
+const Smartwatch=()=>{
  const [mydata, setMydata]= useState([]);
  const dispatch = useDispatch();
 
  const loadData=async()=>{
     
-    const response = await axios.get("http://localhost:3000/products/?productname=SmartPhone");
+    const response = await axios.get("http://localhost:3000/products/?productname=SmartWatch");
     console.log(response.data);
     setMydata(response.data);
  }
@@ -48,7 +48,7 @@ return(
 
            
 
-      <h1 className="heading"> Our Latest SmartPhones</h1>
+      <h1 className="heading"> Our Latest SmartWathes</h1>
       <div id='cardData'>
       {ans}
       </div>
@@ -57,4 +57,4 @@ return(
     )
 }
 
-export default SmartPhones;
+export default Smartwatch;
