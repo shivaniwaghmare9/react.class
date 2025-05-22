@@ -133,7 +133,72 @@
         "operatingsystem":"iOS 17",
         "price":"99999",
         "BatteryCapacity":"5500mAh Battery",
-        "image":"https://m.media-amazon.com/images/I/61qV17Px4NL._SX679_.jpg"
+        "image":"https://m.media-amazon.com/images/I/711VzeHZAPL._SX679_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Layers Anarc Smart Watch",
+        "operatingsystem":"android& iOS",
+        "price":"6,999",
+        "BatteryCapacity":"450 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/71aOc2EYQTL._SX679_.jpg"
+    },
+
+    {    
+        "productname":"SmartPhone",
+        "name":"Oppo F25 PRO 5G 8GB 128GB Coral Purple",
+        "operatingsystem":"Android",
+        "price":"21,999",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://images.meesho.com/images/products/421224803/xtuvp_512.webp"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Fire-Boltt Ninja Call Pro Max",
+        "operatingsystem":"android& iOS",
+        "price":"1399",
+        "BatteryCapacity":"230 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61zBJcICfFL._SX522_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Samsung Z Fold 5 5G 12GB 1TB Light Blue",
+        "operatingsystem":"Android",
+        "price":"1,69,999",
+        "BatteryCapacity":"4400mAh Battery",
+        "image":"https://images.meesho.com/images/products/432865834/wlvxk_512.webp"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"MARVIK Smart Watch",
+        "operatingsystem":"android& iOS",
+        "price":"1199",
+        "BatteryCapacity":"230 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/51Q74o0dcYL._SX522_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Apple iPhone 16e 256GB Black",
+        "operatingsystem":"iOS",
+        "price":"66,400",
+        "BatteryCapacity":"4400mAh Battery",
+        "image":"https://images.meesho.com/images/products/512838592/oike9_512.webp"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Noise Twist Go Smart Watch",
+        "operatingsystem":"android& ",
+        "price":"1489",
+        "BatteryCapacity":"210 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/41g7CijFWDL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Xiaomi 15 5G 12GB 512GB Black",
+        "operatingsystem":"Android",
+        "price":"63,999",
+        "BatteryCapacity":"5240mAh Battery",
+        "image":"https://images.meesho.com/images/products/521633962/ripxd_512.webp"
     }
 ]
 }  
