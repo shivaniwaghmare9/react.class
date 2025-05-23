@@ -88,6 +88,11 @@ body{
      font-weight: bold;
      font-size: 23px;
 }
+.ftr div h5{
+     color: aliceblue;
+     font-weight: bold;
+     font-size: 15px;
+}
 .ftr div{
     display: flex;
     flex-direction: column;
