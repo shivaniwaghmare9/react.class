@@ -33,10 +33,11 @@ const navigate= useNavigate();
         <label for="inp" id="bar"><FaBarsStaggered /></label>
           
          <div id="navdiv">
-         <h4><FaRegUserCircle /> <br/>profile</h4>
+         <h5><FaRegUserCircle /> <br/>profile</h5>
 
-          <h4> {cartLength}
-          <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/></h4> 
+          <h5> {cartLength}
+          <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/>
+          </h5> 
           </div>
       </Navbar>
       
