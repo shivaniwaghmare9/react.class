@@ -76,6 +76,11 @@
     text-align: center;
     width: 100%;
     background-color: rgb(28, 134, 179);
+    border: none;
+}
+#cardbtn:hover{
+    background-color: rgba(28, 134, 179, 0.763);
+    color: black;
 }
 .txt{
     background-color: azure;
@@ -100,9 +105,10 @@
 }
 #display{
     width: 500px;
-    /* background-color: rgb(126, 182, 210); */
+    background-color: azure;
     margin: auto;
     padding: 3rem;
+    border-radius: 10px;
 }
 /*=========================================================================[MEDIA QUERY STARTS HERE]===========================================================================================================*/
 @media (max-width:450px){

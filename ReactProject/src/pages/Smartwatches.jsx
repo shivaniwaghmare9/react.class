@@ -35,7 +35,7 @@ const Smartwatch=()=>{
          BatteryCapacity:{key.BatteryCapacity}
          Price : {key.price}
         </Card.Text>
-        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, name:key.name, operatingsystem:key.operatingsystem, BatteryCapacity:key.BatteryCapacity, category:key.category,  image:key.image,qnty:1,  price:key.price}))}}>Add to Cart</Button>
+        <Button variant="primary" onClick={()=>{dispatch(addCart({id:key.id, name:key.name, operatingsystem:key.operatingsystem, BatteryCapacity:key.BatteryCapacity, image:key.image,qnty:1,  price:key.price}))}} id="cardbtn">Add to Cart</Button>
       </Card.Body>
     </Card>
         

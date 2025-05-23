@@ -20,8 +20,9 @@ const ProductDisplay=()=>{
         <h1 className="heading">My Product</h1>
         <div id="display">
          
-         <h2>Product name : {mydata.productname} </h2>
-         <h4>BatteryCapacity:{mydata.BatteryCapacity}</h4>
+         <h3>Product name : {mydata.productname} </h3>
+         <h4>Name: {mydata.name}</h4>
+         <h4>BatteryCapacity: {mydata.BatteryCapacity}</h4>
          <img src={mydata.image} width="300" height="300" />
           <h4> Price : {mydata.price}</h4>
          </div>
