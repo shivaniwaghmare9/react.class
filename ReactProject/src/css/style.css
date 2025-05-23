@@ -92,6 +92,11 @@
 .heading{
      background-color: rgba(173, 141, 155, 0.269);
      text-align: center;
+     font-size: 30px;
+     height: 50px;
+     padding: 0.5rem;
+     /* text-align: right; */
+    
 }
 #display{
     width: 500px;
