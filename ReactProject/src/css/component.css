@@ -99,6 +99,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+#social{
+    display: inline;
+    font-size: 30px;
+    gap: 30px;
+}
 #inp{
     display: none;
 }

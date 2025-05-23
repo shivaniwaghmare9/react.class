@@ -2,6 +2,12 @@
 import { IoTimer } from "react-icons/io5";
 import { FaTruck } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaTwitterSquare } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io";
+
+
 const Footer=()=>{
     return(
         <>
@@ -68,9 +74,17 @@ const Footer=()=>{
                 <h5>Our Blog</h5>
                 <h5>Affiliate</h5>
                 <h5>Contact Us</h5>
+                <div id="social">
+               <FaFacebook /> <FaSquareInstagram />
+               <FaTwitterSquare /> <IoLogoYoutube /> 
             </div>
-
+                
+            </div>
+            
+            
         </div>
+        
+        
     </footer>
 
         </>
