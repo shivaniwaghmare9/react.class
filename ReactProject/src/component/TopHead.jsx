@@ -35,7 +35,8 @@ const navigate= useNavigate();
          <div id="navdiv">
          <h5><FaRegUserCircle /> <br/>profile</h5>
 
-          <h5> {cartLength}
+          <h5 id="cart"> 
+            {cartLength}
           <FaShoppingCart  onClick={()=>{navigate("/mycart")}}  style={{cursor:"pointer"}}/><br/>
           </h5> 
           </div>

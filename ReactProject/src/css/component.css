@@ -146,6 +146,9 @@ body{
     #navdiv{
         display: none;
     }
+    #navdiv #cart{
+        display: flex;
+    }
     #delivery .inform {
     width: 100%;
     height: auto;
