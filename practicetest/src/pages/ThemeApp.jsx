@@ -12,7 +12,7 @@ const  ThemeApp=()=>{
           Enter Color: <input type="text" value={clr} 
           onChange={(e)=>{setClr(e.target.value)}}/><br/><br/>
           <button onClick={()=>{dispatch(changeColor(clr))}}>Change!!</button>
-          <div style={{width:"300px",height:"400px",border:"1px solid black",backgroundColor:data}}></div>
+          <div style={{width:"200px",height:"200px",border:"1px solid black",backgroundColor:data}}></div>
 
         </>
     )

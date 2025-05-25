@@ -1,9 +1,10 @@
   
-  import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Counter from "./pages/Counter";
-import ThemeApp from "./pages/ThemeApp";
+// import ThemeApp from "./pages/ThemeApp";
+import TodoApp from "./pages/TodoApp";
   const App=()=>{
     return(
       <>
@@ -14,7 +15,8 @@ import ThemeApp from "./pages/ThemeApp";
               <Route index  element={<Home/>}/>
               <Route path="home" element={<Home/>}/>
               <Route path="counter" element={<Counter/>}/>
-              <Route path="theme"  element={<ThemeApp/>}/>
+              {/* <Route path="theme"  element={<ThemeApp/>}/> */}
+              <Route path="todo" element={<TodoApp/>}/>
 
               </Route>
              </Routes>
