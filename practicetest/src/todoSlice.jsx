@@ -34,9 +34,18 @@ const todoSlice=createSlice({
                     state.task[i].taskStatus=false;
                 }
             }
+        },
+        myEdit:(state,actions)=>{
+            for(var i=0; i<state.task.length;i++)
+            {
+                if(state.task[i].id==actions.payload.id)
+                {
+                    state.task[i].work=actions.payload.work;
+                }
+            }
         }
 
     }
 })
-export const{addTask,Remove,RemoveTask,taskComplete,taskInComplete}=todoSlice.actions;
+export const{addTask,Remove,RemoveTask,taskComplete,taskInComplete,myEdit}=todoSlice.actions;
 export default todoSlice.reducer;
