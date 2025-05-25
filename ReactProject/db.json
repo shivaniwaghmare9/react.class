@@ -199,10 +199,138 @@
         "price":"63,999",
         "BatteryCapacity":"5240mAh Battery",
         "image":"https://images.meesho.com/images/products/521633962/ripxd_512.webp"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"sekyo S1 Calling Smart Watch",
+        "operatingsystem":"Rtos ",
+        "price":"2889",
+        "BatteryCapacity":"500 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/51CNRehK2tL._SX522_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Samsung Galaxy M56 5G ",
+        "operatingsystem":"Android 15.0",
+        "price":"27998",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/71Acpnvfu2L._SX679_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Fire-Boltt Ninja Call Pro Max Smart Watch",
+        "operatingsystem":"android,ios",
+        "price":"1389",
+        "BatteryCapacity":"230 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61sFBIcJAqL._SL1500_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"iQOO 12 5G",
+        "operatingsystem":"Funtouch OS 14 based on Android 14",
+        "price":"44999",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/411gvmvNQzL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Fire-Boltt Talk Bluetooth Calling Smartwatch",
+        "operatingsystem":"android4.4 (contain), ios8.0 contain) above",
+        "price":"1499",
+        "BatteryCapacity":"2E+2 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/411A8jbK8-L._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Lava Blaze 2 5G",
+        "operatingsystem":"Android 13.0",
+        "price":"15999",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/41p5+sHnRvL._SY300_SX300_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Boult Mirage Smart Watch",
+        "operatingsystem":"android,ios",
+        "price":"1799",
+        "BatteryCapacity":"2E+2 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/71oWh+8cCpL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Lava Blaze 2 5G",
+        "operatingsystem":"Android 13.0",
+        "price":"10699",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/417Cg3vvHuL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Noise Twist Go Smart Watch",
+        "operatingsystem":"android",
+        "price":"1399",
+        "BatteryCapacity":"210 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61BoaOUf+KL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Vivo Y29 5G",
+        "operatingsystem":"Funtouch OS 14",
+        "price":"15499",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/41ysY3hD4CL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Noise Newly Launched Vortex Plus",
+        "operatingsystem":"Android & iOS",
+        "price":"2199",
+        "BatteryCapacity":"210 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/61QiBo-sPTL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"realme NARZO 80x 5G ",
+        "operatingsystem":"Android 15",
+        "price":"15899",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://images-eu.ssl-images-amazon.com/images/I/711hIcPoVUL._AC_UL232_SR232,232_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Noise Pro 6 Smart Watch:Intelligent AI",
+        "operatingsystem":"Android",
+        "price":"5499",
+        "BatteryCapacity":"210 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/81cuxixj2-L._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Redmi 13 5G",
+        "operatingsystem":"Android 14, Xiaomi HyperOS",
+        "price":"15540",
+        "BatteryCapacity":"5500mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/81Q9jpYOFdL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {    
+       "productname":"SmartWatch",
+        "name":"Noise Newly Launched Halo 2 Smart Watch",
+        "operatingsystem":"Android & ios",
+        "price":"4599",
+        "BatteryCapacity":"210 Milliamp Hours",
+        "image":"https://m.media-amazon.com/images/I/7138OS3wvyL._SX679_.jpg"
+    },
+    {    
+        "productname":"SmartPhone",
+        "name":"Oppo Reno 12 5G",
+        "operatingsystem":"Android 14",
+        "price":"20540",
+        "BatteryCapacity":"5000mAh Battery",
+        "image":"https://m.media-amazon.com/images/I/81a24Tvr+BL._AC_UY327_FMwebp_QL65_.jpg"
     }
 ]
 }  
-   
+         
  
 
 

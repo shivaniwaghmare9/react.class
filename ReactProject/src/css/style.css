@@ -68,6 +68,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+   
+}
+.card{
+    border: none;
+    
 }
 #img{
     height: 300px;
@@ -121,7 +126,6 @@
     font-weight: bold;
     font-size: 35px;
     color: rgb(7, 7, 7);
-    
 }
 #img{
     width: 100%;

@@ -29,8 +29,8 @@ const navigate= useNavigate();
              
           </Nav>
          </Container>
-         <input type="checkbox" id="inp" /> 
-        <label for="inp" id="bar"><FaBarsStaggered /></label>
+         {/* <input type="checkbox" id="inp" />  */}
+        <label  id="bar"><FaBarsStaggered /></label>
           
          <div id="navdiv">
          <h5><FaRegUserCircle /> <br/>profile</h5>
