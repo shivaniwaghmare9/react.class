@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import { createSlice } from "@reduxjs/toolkit"
 const cartslice=createSlice({
     name:"mycart",
@@ -9,12 +9,12 @@ const cartslice=createSlice({
        addCart:(state,actions)=>{
           const mydata= state.cart.filter(key=>key.id==actions.payload.id);
             if (mydata.length>=1)
-            // {
-            //    toast.error("This Product Aleready Added!!");
-            // }
             {
-               alert("This Product Aleready Added!!");
+               toast.error("This Product Aleready Added!!");
             }
+            // {
+            //    alert("This Product Aleready Added!!");
+            // }
             else 
             {
                 state.cart.push(actions.payload);
@@ -37,12 +37,12 @@ const cartslice=createSlice({
                 if (state.cart[i].id==actions.payload.id)
                 {
                     if (state.cart[i].qnty<=1)
-                    // {
-                    //     toast.error("Quantity not less than 1")
-                    // }
                     {
-                        alert("Quantity not less than 1")
+                        toast.warning("Quantity not less than 1")
                     }
+                    // {
+                    //     alert("Quantity not less than 1")
+                    // }
                     else 
                     {
                       state.cart[i].qnty--;
@@ -56,7 +56,10 @@ const cartslice=createSlice({
             state.cart= state.cart.filter(key=>key.id!=actions.payload.id);
         },
         
+        
 }
+
 })
+
 export const {addCart,qtyIncr,qtyDecr,proRemove}=cartslice.actions;
 export default cartslice.reducer;

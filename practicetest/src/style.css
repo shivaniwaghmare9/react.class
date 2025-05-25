@@ -11,3 +11,10 @@
     padding: 1rem;
     border-right: 1px solid white;
 }
+#counter{
+    width: 30%;
+    height: 200px;
+    background-color: azure;
+    margin-left: 30%;
+    padding: 3rem;
+}

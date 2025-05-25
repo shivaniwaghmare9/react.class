@@ -1,5 +1,5 @@
 
-
+import { ToastContainer } from "react-toastify";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
@@ -25,7 +25,7 @@ const App=()=>{
             </Route>
           </Routes>
          </BrowserRouter>
-         
+         <ToastContainer/>
         </>
     )
 }
