@@ -9,8 +9,11 @@ const todoSlice=createSlice({
         addTask:(state,actions)=>{
             console.log(actions.payload);
             state.task.push(actions.payload)
+        },
+        Remove:(state,actions)=>{
+            state.task=state.task.filter(key=>key.id!=actions.payload.id)
         }
     }
 })
-export const{addTask}=todoSlice.actions;
+export const{addTask,Remove}=todoSlice.actions;
 export default todoSlice.reducer;

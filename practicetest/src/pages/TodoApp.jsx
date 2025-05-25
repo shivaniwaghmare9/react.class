@@ -1,7 +1,7 @@
 
 import { useSelector,useDispatch } from "react-redux";
 import { useState } from "react";
-import { addTask } from "../todoSlice";
+import { addTask,Remove } from "../todoSlice";
 const TodoApp=()=>{
     const data=useSelector(state=>state.todo.task)
     const dispatch=useDispatch();
@@ -12,8 +12,11 @@ const TodoApp=()=>{
         return(
             <>
              <tr>
-                <td>{key.sno}</td>
-                <td>{key.task}</td>
+                <td>{sno}</td>
+                <td>{key.work}</td>
+                <td>
+                    <button onClick={()=>{dispatch(Remove({id:key.id}))}}>Remove</button>
+                </td>
              </tr>
 
             </>
@@ -24,12 +27,12 @@ const TodoApp=()=>{
           <h1>ToDo App!!</h1>
           Enter Task: <input type="text" value={val} 
           onChange={(e)=>{setVal(e.target.value)}}/><br/><br/>
-          <button onClick={()=>{dispatch(addTask({task:val}))}}>Add!!</button>
-           <table>
+          <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}>Add!!</button>
+           <table border="2" width="300px">
             <tr>
                 <th>SNO</th>
                 <th>TASK</th>
-                <th></th>
+                <th>REMOVE</th>
                 <th></th>
             </tr>
             {ans}
