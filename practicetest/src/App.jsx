@@ -3,6 +3,7 @@
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Counter from "./pages/Counter";
+import ThemeApp from "./pages/ThemeApp";
   const App=()=>{
     return(
       <>
@@ -13,6 +14,7 @@ import Counter from "./pages/Counter";
               <Route index  element={<Home/>}/>
               <Route path="home" element={<Home/>}/>
               <Route path="counter" element={<Counter/>}/>
+              <Route path="theme"  element={<ThemeApp/>}/>
 
               </Route>
              </Routes>
