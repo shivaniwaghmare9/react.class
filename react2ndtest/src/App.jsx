@@ -1,15 +1,12 @@
 
-
-import Flip from "./Flip";
-
+import FlipCoin from "./FlipCoin";
 const App=()=>{
-  return(
+   return (
     <>
-    <center>
-     <h1>React Flip Coin!!</h1>
-       <Flip></Flip>
-     </center>
+    <FlipCoin/>
     </>
-  )
+  );
 }
+
 export default App;
+
