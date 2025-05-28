@@ -1,16 +1,48 @@
 
+#div{
+    width: 50%;
+    height: 300px;
+    background-color: rgb(215, 215, 225);
+    margin-left: 30%;
+    padding: 1rem;
+}
 .box{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 80px;
     border:  1px solid black;
     border-radius: 100%;
-    /* background-color: darkgray; */
+    text-align: center;
+    padding-top: 10px;
+    /*background-image: url("https://img.freepik.com/premium-vector/silver-coin-indian-rupee-concept-internet-currency-rupee-medal_599062-3684.jpg?ga=GA1.1.1179863856.1733368449&semt=ais_hybrid&w=740");*/
+    background-size: cover;
+    background-color: darkgray;
 }
-#img{
-     width: 100px;
-    height: 100px;
-    border-radius: 100%;
+.counter{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
 }
+.counter h3{
+    width: 35%;
+    height: 40px;
+    /* border: 1px solid  black; */
+    padding: 0.6rem;
+    box-shadow: 5px 10px 15px  rgb(215, 215, 225),-5px -10px 15px  rgb(215, 215, 225);
+}
+.counter #add{
+    background-color: aliceblue;
+}
+.counter #heads{
+    background-color: antiquewhite;
+}
+.counter #tails{
+    background-color: rgb(194, 233, 233);
+}
+
 #btn{
-    margin-top: 30px;
+    background-color: rgb(12, 12, 12);
+    padding: auto;
+    font-size: 15px;
+    color: aliceblue;
 }
