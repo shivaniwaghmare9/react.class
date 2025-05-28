@@ -60,13 +60,13 @@ const Home=()=>{
           <button className="btn1">Shop Now</button>
         </Carousel.Caption>
       </Carousel.Item>
-      {/* <Carousel.Item>
+       <Carousel.Item>
       <img src={img2} alt="web" width="100%" height="450px"/>
         <Carousel.Caption id="caption">
         <h1 className="descrip1">YOUR PRODUCTSARE GREAT</h1>
           <button className="btn1">Shop Now</button>
         </Carousel.Caption>
-      </Carousel.Item> */}
+      </Carousel.Item> 
       
     </Carousel> 
 {/*=============================================================================================================================================================================================*/}
