@@ -2,27 +2,35 @@
 const EmpData=[
     {
         name:"Shivani",
-        Empno:24,
-        Post:"CEO",
-        Salary:50000
+        empno:23,
+        designation:"CEO",
+        salary:"68000"
     },
     {
-        name:"Gyani",
-        Empno:25,
-        Post:"Manager",
-        Salary:48000
+        name:"Pritam",
+        empno:24,
+        designation:"Manager",
+        salary:"58000"
     },
     {
-        name:"Shiva",
-        Empno:26,
-        Post:"Assistant",
-        Salary:45000
+        name:"Sahil",
+        empno:25,
+        designation:"PA",
+        salary:"48000"
     },
     {
-        name:"vani",
-        Empno:27,
-        Post:"Clerk",
-        Salary:40000
+        name:"Shreyaa",
+        empno:26,
+        designation:"Assistant",
+        salary:"38000"
+    },
+    {
+        name:"Riyaa",
+        empno:27,
+        designation:"Clerk",
+        salary:"28000"
     }
+
+
 ]
 export default EmpData;
