@@ -240,54 +240,64 @@
 // }
 // export default App;
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-import EmpData from "./EmpData";
-const App=()=>{
-  const ans=EmpData.map((key)=>{
-    return(
-      <>
-       <tr>
-        <td>{key.name}</td>
-        <td>{key.empno}</td>
-        <td>{key.designation}</td>
-        <td>{key.salary}</td>
-       </tr>
-      </>
-    )
-  })
-  return(
-    <>
-      <h1>Employee Records!!!</h1>
-      <table border="1" width="500px">
-        <tr>
-          <th>Name</th>
-          <th>Empno</th>
-          <th>Designation</th>
-          <th>Salary</th>
-        </tr>
-        {ans}
-      </table>
-    </>
-  )
-}
-export default App;
+// import EmpData from "./EmpData";
+// const App=()=>{
+//   const ans=EmpData.map((key)=>{
+//     return(
+//       <>
+//        <tr>
+//         <td>{key.name}</td>
+//         <td>{key.empno}</td>
+//         <td>{key.designation}</td>
+//         <td>{key.salary}</td>
+//        </tr>
+//       </>
+//     )
+//   })
+//   return(
+//     <>
+//       <h1>Employee Records!!!</h1>
+//       <table border="1" width="500px">
+//         <tr>
+//           <th>Name</th>
+//           <th>Empno</th>
+//           <th>Designation</th>
+//           <th>Salary</th>
+//         </tr>
+//         {ans}
+//       </table>
+//     </>
+//   )
+// }
+// export default App;
  //==============================================================================================================================================================
 // import EmpData from "./EmpData";
-// import Design from "./EmpDesign";
+// import EmpDesign from "./EmpDesign";
 // const App=()=>{
-//   const ans=EmpData.map((key)=> <Design 
+//   let sno=0;
+//   const ans=EmpData.map((key)=> {
+//     sno++;
+//     return(
+//       <>
+//       <EmpDesign 
+      
 //   nm={key.name}  
-//   no={key.Empno} 
-//   pt={key.Post} 
-//   sal={key.Salary}/>)
+//   eno={key.empno} 
+//   dpt={key.department} 
+//   sal={key.salary}/>
+//       </>
+//     )
+//   })
 //   return(
 //     <>
 //      <h1 align="center">Welcome To Employeeee Records!!!!</h1>
 //      <hr />
 //      <table border="1" width="500px">
 //       <tr>
+//         <th>Sno</th>
 //         <th>Name</th>
 //         <th>EmpNo</th>
-//         <th>Post</th>
+//         <th>Department</th>
 //         <th>Salary</th>
 //       </tr>
 //       {ans}
@@ -296,4 +306,44 @@ export default App;
 //   )
 // }
 // export default App;
+
+//=======================================================================product============================================================
+
+import ProDesign from "./ProDesign";
+import ProductData from "./ProductData";
+const App=()=>{
+  let sno=0;
+  const ans=ProductData.map((key)=> {
+    sno++;
+    return(
+      <>
+      <ProDesign 
+   
+  no={key.pno}  
+  nm={key.name} 
+  qnt={key.Qunty} 
+  ct={key.city}/>
+      </>
+    )
+  })
+  return(
+    <>
+     <h1 align="center">Welcome To Product Records!!!!</h1>
+     <hr />
+     <table border="1" width="700px">
+      <tr>
+        <th>Sno</th>
+        <th>Number</th>
+        <th>ProductName</th>
+        <th>Quntity</th>
+        <th>City</th>
+      </tr>
+      {ans}
+     </table>
+    </>
+  )
+}
+export default App;
+
+
 
