@@ -332,10 +332,10 @@ const App=()=>{
      <hr />
      <table border="1" width="700px">
       <tr>
-        <th>Sno</th>
+        
         <th>Number</th>
         <th>ProductName</th>
-        <th>Quntity</th>
+        <th>Quantity</th>
         <th>City</th>
       </tr>
       {ans}

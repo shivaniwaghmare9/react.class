@@ -9,25 +9,25 @@ const ProductData=[
     {
       "pno":19,
       "name":"Shoose",
-      "Qunty":2,
+      "Qunty":4,
       "city":"Vidisha"
     },
     {
       "pno":17,
       "name":"Mobile",
-      "Qunty":2,
+      "Qunty":1,
       "city":"Puna"
-    }
-    ,{
+    },
+    {
       "pno":14,
       "name":"Laptop",
       "Qunty":3,
       "city":"Bhopal"
-    }
-    ,{
-      "pno":12,
-      "name":"Jwellary",
-      "Qunty":4,
+    },
+    {
+      "pno":15,
+      "name":"Jwellery",
+      "Qunty":6,
       "city":"Delhi"
     }
     
