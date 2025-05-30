@@ -22,7 +22,7 @@ const ProductData=[
       "pno":14,
       "name":"Laptop",
       "Qunty":3,
-      "city":"Bhopal"
+      "city":"Indore"
     },
     {
       "pno":15,

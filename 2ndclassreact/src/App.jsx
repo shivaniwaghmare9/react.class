@@ -309,37 +309,61 @@
 
 //=======================================================================product============================================================
 
-import ProDesign from "./ProDesign";
-import ProductData from "./ProductData";
-const App=()=>{
-  let sno=0;
-  const ans=ProductData.map((key)=> {
-    sno++;
-    return(
-      <>
-      <ProDesign 
+// import ProDesign from "./ProDesign";
+// import ProductData from "./ProductData";
+// const App=()=>{
+//   let sno=0;
+//   const ans=ProductData.map((key)=> {
+//     sno++;
+//     return(
+//       <>
+//       <ProDesign 
    
-  no={key.pno}  
-  nm={key.name} 
-  qnt={key.Qunty} 
-  ct={key.city}/>
-      </>
-    )
-  })
+//   no={key.pno}  
+//   nm={key.name} 
+//   qnt={key.Qunty} 
+//   ct={key.city}/>
+//       </>
+//     )
+//   })
+//   return(
+//     <>
+//      <h1 align="center">Welcome To Product Records!!!!</h1>
+//      <hr />
+//      <table border="1" width="700px">
+//       <tr>
+        
+//         <th>Number</th>
+//         <th>ProductName</th>
+//         <th>Quantity</th>
+//         <th>City</th>
+//       </tr>
+//       {ans}
+//      </table>
+//     </>
+//   )
+// }
+// export default App;
+
+//================================================================================(react-router-dom)================================================================
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+const App=()=>{
   return(
     <>
-     <h1 align="center">Welcome To Product Records!!!!</h1>
-     <hr />
-     <table border="1" width="700px">
-      <tr>
-        
-        <th>Number</th>
-        <th>ProductName</th>
-        <th>Quantity</th>
-        <th>City</th>
-      </tr>
-      {ans}
-     </table>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout/>}>
+            <Route index element={<Home/>}/>
+            <Route path="home" element={<Home/>}/>
+             <Route path="about" element={<About/>}/>
+              <Route path="contact" element={<Contact/>}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </>
   )
 }
