@@ -36,15 +36,25 @@ const todoSlice=createSlice({
             }
         },
         InComplete:(state,actions)=>{
-            for(var i=0; i<state.task.length;i++)
+            for(var i=0; i<state.task.length; i++)
             {
                 if(state.task[i].id==actions.payload.id)
                 {
                     state.task[i].taskStatus=false;
-                }
+                } 
+            }
+        },
+        MyEditSave:(state,actions)=>{
+            for(var i=0; i<state.task.length; i++)
+            {
+            if(state.task[i].id==actions.payload.id)
+            {
+                state.task[i].work=actions.payload.work;
+            }
             }
         }
+
     }
 })
-export const{addTask,Deletetask,DeleteByIndex,Complete,InComplete}=todoSlice.actions;
+export const{addTask,Deletetask,DeleteByIndex,Complete,InComplete,MyEditSave}=todoSlice.actions;
 export default todoSlice.reducer;
