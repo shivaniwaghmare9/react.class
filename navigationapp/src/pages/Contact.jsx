@@ -3,7 +3,7 @@
 const Contact=()=>{
     return(
         <>
-          <h1>Welcome To Contact Us!!!</h1>
+         <h1>Welcome Contact Us Page!!!</h1>
         </>
     )
 }

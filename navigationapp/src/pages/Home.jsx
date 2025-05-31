@@ -1,11 +1,8 @@
 
-
-
-
 const Home=()=>{
     return(
         <>
-          <h1>Welcome To Home Us!!!</h1>
+         <h1>Welcome Home Page!!!</h1>
         </>
     )
 }

@@ -1,12 +1,10 @@
 
 
-
-
-const Nofound=()=>{
+const NotFound=()=>{
     return(
         <>
-          <h1>Nofound page!! 404 not found!!!</h1>
+         <h1>This page Notfound:error 404!!!</h1>
         </>
     )
 }
-export default Nofound;
+export default NotFound;

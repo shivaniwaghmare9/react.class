@@ -1,11 +1,9 @@
 
 
-
-
 const Product=()=>{
     return(
         <>
-          <h1>Welcome To Product Us!!!</h1>
+         <h1>This is Our Product Page!!!</h1>
         </>
     )
 }
