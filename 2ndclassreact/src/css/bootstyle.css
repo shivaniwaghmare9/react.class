@@ -1,0 +1,13 @@
+
+.ftr{
+    margin: 2rem;
+    background-color: cadetblue;
+    height: 200px;
+}
+.middout{
+    height: 300px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -346,28 +346,61 @@
 // export default App;
 
 //================================================================================(react-router-dom)================================================================
+// import { BrowserRouter,Routes,Route } from "react-router-dom";
+// import Layout from "./Layout";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+// import NoFound from "./pages/NoFound";
+// const App=()=>{
+//   return(
+//     <>
+//         <BrowserRouter>
+//           <Routes>
+//             <Route path="/" element={<Layout/>}>
+//             <Route index element={<Home/>}/>
+//             <Route path="home" element={<Home/>}/>
+//              <Route path="about" element={<About/>}/>
+//               <Route path="contact" element={<Contact/>}/>
+//               <Route path="*" element={<NoFound/>}/>
+//             </Route>
+//           </Routes>
+//         </BrowserRouter>
+//     </>
+//   )
+// }
+// export default App;
+
+
+
+//====================================================BOOTSTRAP-NAVBAR=NAVIGATION======================================================================================================================================
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./bootpages/Home";
+import About from "./bootpages/About";
+import Services from "./bootpages/Services";
+import Product from "./bootpages/Product";
+import Join from "./bootpages/Join";
+import Contact from "./bootpages/Contact";
 const App=()=>{
   return(
     <>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path="home" element={<Home/>}/>
-             <Route path="about" element={<About/>}/>
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="home" element={<Home/>}/>
+          <Route path="about" element={<About/>}/>
+           <Route path="services" element={<Services/>}/>
+            <Route path="product" element={<Product/>}/>
+             <Route path="join" element={<Join/>}/>
               <Route path="contact" element={<Contact/>}/>
-            </Route>
-          </Routes>
-        </BrowserRouter>
+
+          </Route>
+        </Routes>
+     </BrowserRouter>
+      
     </>
   )
 }
 export default App;
-
-
-
