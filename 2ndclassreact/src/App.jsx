@@ -493,16 +493,68 @@
 
 //==============================================================================================================================
 
+// const App=()=>{
+//   const show=(e)=>{
+//     let nam=e.target.name;
+//     let val=e.target.value;
+//     alert(`Name: ${nam} Value: ${val} Type:${e.type}`)
+//   }
+//   return(
+//     <>
+//       <h3>Event App!!!</h3>
+//       <button name="mybtn" value="Btnval" onClick={show}>Click here</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//=======================================================================================================================
+
+// const App=()=>{
+//   const handleInput=(e)=>{
+//     let nam=e.target.name;
+//     let val=e.target.value;
+//     // alert(`Name: ${nam} Value:${val}`)
+//     console.log(nam,val)
+//   }
+//   return(
+//     <>
+//      <h1> Welcome Events App!!1</h1>
+//      Enter city: <input type="text" name="city" value="Pune" onChange={handleInput}/>
+//     </>
+//   )
+// }
+// export default App;
+
+//=======================================================================================================================
+
+// const App=()=>{
+//   const handleInput=(e)=>{
+//     let name=e.target.name;
+//     let value=e.target.value;
+//     console.log({name:value})
+//   }
+//   return(
+//     <>
+//      <h1>Welcome Event App!!!</h1>
+//      Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
+//     </>
+//   )
+// }
+// export default App;
+
+//=========================================================================================================================
+
 const App=()=>{
-  const show=(e)=>{
-    let nam=e.target.name;
-    let val=e.target.value;
-    alert(`Name: ${nam} Value: ${val} Type:${e.type}`)
+  const handleInput=(e)=>{
+    let name=e.target.name;
+    let value=e.target.value;
+    console.log({[name]:value})
   }
   return(
     <>
-      <h3>Event App!!!</h3>
-      <button name="mybtn" value="Btnval" onClick={show}>Click here</button>
+     <h1>Welcome Event App!!!</h1>
+     Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
     </>
   )
 }
