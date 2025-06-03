@@ -374,32 +374,74 @@
 
 
 //====================================================BOOTSTRAP-NAVBAR=NAVIGATION======================================================================================================================================
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Layout from "./Layout";
-import Home from "./bootpages/Home";
-import About from "./bootpages/About";
-import Services from "./bootpages/Services";
-import Product from "./bootpages/Product";
-import Join from "./bootpages/Join";
-import Contact from "./bootpages/Contact";
+// import { BrowserRouter,Routes,Route } from "react-router-dom";
+// import Layout from "./Layout";
+// import Home from "./bootpages/Home";
+// import About from "./bootpages/About";
+// import Services from "./bootpages/Services";
+// import Product from "./bootpages/Product";
+// import Join from "./bootpages/Join";
+// import Contact from "./bootpages/Contact";
+// const App=()=>{
+//   return(
+//     <>
+//      <BrowserRouter>
+//         <Routes>
+//           <Route path="/" element={<Layout/>}>
+//           <Route index element={<Home/>}/>
+//           <Route path="home" element={<Home/>}/>
+//           <Route path="about" element={<About/>}/>
+//            <Route path="services" element={<Services/>}/>
+//             <Route path="product" element={<Product/>}/>
+//              <Route path="join" element={<Join/>}/>
+//               <Route path="contact" element={<Contact/>}/>
+
+//           </Route>
+//         </Routes>
+//      </BrowserRouter>
+      
+//     </>
+//   )
+// }
+// export default App;
+//====================================================(Events [02/06/2025])==============================================================================
+//===================================function===========================================================
+// const App=()=>{
+//   const show=()=>{
+//     alert("This Is our Event App")
+//   }
+//   return(
+//     <>
+//      <h3>Welcome To Events App!!!</h3>
+//      <button onClick={show}>Click here</button>
+//     </>
+//   )
+// }
+// export default App;
+//=======================================event with parameter(single parameter)=============================================================================================================
+
+// const App=()=>{
+//   const show=(nm)=>{
+//     alert(`my name is ${nm} This Is our Event App`)
+//   }
+//   return(
+//     <>
+//      <h3>Welcome To Events App!!!</h3>
+//      <button onClick={()=>{show("Shivani")}}>Click here</button>
+//     </>
+//   )
+// }
+// export default App;
+//====================================================double parameter======================================================================
+
 const App=()=>{
+  const show=(nm,srn,frm)=>{
+    alert(`my name is ${nm} ${srn} i am from ${frm} This Is our Event App`)
+  }
   return(
     <>
-     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout/>}>
-          <Route index element={<Home/>}/>
-          <Route path="home" element={<Home/>}/>
-          <Route path="about" element={<About/>}/>
-           <Route path="services" element={<Services/>}/>
-            <Route path="product" element={<Product/>}/>
-             <Route path="join" element={<Join/>}/>
-              <Route path="contact" element={<Contact/>}/>
-
-          </Route>
-        </Routes>
-     </BrowserRouter>
-      
+     <h3>Welcome To Events App!!!</h3>
+     <button onClick={()=>{show("Shivani","waghmare", "Bhopal")}}>Click here</button>
     </>
   )
 }
