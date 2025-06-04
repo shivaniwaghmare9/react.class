@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 const ToDo=()=>{
     const data=useSelector(state=>state.todo.task);
     const dispatch=useDispatch();
-    const[val,setVal]=useState("");
+    const [val,setVal]=useState("");
     const [btn,setBtn]=useState(true);
     const [myid,setMyid]=useState("");
     console.log(data);
@@ -43,19 +43,19 @@ const ToDo=()=>{
                    )}
                 </td>
                 <td>
-                    <button onClick={()=>{dispatch(Deletetask({id:key.id}))}}>Delete</button>
+                    <span onClick={()=>{dispatch(Deletetask({id:key.id}))}}>Delete</span>
                 </td>
                 <td>
-                    <button onClick={()=>{dispatch(DeleteByIndex({id:index}))}}>Remove</button>
+                    <span onClick={()=>{dispatch(DeleteByIndex({id:index}))}}>Remove</span>
                 </td>
                 <td>
-                    <button onClick={()=>{dispatch(Complete({id:key.id}))}}>Complete</button>
+                    <span onClick={()=>{dispatch(Complete({id:key.id}))}}>Complete</span>
                 </td>
                 <td>
-                    <button onClick={()=>{dispatch(InComplete({id:key.id}))}}>InComplete</button>
+                    <span onClick={()=>{dispatch(InComplete({id:key.id}))}}>InComplete</span>
                 </td>
                 <td>
-                    <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit</button>
+                    <span onClick={()=>{dataEdit(key.id,key.work)}}>Edit</span>
                 </td>
              </tr>
             </>
@@ -76,7 +76,7 @@ const ToDo=()=>{
                  <button onClick={MyEditData}>EditSave</button><br/><br/>
                 </>
             )}
-        <Table striped bordered hover>
+        <Table striped bordered hover id="tbl">
       <thead>
         <tr>
           <th>Sno</th>

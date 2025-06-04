@@ -13,7 +13,10 @@ const Topnav=()=>{
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="home">Home</Nav.Link>
-            <Nav.Link as={Link} to="todo">ToDo</Nav.Link>
+            <Nav.Link as={Link} to="todo">Todo App</Nav.Link>
+            <Nav.Link as={Link} to="counter">CounterApp</Nav.Link>
+            <Nav.Link as={Link} to="weather">Weather App</Nav.Link>
+            <Nav.Link as={Link} to="shopping">Shopping Cart</Nav.Link>
            
           </Nav>
         </Container>

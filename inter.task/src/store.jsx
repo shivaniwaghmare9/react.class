@@ -1,8 +1,19 @@
+//===========================================================TODOAPP======================================================================
+// import { configureStore } from "@reduxjs/toolkit"
+// import todoReducer from "./TodoSlice"
+// const store=configureStore({
+//     reducer:{
+//       todo:todoReducer
+//     }
+// })
+// export default store;
+
+//=======================================================COUNTERAPP================================================================================
 import { configureStore } from "@reduxjs/toolkit"
-import todoReducer from "./TodoSlice"
+import counterReducer from "./CounterSlice"
 const store=configureStore({
     reducer:{
-      todo:todoReducer
+      mycounter:counterReducer
     }
 })
 export default store;
