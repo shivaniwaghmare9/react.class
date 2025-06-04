@@ -178,68 +178,7 @@
 // export default App;
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-// const App=()=>{
-//   const student=[
-//     {
-//       name:"shivani",
-//       rollono:123,
-//       city:"Bhopal",
-//       fees:45000
-//     },
-//     {
-//       name:"Sweta",
-//       rollono:123,
-//       city:"Bhopal",
-//       fees:25000
-//     },
-//     {
-//       name:"Divya",
-//       rollono:123,
-//       city:"Bhopal",
-//       fees:65000
-//     },
-//     {
-//       name:"Pritam",
-//       rollono:123,
-//       city:"Bhopal",
-//       fees:35000
-//     },
-//     {
-//       name:"Ram",
-//       rollono:123,
-//       city:"Bhopal",
-//       fees:55000
-//     }
-//   ]
-//   const ans=student.map((key)=>{
-//     return(
-//       <>
-//        <tr>
-//         <td>{key.name}</td>
-//         <td>{key.rollono}</td>
-//         <td>{key.city}</td>
-//         <td>{key.fees}</td>
-//        </tr>
-//       </>
-//     )
-//   })
-//   return(
-//     <>
-//      <h1>Student Records!!!</h1>
-//      <table border="1" width="500px">
-//       <tr>
-//         <th>Name</th>
-//         <th>Rollno</th>
-//         <th>City</th>
-//         <th>Fees</th>
-//       </tr>
-//       {ans}
-//      </table>
-//     </>
-//   )
-// }
-// export default App;
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
 // import EmpData from "./EmpData";
 // const App=()=>{
 //   const ans=EmpData.map((key)=>{
@@ -378,7 +317,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./bootpages/Home";
 import Form from "./bootpages/Form";
-import Services from "./bootpages/Services";
+import MapTable from "./bootpages/TablewithMap";
 import Product from "./bootpages/Product";
 import Join from "./bootpages/Join";
 import Contact from "./bootpages/Contact";
@@ -391,7 +330,7 @@ const App=()=>{
           <Route index element={<Home/>}/>
           <Route path="home" element={<Home/>}/>
           <Route path="form" element={<Form/>}/>
-          <Route path="services" element={<Services/>}/>
+          <Route path="map" element={<MapTable/>}/>
           <Route path="product" element={<Product/>}/>
           <Route path="join" element={<Join/>}/>
           <Route path="contact" element={<Contact/>}/>
