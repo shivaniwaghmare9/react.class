@@ -374,36 +374,36 @@
 
 
 //====================================================BOOTSTRAP-NAVBAR=NAVIGATION======================================================================================================================================
-// import { BrowserRouter,Routes,Route } from "react-router-dom";
-// import Layout from "./Layout";
-// import Home from "./bootpages/Home";
-// import About from "./bootpages/About";
-// import Services from "./bootpages/Services";
-// import Product from "./bootpages/Product";
-// import Join from "./bootpages/Join";
-// import Contact from "./bootpages/Contact";
-// const App=()=>{
-//   return(
-//     <>
-//      <BrowserRouter>
-//         <Routes>
-//           <Route path="/" element={<Layout/>}>
-//           <Route index element={<Home/>}/>
-//           <Route path="home" element={<Home/>}/>
-//           <Route path="about" element={<About/>}/>
-//            <Route path="services" element={<Services/>}/>
-//             <Route path="product" element={<Product/>}/>
-//              <Route path="join" element={<Join/>}/>
-//               <Route path="contact" element={<Contact/>}/>
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./bootpages/Home";
+import Form from "./bootpages/Form";
+import Services from "./bootpages/Services";
+import Product from "./bootpages/Product";
+import Join from "./bootpages/Join";
+import Contact from "./bootpages/Contact";
+const App=()=>{
+  return(
+    <>
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="home" element={<Home/>}/>
+          <Route path="form" element={<Form/>}/>
+          <Route path="services" element={<Services/>}/>
+          <Route path="product" element={<Product/>}/>
+          <Route path="join" element={<Join/>}/>
+          <Route path="contact" element={<Contact/>}/>
 
-//           </Route>
-//         </Routes>
-//      </BrowserRouter>
+          </Route>
+        </Routes>
+     </BrowserRouter>
       
-//     </>
-//   )
-// }
-// export default App;
+    </>
+  )
+}
+export default App;
 //====================================================(Events [02/06/2025])==============================================================================
 //===================================function===========================================================
 // const App=()=>{
@@ -692,24 +692,49 @@
 // export default App;
 
 //=============================================USEEFFECT(3-ek hi bar render hoga lekin ydii first me change kiyaa to second me changes hoge)==========================================================================================================
-import { useState,useEffect } from "react";
-const App=()=>{
-  const[add,setAdd]=useState(0);
-  const[multi,setMulti]=useState(0);
-  useEffect(()=>{
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//   const[add,setAdd]=useState(0);
+//   const[multi,setMulti]=useState(0);
+//   useEffect(()=>{
 
-    setMulti(add*2)
+//     setMulti(add*2)
 
-  },[add])
-  return(
-    <>
-     <h3>Counter App!!!</h3>
-     <h4>Addition:{add}</h4>
-     <h4>Multiplication:{multi}</h4>
-     <button onClick={()=>{setAdd(add+1)}}>Click me</button>
+//   },[add])
+//   return(
+//     <>
+//      <h3>Counter App!!!</h3>
+//      <h4>Addition:{add}</h4>
+//      <h4>Multiplication:{multi}</h4>
+//      <button onClick={()=>{setAdd(add+1)}}>Click me</button>
     
      
-    </>
-  )
-}
-export default App;
+//     </>
+//   )
+// }
+// export default App;
+
+//=======================================(04/06/2025)(from-handle-design-submit)=========================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//   const[name,setaName]=useState("");
+//   const[city,setCity]=useState("");
+//   const handleSubmit=()=>{
+//     console.log({name:name,city:city})
+//   }
+//   return(
+//     <>
+//      <h3>Application Form</h3>
+//      Enter Name: <input type="text" value={name} 
+//      onChange={(e)=>{setaName(e.target.value)}}/><br/><br/>
+//      Enter City: <input type="text" value={city}  
+//      onChange={(e)=>{setCity(e.target.value)}}/><br/><br/>
+//      <button onClick={handleSubmit}>Submit</button>
+
+//     </>
+//   )
+// }
+// export default App;
+
+//=================================================MULTIPUL OBJECT RETURN KRNA(spread operator)=======================================================
+

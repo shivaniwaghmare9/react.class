@@ -8,7 +8,7 @@ const Footer=()=>{
                 <h4>Quick Links</h4><br/>
                 <h6>Instagram</h6>
                 <h6>facebook</h6>
-                <h6>Twitter</h6>
+                <h6>Twitter</h6>zz
                 <h6>Youtube</h6>
                 
             </div>
