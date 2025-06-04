@@ -5,6 +5,7 @@ import ToDo from "./Pages/ToDo";
 import Weather from "./Pages/Weather";
 import Shopping from "./Pages/Shoppingcart";
 import Counter from "./Pages/Counter";
+import CounterTodo from "./Pages/CounterTodoApp";
 
 const App=()=>{
   return(
@@ -16,6 +17,7 @@ const App=()=>{
                <Route path="home" element={<Home/>}/>
                <Route path="todo" element={<ToDo/>}/>
                <Route path="counter" element={<Counter/>}/>
+               <Route path="countertodo" element={<CounterTodo/>}/>
                <Route path="weather" element={<Weather/>}/>
                <Route path="shopping" element={<Shopping/>}/>
               </Route>

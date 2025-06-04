@@ -9,10 +9,16 @@ const CounterSlice=createSlice({
             state.count++;
         },
         Decrement:(state)=>{
-            state.count--;
+            if(state.count==0){
+                alert("not less then 0")
+            }
+            else{
+             state.count--;
+            }
+           
         }
     }
 })
-export const[Increment,Decrement]=CounterSlice.actions;
+export const{Increment,Decrement}=CounterSlice.actions;
 export default CounterSlice.reducer;
      
