@@ -545,16 +545,170 @@
 
 //=========================================================================================================================
 
+// const App=()=>{
+//   const handleInput=(e)=>{
+//     let name=e.target.name;
+//     let value=e.target.value;
+//     console.log({[name]:value})
+//   }
+//   return(
+//     <>
+//      <h1>Welcome Event App!!!</h1>
+//      Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
+//     </>
+//   )
+// }
+// export default App;
+
+//===========================================HOOKS(03/06/2025)(USESTATE HOOK)==========================================================================================================
+
+// import { useState } from "react";
+// const App=()=>{
+//   const[val,setVal]=useState("Shivani");
+//   return(
+//     <>
+//      <h3>Welcome to react hook!!!: {val}</h3>
+//      <button onClick={()=>{setVal("Riya")}}>Click me</button>
+//     </>
+//   )
+// }
+// export default App;
+
+//=====================================================================================================================================
+
+// import { useState } from "react";
+// const App=()=>{
+//   const[color,setColor]=useState("red");
+//   return(
+//     <>
+//     <div style={{width:"35%",backgroundColor:"grey",padding:"2rem"}}>
+//      <h3>Welcome to react hook!!!</h3>
+//      <h4 style={{color:color}}>My fav color: {color}</h4>
+//      <button onClick={()=>{setColor("blue")}}>Blue</button>
+//      <button onClick={()=>{setColor("green")}}>Green</button>
+//      <button onClick={()=>{setColor("darkblue")}}>Dark Blue</button>
+//      <button onClick={()=>{setColor("yellow")}}>Yellow</button>
+//      </div>
+//     </>
+//   )
+// }
+// export default App;
+//=================================================COUNTER APP=====================================================================================
+// import { useState } from "react"
+// const App=()=>{
+//   const[count,setCount]=useState(0)
+//   const Incre=()=>{
+//     setCount(count+1);
+//   }
+//   const Decre=()=>{
+//     if(count==0){
+//       alert("Not less then 0")
+//     }
+//     else
+//     {
+//       setCount(count-1);
+//     }
+//   }
+//   return(
+//     <>
+//     <div style={{marginLeft:"30%",backgroundColor:"gray",width:"30%",padding:"2rem"}}>
+//       <h3>Counter App!!</h3>
+//       <button onClick={Incre}>Increment</button>
+//       <h4>{count}</h4>
+//       <button onClick={Decre}>Decrement</button>
+//       <button onClick={()=>{setCount(0)}}>Reset</button>
+      
+//       </div>
+//     </>
+//   )
+// }
+// export default App
+
+//=============================================================================================================================
+
+// import { useState } from "react"
+// const App=()=>{
+//   const[count,setCount]=useState(0)
+  
+//   const Decre=()=>{
+//     if(count==0){
+//       alert("Not less then 0")
+//     }
+//     else
+//     {
+//       setCount(count-1);
+//     }
+//   }
+//   return(
+//     <>
+//     <div style={{marginLeft:"30%",backgroundColor:"gray",width:"30%",padding:"2rem"}}>
+//       <h3>Counter App!!</h3>
+//       <button onClick={()=>{setCount(count+1)}}>Increment</button>
+//       <h4>{count}</h4>
+//       <button onClick={Decre}>Decrement</button>
+//       <button onClick={()=>{setCount(0)}}>Reset</button>
+      
+//       </div>
+//     </>
+//   )
+// }
+// export default App
+
+//==============================================(USESTATE-USEEFFECT(1 her render par chalegaa) HOOK)=======================================================================================
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//   const[myval,setMyval]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//        setMyval(myval+1);
+//     },2000)
+    
+//   })
+//   return(
+//     <>
+//      <h3>React usestate and useeffect hook using:{myval}</h3>
+
+//     </>
+//   )
+// }
+// export default App;
+
+//============================================USEEFFECT(2-EK hi bar chalegaa)================================================================================
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//   const[myval,setMyval]=useState(0);
+//   useEffect(()=>{
+//     setTimeout(()=>{
+//        setMyval(myval+1);
+//     },3000)
+// },[])
+//   return(
+//     <>
+//      <h3>Using React usestate and useeffect hook :{myval}</h3>
+
+//     </>
+//   )
+// }
+// export default App;
+
+//=============================================USEEFFECT(3-ek hi bar render hoga lekin ydii first me change kiyaa to second me changes hoge)==========================================================================================================
+import { useState,useEffect } from "react";
 const App=()=>{
-  const handleInput=(e)=>{
-    let name=e.target.name;
-    let value=e.target.value;
-    console.log({[name]:value})
-  }
+  const[add,setAdd]=useState(0);
+  const[multi,setMulti]=useState(0);
+  useEffect(()=>{
+
+    setMulti(add*2)
+
+  },[add])
   return(
     <>
-     <h1>Welcome Event App!!!</h1>
-     Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
+     <h3>Counter App!!!</h3>
+     <h4>Addition:{add}</h4>
+     <h4>Multiplication:{multi}</h4>
+     <button onClick={()=>{setAdd(add+1)}}>Click me</button>
+    
+     
     </>
   )
 }
