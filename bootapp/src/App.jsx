@@ -1,59 +1,24 @@
-
-
-
-// //===========================================useeffect(1)======================================================================================================
-// import { useState,useEffect } from "react";
-// const App=()=>{
-//   const[myval,setMyval]=useState(0);
-//   useEffect(()=>{
-//     setTimeout(()=>{
-//       setMyval(myval+1);
-//     },3000)
-//   })
-//   return(
-//     <>
-//     <h3>welcome to my App:{myval}</h3>
-//     </>
-
-//   )
-// }
-// export default App;
-
-//===========================================================================================================================
-
-//===========================================useeffect(2)======================================================================================================
-// import { useState,useEffect } from "react";
-// const App=()=>{
-//   const[myval,setMyval]=useState(0);
-//   useEffect(()=>{
-//     setTimeout(()=>{
-//       setMyval(myval+1);
-//     },3000)
-//   },[])
-//   return(
-//     <>
-//     <h3>welcome to my App:{myval}</h3>
-//     </>
-
-//   )
-// }
-// export default App;
-//===============================================useeffect(3)==========================================================================================
-
-import { useState,useEffect } from "react";
+import { useState } from "react";
 const App=()=>{
-  const [count,setCount]=useState(0);
-  const[multi,setMulti]=useState(0);
-  useEffect(()=>{
-    setMulti(count*2)
-  },[count])
+  const[input,setInput]=useState({});
+  const handleInput=(e)=>{
+    let name=e.target.name;
+    let value=e.target.value;
+    setInput(Values=>({...Values,[name]:value}))
+    console.log(input)
+  }
+  const handleSubmit=()=>{
+    console.log(input)
+  }
   return(
-  <>
-  <h3>Counter App!!</h3>
-  <h4>Addition: {count}</h4>
-  <h4>Multiplication:{multi}</h4>
-  <button onClick={()=>{setCount(count+1)}}>Click me</button>
-  </>
+    <>
+     <h3>Application Form!!</h3>
+    Enter Name: <input type="text" name="name"  onChange={handleInput}/><br/><br/>
+    Enter Rollno: <input type="text" name="rollno"  onChange={handleInput}/><br/><br/>
+    Enter City: <input type="text" name="city"  onChange={handleInput}/><br/><br/>
+    Enter Fees: <input type="text" name="fees"  onChange={handleInput}/><br/><br/>
+    <button onClick={handleSubmit}>Save!!!</button>
+    </>
   )
 }
 export default App;
