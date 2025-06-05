@@ -1,0 +1,18 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "name": "shiavni",
+      "number": 12,
+      "designation": "CEO",
+      "city": "Indore"
+    },
+    {
+      "id": "962f",
+      "name": "riyaa",
+      "number": "1002",
+      "designation": "Admin",
+      "city": "Indore"
+    }
+  ]
+}
