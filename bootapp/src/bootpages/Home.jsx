@@ -6,7 +6,8 @@ import img3 from "../images/img3.webp"
 const Home=()=>{
     return(
         <>
-          <Carousel fade>
+        
+           <Carousel fade>
       <Carousel.Item>
         <img src={img1} alt="web" width="100%" height="400px"/>
         <Carousel.Caption>
@@ -30,7 +31,7 @@ const Home=()=>{
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
+    </Carousel> 
         </>
     )
 }
