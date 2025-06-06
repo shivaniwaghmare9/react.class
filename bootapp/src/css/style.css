@@ -10,3 +10,25 @@
 .me-auto{
     margin-left: 10%;
 }
+/*/===============================================================FOOTER===============================================================*/
+.ftr{
+    margin: 2rem;
+    background-color: cadetblue;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/*====================================================================PAGESBOOT====================================================================*/
+.insert{
+    width: 30%;
+    margin-left: 35%;
+    height: 430px;
+    background-color: lightblue;
+    padding: 2.5rem;
+}
+.insert input{
+    width: 100%;
+    height: 35px;
+    border: none;
+}

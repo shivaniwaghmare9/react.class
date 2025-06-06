@@ -30,7 +30,7 @@
 // }
 // export default App;
 
-
+//=======================================use-spread operator==================================================================================================
 // import axios from "axios";
 // import { useState } from "react";
 // const App=()=>{
@@ -63,24 +63,48 @@
 // export default App;
 
 //==========================================================================================================================
-import { BrowserRouter,Routes,Route } from "react-router-dom"
-import Layout from "./Layout"
-import Home from "./pages/Home"
-import Insert from "./pages/Insert"
+// import { BrowserRouter,Routes,Route } from "react-router-dom"
+// import Layout from "./Layouts/Layout"
+// import Home from "./pages/Home"
+// import Insert from "./pages/Insert"
+// const App=()=>{
+//   return(
+//     <>
+//        <BrowserRouter>
+//           <Routes>
+//             <Route path="/" element={<Layout/>}>
+//             <Route index element={<Home/>}/>
+//             <Route path="home" element={<Home/>}/>
+//             <Route path="insert" element={<Insert/>}/>
+
+//             </Route>
+//           </Routes>
+//        </BrowserRouter>
+//     </>
+//   )
+// }
+// export default App
+
+//=======================================================================================================================================
+
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import LayoutBt from "./Layouts/LayoutBt";
+import Home from "./bootpages/Home";
+import Insert from "./bootpages/Insert";
 const App=()=>{
   return(
     <>
-       <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>}/>
-            <Route path="home" element={<Home/>}/>
-            <Route path="insert" element={<Insert/>}/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LayoutBt/>}>
+          <Route index element={<Home/>}/>
+          <Route path="home" element={<Home/>}/>
+          <Route path="insert" element={<Insert/>}/>
 
-            </Route>
-          </Routes>
-       </BrowserRouter>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
-export default App
+export default App;

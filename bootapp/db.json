@@ -1,0 +1,25 @@
+{
+  "employee": [
+    {
+      "id": "1",
+      "name": "Shivani",
+      "Empno": 1002,
+      "designation": "CEO",
+      "salary": 45689
+    },
+    {
+      "id": "1b88",
+      "name": "mahi",
+      "empno": "008",
+      "designation": "admin",
+      "salary": "57000"
+    },
+    {
+      "id": "d2d9",
+      "name": "shreyaa",
+      "empno": "346",
+      "designation": "developer",
+      "salary": "68000"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ const Insert=()=>{
     const handleSubmit=async()=>{
     let api="http://localhost:3000/employee";
     const response=await axios.post(api,input);
-    // console.log(response.data)
+     console.log(response.data)
     alert("Data Successfully saved!!!")
   }
 
