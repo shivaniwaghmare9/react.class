@@ -91,6 +91,8 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import LayoutBt from "./Layouts/LayoutBt";
 import Home from "./bootpages/Home";
 import Insert from "./bootpages/Insert";
+import Display from "./bootpages/Display";
+import Update from "./bootpages/Update";
 const App=()=>{
   return(
     <>
@@ -100,6 +102,8 @@ const App=()=>{
           <Route index element={<Home/>}/>
           <Route path="home" element={<Home/>}/>
           <Route path="insert" element={<Insert/>}/>
+          <Route path="display" element={<Display/>}/>
+          <Route path="update" element={<Update/>}/>
 
           </Route>
         </Routes>

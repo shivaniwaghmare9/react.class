@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Shivani",
-      "Empno": 1002,
+      "empno": 1002,
       "designation": "CEO",
       "salary": 45689
     },
@@ -20,6 +20,20 @@
       "empno": "346",
       "designation": "developer",
       "salary": "68000"
+    },
+    {
+      "id": "0620",
+      "name": "hina",
+      "empno": "1002",
+      "designation": "developer",
+      "salary": "57000"
+    },
+    {
+      "id": "de8e",
+      "name": "hina",
+      "empno": "1002",
+      "designation": "developer",
+      "salary": "57000"
     }
   ]
 }
