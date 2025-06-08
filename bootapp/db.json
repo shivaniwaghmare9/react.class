@@ -27,13 +27,6 @@
       "empno": "1002",
       "designation": "developer",
       "salary": "57000"
-    },
-    {
-      "id": "de8e",
-      "name": "hina",
-      "empno": "1002",
-      "designation": "developer",
-      "salary": "57000"
     }
   ]
 }

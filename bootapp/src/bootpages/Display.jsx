@@ -37,7 +37,7 @@ const Display=()=>{
               <th>Name</th>
               <th>Empno</th>
               <th>Designation</th>
-              <th>salary</th>
+              <th>Salary</th>
             </tr>
             {ans}
           </table>

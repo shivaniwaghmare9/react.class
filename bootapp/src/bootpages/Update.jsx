@@ -54,7 +54,7 @@ const Update=()=>{
               <th>Name</th>
               <th>Empno</th>
               <th>Designation</th>
-              <th>salary</th>
+              <th>Salary</th>
               <th>Edit</th>
               <th>Delete</th>
             </tr>
