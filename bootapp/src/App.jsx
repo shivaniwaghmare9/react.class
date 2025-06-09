@@ -93,6 +93,8 @@ import Home from "./bootpages/Home";
 import Insert from "./bootpages/Insert";
 import Display from "./bootpages/Display";
 import Update from "./bootpages/Update";
+import Search from "./bootpages/Search";
+import Edit from "./bootpages/MyEdit";
 const App=()=>{
   return(
     <>
@@ -104,7 +106,8 @@ const App=()=>{
           <Route path="insert" element={<Insert/>}/>
           <Route path="display" element={<Display/>}/>
           <Route path="update" element={<Update/>}/>
-
+          <Route path="search" element={<Search/>}/>
+          <Route path="edit/:id" element={<Edit/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

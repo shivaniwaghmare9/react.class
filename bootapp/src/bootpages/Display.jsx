@@ -29,8 +29,10 @@ const Display=()=>{
   })
     return(
         <>
-          <h3>Our data</h3>
+        
+          <h3 align="center">Display Our data</h3>
           <hr />
+          <div className="data">
           <table border="1" width="500px">
             <tr>
               <th>Sno</th>
@@ -41,6 +43,8 @@ const Display=()=>{
             </tr>
             {ans}
           </table>
+
+        </div>
         </>
     )
 }

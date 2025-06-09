@@ -20,8 +20,8 @@ const Update=()=>{
     alert("data successfully deleted");
     loadData();
   }
-  const myEdit=(id)=>{
-        navigate(`/myedit/${id}`)
+  const recEdit=(id)=>{
+        navigate(`/edit/${id}`)
        }
   let sno=0;
   const ans=mydata.map((key)=>{
@@ -35,7 +35,7 @@ const Update=()=>{
         <td>{key.designation}</td>
         <td>{key.salary}</td>
         <td>
-            <button onClick={()=>{myEdit(key.id)}}>Edit</button>
+            <button onClick={()=>{recEdit(key.id)}}>Edit</button>
         </td>
         <td>
             <button onClick={()=>{recDelete(key.id)}}>Delete</button>
