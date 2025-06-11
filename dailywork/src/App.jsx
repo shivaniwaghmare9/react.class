@@ -1,29 +1,32 @@
 
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Layout from "./Layout";
-import Home from "./pages/Home";
-import Insert from "./pages/Insert";
-import Display from "./pages/Display";
-import Update from "./pages/Update";
-import Search from "./pages/Search";
-import Edit from "./pages/MyEdit";
+// import { useState } from "react";
+// import Compo1 from "./Compo1";
+// const App=()=>{
+//   const[user,setUser]=useState("Shivani")
+//   return(
+//     <>
+//     <h3> Welcome App!! {user}</h3>
+//     <Compo1 user={user}/>
+//     </>
+//   )
+// }
+// export default App;
+
+
+import { useState,createContext } from "react";
+import Compo1 from "./Compo1";
+const UserContext=createContext();
 const App=()=>{
+  const[user,setUser]=useState("Shivani")
   return(
     <>
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path="home" element={<Home/>}/>
-        <Route path="insert" element={<Insert/>}/>
-        <Route path="display" element={<Display/>}/>
-        <Route path="update" element={<Update/>}/>
-        <Route path="search" element={<Search/>}/>
-        <Route path="edit/:id" element={<Edit/>}/>
-        </Route>
-      </Routes>
-     </BrowserRouter>
+    <h3> Welcome App!! {user}</h3>
+    <UserContext.Provider value={{user}}>
+         <Compo1/>
+    </UserContext.Provider>
+    
     </>
   )
 }
 export default App;
+export {UserContext}
