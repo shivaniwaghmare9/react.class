@@ -14,8 +14,8 @@ const Topnav=()=>{
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="form">Form</Nav.Link>
             <Nav.Link as={Link} to="map">ArrayMap</Nav.Link>
-            <Nav.Link as={Link} to="product">Product</Nav.Link>
-            <Nav.Link as={Link} to="join">Join</Nav.Link>
+            <Nav.Link as={Link} to="event">Events</Nav.Link>
+            <Nav.Link as={Link} to="context">Context</Nav.Link>
             <Nav.Link as={Link} to="contact">Contact</Nav.Link>
            
           </Nav>

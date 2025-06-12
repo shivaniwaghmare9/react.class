@@ -318,9 +318,9 @@ import Layout from "./Layout";
 import Home from "./bootpages/Home";
 import Form from "./bootpages/Form";
 import MapTable from "./bootpages/TablewithMap";
-import Product from "./bootpages/Product";
-import Join from "./bootpages/Join";
+import Event from "./bootpages/Event";
 import Contact from "./bootpages/Contact";
+import Context from "./bootpages/Context";
 const App=()=>{
   return(
     <>
@@ -331,8 +331,8 @@ const App=()=>{
           <Route path="home" element={<Home/>}/>
           <Route path="form" element={<Form/>}/>
           <Route path="map" element={<MapTable/>}/>
-          <Route path="product" element={<Product/>}/>
-          <Route path="join" element={<Join/>}/>
+          <Route path="event" element={<Event/>}/>
+          <Route path="context" element={<Context/>}/>
           <Route path="contact" element={<Contact/>}/>
 
           </Route>
@@ -343,161 +343,6 @@ const App=()=>{
   )
 }
 export default App;
-//====================================================(Events [02/06/2025])==============================================================================
-//===================================function===========================================================
-// const App=()=>{
-//   const show=()=>{
-//     alert("This Is our Event App")
-//   }
-//   return(
-//     <>
-//      <h3>Welcome To Events App!!!</h3>
-//      <button onClick={show}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-//=======================================event with parameter(single parameter)=============================================================================================================
-
-// const App=()=>{
-//   const show=(nm)=>{
-//     alert(`my name is ${nm} This Is our Event App`)
-//   }
-//   return(
-//     <>
-//      <h3>Welcome To Events App!!!</h3>
-//      <button onClick={()=>{show("Shivani")}}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-//====================================================double parameter======================================================================
-
-// const App=()=>{
-//   const show=(nm,srn,frm)=>{
-//     alert(`my name is ${nm} ${srn} i am from ${frm} This Is our Event App`)
-//   }
-//   return(
-//     <>
-//      <h3>Welcome To Events App!!!</h3>
-//      <button onClick={()=>{show("Shivani","waghmare", "Bhopal")}}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-
-//===============================================================================================================================================
-
-// const App=()=>{
-//   const display=(nm)=>{
-//     alert("Welcome" + nm + " to event App")
-//   }
-//   return(
-//     <>
-//      <h3>Welcome!!!</h3>
-//      <button onClick={()=>{display("shivani")}}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-//=============================================================================================================================
-
-// const App=()=>{
-//   const show=(e)=>{
-//     console.log(e.type)
-//   }
-//   return(
-//     <>
-//       <h3>Event App!!!</h3>
-//       <button onClick={show}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-
-//======================================================================================================================
-
-// const App=()=>{
-//   const show=(nm,e)=>{
-//     alert(`welcome ${nm} Type:${e.type}`)
-//   }
-//   return(
-//     <>
-//       <h3>Event App!!!</h3>
-//       <button onClick={(e)=>{show("shivani",e)}}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-
-//==============================================================================================================================
-
-// const App=()=>{
-//   const show=(e)=>{
-//     let nam=e.target.name;
-//     let val=e.target.value;
-//     alert(`Name: ${nam} Value: ${val} Type:${e.type}`)
-//   }
-//   return(
-//     <>
-//       <h3>Event App!!!</h3>
-//       <button name="mybtn" value="Btnval" onClick={show}>Click here</button>
-//     </>
-//   )
-// }
-// export default App;
-
-//=======================================================================================================================
-
-// const App=()=>{
-//   const handleInput=(e)=>{
-//     let nam=e.target.name;
-//     let val=e.target.value;
-//     // alert(`Name: ${nam} Value:${val}`)
-//     console.log(nam,val)
-//   }
-//   return(
-//     <>
-//      <h1> Welcome Events App!!1</h1>
-//      Enter city: <input type="text" name="city" value="Pune" onChange={handleInput}/>
-//     </>
-//   )
-// }
-// export default App;
-
-//=======================================================================================================================
-
-// const App=()=>{
-//   const handleInput=(e)=>{
-//     let name=e.target.name;
-//     let value=e.target.value;
-//     console.log({name:value})
-//   }
-//   return(
-//     <>
-//      <h1>Welcome Event App!!!</h1>
-//      Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
-//     </>
-//   )
-// }
-// export default App;
-
-//=========================================================================================================================
-
-// const App=()=>{
-//   const handleInput=(e)=>{
-//     let name=e.target.name;
-//     let value=e.target.value;
-//     console.log({[name]:value})
-//   }
-//   return(
-//     <>
-//      <h1>Welcome Event App!!!</h1>
-//      Enter City: <input type="text" name="city" value="Banglore" onChange={handleInput}/>
-//     </>
-//   )
-// }
-// export default App;
 
 //===========================================HOOKS(03/06/2025)(USESTATE HOOK)==========================================================================================================
 
