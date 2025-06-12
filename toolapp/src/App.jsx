@@ -47,7 +47,27 @@
 //   )
 // }
 // export default App;
+//===================================================CHNAGECOLOR========================================================================
 
+import { useSelector,useDispatch } from "react-redux";
+import { changeColor } from "./colorSlice";
+import { useState } from "react";
+const App=()=>{
+  const[clr,setClr]=useState("")
+  const data=useSelector(state=>state.mycolor.color)
+  const dispath=useDispatch();
+  return(
+    <>
+        <h1>ColorSlice!!!</h1>
+        Enter Color: <input type="text" value={clr} onChange={(e)=>{setClr(e.target.value)}}/><br/><br/>
+        <div style={{backgroundColor:data,width:"200px",height:"200px",border:"1px solid black"}}>
+
+        </div>
+        <button onClick={()=>{dispath(changeColor(clr))}}>Change!!</button>
+    </>
+  )
+}
+export default App;
 //===============================================(30-04-2025(payload[todo-list]))====================================================================================================================
 // import { useSelector,useDispatch } from "react-redux";
 // import { useState } from "react";
@@ -140,88 +160,88 @@
 // export default App;
 
 //===============================================(02-05-2025(ToDo))=================================================================================================================================================
-import { useState } from "react";
-import { useSelector,useDispatch } from "react-redux";
-import { addTask,RemoveTask,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
-const App=()=>{
-  const[txtVal,setTxtval]=useState("");
-  const[btnStatus,setbtnStatus]=useState(true);
-  const[myid,setMyid]=useState("");
-  const data=useSelector(state=>state.todo.task);
-    const dispatch=useDispatch();
-    console.log(data);
-    const dataEdit=(id,work)=>{
-      setTxtval(work);
-      setbtnStatus(false);
-      setMyid(id);
-    }
-    const myEditData=()=>{
-      dispatch(myEditSave({id:myid,work:txtVal}));
-      setbtnStatus(true);
-    };
-    let sno=0;
+// import { useState } from "react";
+// import { useSelector,useDispatch } from "react-redux";
+// import { addTask,RemoveTask,taskComplete,taskInComplete,myEditSave } from "./todoSlice";
+// const App=()=>{
+//   const[txtVal,setTxtval]=useState("");
+//   const[btnStatus,setbtnStatus]=useState(true);
+//   const[myid,setMyid]=useState("");
+//   const data=useSelector(state=>state.todo.task);
+//     const dispatch=useDispatch();
+//     console.log(data);
+//     const dataEdit=(id,work)=>{
+//       setTxtval(work);
+//       setbtnStatus(false);
+//       setMyid(id);
+//     }
+//     const myEditData=()=>{
+//       dispatch(myEditSave({id:myid,work:txtVal}));
+//       setbtnStatus(true);
+//     };
+//     let sno=0;
     
-    const ans=data.map((key)=>{
-              sno++;
-              return(
-                <>
-                 <tr>
-                  <td>{sno}</td>
-                  <td>{key.taskStatus?(
-                    <>
-                    <span style={{color:"red",textDecoration:"line-through"}}>
-                      {key.work}
-                      </span>
-                      </>
-                     ):(
-                    <>{key.work}</>
-                     )}
-                  </td>
-                  <td>
-                    <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
-                  </td>
-                  <td>
-                    <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
-                  </td>
-                  <td>
-                    <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
-                  </td>
-                  <td>
-                    <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit</button>
-                  </td>
-                 </tr>
-                </>  
-              )
-            })
-  return(
-    <>
-     <h1>Welome ToDo App</h1>
-     Enter Your Task : <input type="text" value={txtVal} 
-     onChange={(e)=>{setTxtval(e.target.value)}}/><br/><br/>
-     {btnStatus ?(
-      <>
-   <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txtVal,taskStatus:false}))}}>Add</button>
+//     const ans=data.map((key)=>{
+//               sno++;
+//               return(
+//                 <>
+//                  <tr>
+//                   <td>{sno}</td>
+//                   <td>{key.taskStatus?(
+//                     <>
+//                     <span style={{color:"red",textDecoration:"line-through"}}>
+//                       {key.work}
+//                       </span>
+//                       </>
+//                      ):(
+//                     <>{key.work}</>
+//                      )}
+//                   </td>
+//                   <td>
+//                     <button onClick={()=>{dispatch(RemoveTask({id:key.id}))}}>Delete</button>
+//                   </td>
+//                   <td>
+//                     <button onClick={()=>{dispatch(taskComplete({id:key.id}))}}>Complete</button>
+//                   </td>
+//                   <td>
+//                     <button onClick={()=>{dispatch(taskInComplete({id:key.id}))}}>InComplete</button>
+//                   </td>
+//                   <td>
+//                     <button onClick={()=>{dataEdit(key.id,key.work)}}>Edit</button>
+//                   </td>
+//                  </tr>
+//                 </>  
+//               )
+//             })
+//   return(
+//     <>
+//      <h1>Welome ToDo App</h1>
+//      Enter Your Task : <input type="text" value={txtVal} 
+//      onChange={(e)=>{setTxtval(e.target.value)}}/><br/><br/>
+//      {btnStatus ?(
+//       <>
+//    <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txtVal,taskStatus:false}))}}>Add</button>
      
-      </>
-     ):(
-      <>
-        <button onClick={myEditData}>EditSave</button>
-      </>
-     )}
-     <hr />
+//       </>
+//      ):(
+//       <>
+//         <button onClick={myEditData}>EditSave</button>
+//       </>
+//      )}
+//      <hr />
      
-      <table border="1"width="600px">
-            <tr>
-              <th>Sno</th>
-              <th>Your Task</th>
-              <th>Delete</th>
-              <th>Complete</th>
-              <th>Incomplete</th>
-              <th>Edit</th>
-            </tr>
-            {ans}
-          </table>
-    </>
-  )
-}
-export default App;
+//       <table border="1"width="600px">
+//             <tr>
+//               <th>Sno</th>
+//               <th>Your Task</th>
+//               <th>Delete</th>
+//               <th>Complete</th>
+//               <th>Incomplete</th>
+//               <th>Edit</th>
+//             </tr>
+//             {ans}
+//           </table>
+//     </>
+//   )
+// }
+// export default App;
