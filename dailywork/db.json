@@ -1,25 +1,62 @@
 {
-  "students": [
+  "attendence": [
     {
-      "id": 1,
-      "name": "Shivani",
-      "rollno": 1002,
+      "id": "1",
+      "name": "shivani",
+      "designation": "CEO",
+      "department": "CS",
+      "salary": 67000
+    },
+    {
+      "id": "2",
+      "name": "shiva",
+      "designation": "Engineer",
+      "department": "Hard",
+      "salary": 67000
+    },
+    {
+      "id": "6",
+      "name": "vani",
+      "designation": "Developer",
+      "department": "Backend",
+      "salary": 67000
+    },
+    {
+      "id": "3",
+      "name": "shiv",
+      "designation": "Teacher",
+      "department": "Physics",
+      "salary": 67000
+    },
+    {
+      "id": "15",
+      "name": "divyaa",
+      "designation": "Clerk",
+      "department": "Maths",
+      "salary": 67000
+    }
+  ],
+  "student": [
+    {
+      "id": "1",
+      "name": "shivani",
+      "rollno": 123,
       "city": "Bhopal",
-      "fees": 24599
+      "fees": 56000
     },
     {
-      "id": "5d72",
-      "name": "preetam",
-      "rollno": "122",
-      "city": "satna",
-      "fees": "67000"
-    },
-    {
-      "id": "84f5",
+      "id": "18c9",
       "name": "shreyaa",
       "rollno": "120",
       "city": "pune",
-      "fees": "34000"
+      "fees": "80000"
+    },
+    {
+      "id": "6adb",
+      "name": "shreyaa",
+      "rollno": "120",
+      "city": "pune",
+      "fees": "80000"
     }
   ]
 }
