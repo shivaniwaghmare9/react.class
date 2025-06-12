@@ -18,9 +18,22 @@
 // export {MyContext};
 
 //=======================================================================================================================
+// import Cybrom from "./Cybrom";
+// const App=()=>{
+  
+//     return(
+//         <>
+//         <h1>Welcome to my app:</h1>
+//         <Cybrom>
+//             <h2>We learn mern full stack course!!</h2>
+//         </Cybrom>
+        
+//         </>
+//     )
+// }
+// export default App;
 
-
-
+//=======================================================================================================================
 
 import Cybrom from "./Cybrom";
 const App=()=>{
@@ -28,11 +41,10 @@ const App=()=>{
     return(
         <>
         <h1>Welcome to my app:</h1>
-        <Cybrom>
-            <h2>We learn mern full stack course!!</h2>
-        </Cybrom>
+        <Cybrom/>
         
         </>
     )
 }
 export default App;
+
