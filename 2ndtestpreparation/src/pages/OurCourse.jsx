@@ -8,12 +8,14 @@ const Course=()=>{
     const dispatch=useDispatch();
     return(
         <>
+        <div className="slice">
         <h3>Theme Change!!</h3>
         Enter Color: <input type="text" value={clr} onChange={(e)=>{setClr(e.target.value)}}/><br/><br/>
-        <div style={{width:"200px",height:"200px",border:"1px solid black",backgroundColor:color}}>
+        <div style={{width:"200px",height:"200px",border:"none",backgroundColor:color}}>
 
         </div><br/>
         <button onClick={()=>{dispatch(ChangeColor(clr))}}>Change</button>
+        </div>
         </>
     )
 }

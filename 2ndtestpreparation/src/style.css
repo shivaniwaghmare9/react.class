@@ -39,3 +39,15 @@
     padding: 0.3rem;
     border: none;
 }
+.slice{
+    width: 30%;
+    height: 420px;
+    /* border: 1px solid,black; */
+    margin-left: 35%;
+    padding: 3rem;
+    margin-top: 30px;
+    background-color: rgb(192, 220, 220);
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px aliceblue,-10px -15px 20px aliceblue;
+
+}
