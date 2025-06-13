@@ -24,7 +24,6 @@
 //           <UserContext.Provider value={{user}}>
 //              <Compo1 />
 //           </UserContext.Provider>
-          
 //         </>
 //     )
 // }
@@ -33,20 +32,34 @@
 
 //==========================================================================================================================================
 
-import { createContext,useState } from "react";
+// import { createContext,useState } from "react";
+// import Cybrom from "../propsdrilling/Cybrom";
+// const MyContext=createContext();
+// const Context=()=>{
+//   const[user,setUser]=useState("shivani")
+//   return(
+//     <>
+//       <h3>Welcome to context app:{user}</h3>
+//       <button onClick={()=>{setUser("Riyaa")}}>Click</button>
+//       <MyContext.Provider value={{user,setUser}}>
+//            <Cybrom/>
+//       </MyContext.Provider>
+//     </>
+//   )
+// }
+// export default Context;
+// export {MyContext}
+
+//========================================CHILDREN======================================================================================================
 import Cybrom from "../propsdrilling/Cybrom";
-const MyContext=createContext();
 const Context=()=>{
-  const[user,setUser]=useState("shivani")
   return(
     <>
-      <h3>Welcome to context app:{user}</h3>
-      <button onClick={()=>{setUser("Riyaa")}}>Click</button>
-      <MyContext.Provider value={{user,setUser}}>
-           <Cybrom/>
-      </MyContext.Provider>
+       <h1>Welcome to app</h1>
+       <Cybrom>
+          <h4>We learn mern full stack course</h4>
+       </Cybrom>
     </>
   )
 }
 export default Context;
-export {MyContext}
