@@ -51,14 +51,27 @@
 // export {MyContext}
 
 //========================================CHILDREN======================================================================================================
+// import Cybrom from "../propsdrilling/Cybrom";
+// const Context=()=>{
+//   return(
+//     <>
+//        <h1>Welcome to app</h1>
+//        <Cybrom>
+//           <h4>We learn mern full stack course</h4>
+//        </Cybrom>
+//     </>
+//   )
+// }
+// export default Context;
+
+//=====================================================================================================================================================================================
+
 import Cybrom from "../propsdrilling/Cybrom";
 const Context=()=>{
   return(
     <>
        <h1>Welcome to app</h1>
-       <Cybrom>
-          <h4>We learn mern full stack course</h4>
-       </Cybrom>
+       <Cybrom/>
     </>
   )
 }
