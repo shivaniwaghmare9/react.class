@@ -1,12 +1,14 @@
-import Cybrom from "./Cybrom";
 
+import { useContext } from "react";
+import Auth from "./Auth";
+import Unauth from "./Unauth";
+import { MyContext } from "./LoginContext";
 const App=()=>{
+    const{user}=useContext(MyContext)
     return(
         <>
-        <h1>Welcome to App</h1>
-        <Cybrom>
-            <h2>We learn java script</h2>
-        </Cybrom>
+        <h1>Login App!!</h1>
+         {user.auth ? <Auth/>:<Unauth/>}
         </>
     )
 }
