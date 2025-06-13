@@ -1,4 +1,5 @@
 
+import Table from 'react-bootstrap/Table';
 import axios from "axios";
 import { useState,useEffect } from "react";
 const Home=()=>{
@@ -30,16 +31,20 @@ const Home=()=>{
     return(
         <>
        <h3>Display data!!</h3>
-         <table border="1" width="500px" cellPadding="10px" cellSpacing="15px">
-            <tr>
-                <th>Sno</th>
-                <th>Name</th>
-                <th>Designation</th>
-                <th>DepartMent</th>
-                <th>Salary</th>
-            </tr>
-            {ans}
-         </table>
+         <Table striped bordered hover variant="dark">
+      <thead>
+        <tr>
+          <th>Sno</th>
+          <th>Name</th>
+          <th>Desigation</th>
+          <th>Department</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        {ans}
+    </tbody>
+    </Table>
         </>
     )
 }

@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faculty from "./pages/Faculty";
+import Course from "./pages/OurCourse";
 const App=()=>{
   return(
     <>
@@ -14,6 +15,7 @@ const App=()=>{
         <Route path="home" element={<Home/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="faculty" element={<Faculty/>}/>
+        <Route path="course" element={<Course/>}/>
         </Route>
       </Routes>
 

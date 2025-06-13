@@ -13,10 +13,11 @@ const About=()=>{
         let api="http://localhost:3000/student";
         const response=await axios.post(api,input);
         alert("data successfully inserted!!")
+        console.log(response.data);
     }
     return(
         <>
-        <form>
+        <form id="form">
             Enter Name: <input type="text" name="name" onChange={handleInput}/><br/><br/>
             Enter Rollno: <input type="text" name="rollno" onChange={handleInput}/><br/><br/>
             Enter City: <input type="text" name="city" onChange={handleInput}/><br/><br/>

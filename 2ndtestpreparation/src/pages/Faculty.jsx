@@ -22,6 +22,7 @@ const Faculty=()=>{
            <h2>{count}</h2>
            <button onClick={Incre} className="btn1">Incremnet</button>
            <button onClick={Decre} className="btn2">Decrement</button>
+           <button onClick={()=>{setCount(0)}} className="btn3">Reset</button>
        </div>
         </>
     )
