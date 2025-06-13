@@ -1,19 +1,13 @@
-
-import { createContext,useState } from "react";
 import Cybrom from "./Cybrom";
-const Mycontext=createContext();
+
 const App=()=>{
-    const[name,setName]=useState("Shivani");
     return(
         <>
-        <h1>Welcome to context app:{name}</h1>
-        <button onClick={()=>{setName("Ram")}}>Click</button>
-        <Mycontext.Provider value={{name,setName}}>
-              <Cybrom/>
-        </Mycontext.Provider>
-       
+        <h1>Welcome to App</h1>
+        <Cybrom>
+            <h2>We learn java script</h2>
+        </Cybrom>
         </>
     )
 }
 export default App;
-export {Mycontext}
