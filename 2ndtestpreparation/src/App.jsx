@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Faculty from "./pages/Faculty";
 import Course from "./pages/OurCourse";
 import Contact from "./pages/Contact";
+import Style from "./pages/Stylediv";
 const App=()=>{
   return(
     <>
@@ -14,6 +15,7 @@ const App=()=>{
         <Route path="/" element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path="home" element={<Home/>}/>
+        <Route path="style" element={<Style/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="faculty" element={<Faculty/>}/>
         <Route path="course" element={<Course/>}/>
