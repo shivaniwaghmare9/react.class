@@ -3,8 +3,8 @@ const App=()=>{
     const handleInput=(e)=>{
        let name=e.target.name;
        let value=e.target.value;
-       alert(`Name: ${name} Value: ${value} Type: ${e.type}`)
-       console.log({name,value})
+       //alert(`Name: ${name} Value: ${value} Type: ${e.type}`)
+       console.log({[name]:value})
     }
     return(
         <>
