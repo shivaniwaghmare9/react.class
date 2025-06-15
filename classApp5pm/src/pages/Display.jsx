@@ -30,7 +30,7 @@ const Display=()=>{
     return(
         <>
         <h1>Display Data!!!</h1><br/><br/>
-        <table>
+        <table  border="1" width="500px">
             <tr>
                 <th>Sno</th>
                 <th>Name</th>
