@@ -8,7 +8,7 @@ const Contact=()=>{
             let name=e.target.name;
             let value=e.target.value;
             setStudent(Values=>({...Values,[name]:value}))
-            // console.log(student);
+            console.log(student);
         }
         const calculateSubmit=()=>{
           const {physics,chemistry,maths,english,hindi}=student;
@@ -48,8 +48,10 @@ const Contact=()=>{
            <input type="number" name="hindi" placeholder="Hindi" onChange={handleChange}/><br/><br/>
            <button onClick={calculateSubmit}>Calculate</button>
 
-           {result && (
-            <div>
+           
+        </div>
+        {result && (
+            <div id="result">
                 <h3>Result</h3>
                 <h4>Total Marks:{result.total}</h4>
                 <h4>Percentage:{result.percentage}%</h4>
@@ -58,7 +60,6 @@ const Contact=()=>{
            )
 
            }
-        </div>
         </>
     )
 }
