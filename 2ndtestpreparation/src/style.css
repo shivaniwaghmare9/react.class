@@ -51,7 +51,8 @@
     box-shadow: 10px 15px 20px aliceblue,-10px -15px 20px aliceblue;
 }
 .btn4{
-    background-color: rgb(5, 144, 250);
+    background-color: darkslategray;
     padding: 0.2rem;
     border: none;
+    color: aliceblue;
 }
