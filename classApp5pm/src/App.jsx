@@ -1,15 +1,16 @@
 
 const App=()=>{
-    const show=(e)=>{
+    const handleInput=(e)=>{
        let name=e.target.name;
        let value=e.target.value;
        alert(`Name: ${name} Value: ${value} Type: ${e.type}`)
-       console.log(name,value)
+       console.log({name,value})
     }
     return(
         <>
         <h1>Events!!</h1>
-        <button name="btn" value="mybtn" onClick={show}>Click</button>
+      Enter Name: <input type="text" name="city" value="indore" onChange={handleInput}/><br/><br/>
+      
         </>
     )
 }
