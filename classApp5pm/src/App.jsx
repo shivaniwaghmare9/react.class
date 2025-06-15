@@ -1,29 +1,14 @@
-
-import axios from "axios";
-import { useState } from "react";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 const App=()=>{
-    const[input,setInput]=useState({});
-    const handleInput=(e)=>{
-        let name=e.target.name;
-        let value=e.target.value;
-        setInput(Values=>({...Values,[name]:value}))
-        console.log(input)
-    }
-    const handleSubmit=async()=>{
-    let api="http://localhost:3000/record";
-    const response=await axios.post(api,input);
-    alert("data successfully inserted")
-    console.log(response.data)
-    }
     return(
         <>
-          <h1>Welcome to useState hook</h1>
-          Enter Name : <input type="text" name="name" onChange={handleInput}/><br/><br/>
-          Enter City : <input type="text" name="city" onChange={handleInput}/><br/><br/>
-          Enter Roll : <input type="text" name="rollno" onChange={handleInput}/><br/><br/>
-          Enter Fees : <input type="text" name="fees" onChange={handleInput}/><br/><br/>
-          <button onClick={handleSubmit}>Click</button>
-
+        <BrowserRouter>
+          <Routes>
+            <Route>
+                
+            </Route>
+          </Routes>
+        </BrowserRouter>
         </>
     )
 }

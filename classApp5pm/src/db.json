@@ -13,6 +13,13 @@
       "city": "pune",
       "rollno": "122",
       "fees": "80000"
+    },
+    {
+      "id": "22c0",
+      "name": "preetam",
+      "city": "banglore",
+      "rollno": "125",
+      "fees": "45000"
     }
   ]
 }
