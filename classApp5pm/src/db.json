@@ -1,0 +1,12 @@
+
+{
+    "record":[
+        {
+            "id":1,
+            "name":"Shivani",
+            "city":"indore",
+            "rollno":123,
+            "fees":34000
+        }
+    ]
+}
