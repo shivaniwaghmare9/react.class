@@ -37,6 +37,7 @@ const Contact=()=>{
         
     return(
         <>
+    <div id="box">
         <div className="form">
            <h3>Student Records Form!!!</h3>
            <input type="text" name="name" placeholder="Name" onChange={handleChange}/><br/><br/>
@@ -48,7 +49,6 @@ const Contact=()=>{
            <input type="number" name="hindi" placeholder="Hindi" onChange={handleChange}/><br/><br/>
            <button onClick={calculateSubmit}>Calculate</button>
 
-           
         </div>
         {result && (
             <div id="result">
@@ -58,8 +58,9 @@ const Contact=()=>{
                 <h4>Division:{result.division}</h4>
             </div>
            )
+        }
 
-           }
+    </div>
         </>
     )
 }
