@@ -16,8 +16,19 @@ const Contact=()=>{
           const total=marks.reduce((acc,mark)=>acc+mark,0)
           const percentage=total/5
         }
-        let percentage=""
-        if()
+        let division="";
+        if( percentage>=60){
+            division="first division"
+        }
+        else if(percentage>=45){
+            division="second division"
+        }
+        else if(percentage>=33){
+            division="third division"
+        }
+        else{
+            division="fail"
+        }
        setResult((
         
        ))
