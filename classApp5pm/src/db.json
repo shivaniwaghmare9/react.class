@@ -6,6 +6,19 @@
       "rollno": 123,
       "city": "indore",
       "fees": 34000
+    },
+    {
+      "id": "dc03",
+      "name": "preetam",
+      "rollno": "125",
+      "city": "pune"
+    },
+    {
+      "id": "8355",
+      "name": "preetam",
+      "rollno": "125",
+      "city": "pune",
+      "fees": "80000"
     }
   ]
 }

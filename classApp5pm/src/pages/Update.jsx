@@ -1,8 +1,10 @@
 
 import axios from "axios";
 import { useState,useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const Update=()=>{
     const[mydata,setMydata]=useState([]);
+    const navigate=useNavigate();
     const loadData=async()=>{
         let api="http://localhost:3000/record";
         const response=await axios.get(api);
@@ -18,6 +20,9 @@ const Update=()=>{
         alert("data successfully deleted!!!")
         loadData();
     }
+    const recEdit=(id)=>{
+        navigate(`/edit/${id}`)
+    }
     let sno=0;
     const ans=mydata.map((key)=>{
         sno++;
@@ -29,6 +34,9 @@ const Update=()=>{
                 <td>{key.rollno}</td>
                 <td>{key.city}</td>
                 <td>{key.fees}</td>
+                <td>
+                    <button onClick={()=>{recEdit(key.id)}}>Edit</button>
+                </td>
                 <td>
                     <button onClick={()=>{recDelete(key.id)}}>Delete</button>
                 </td>
@@ -47,6 +55,7 @@ const Update=()=>{
                 <th>Rollno</th>
                 <th>City</th>
                 <th>Fees</th>
+                <th>Update</th>
                 <th>Delete</th>
             </tr>
             {ans}
