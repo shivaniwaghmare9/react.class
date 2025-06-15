@@ -1,33 +1,14 @@
 
-// import { useContext } from "react";
-// import Auth from "./Auth";
-// import Unauth from "./Unauth";
-// import { MyContext } from "./LoginContext";
-// const App=()=>{
-//     const{user}=useContext(MyContext)
-//     return(
-//         <>
-//         <h1>Login App!!</h1>
-//          {user.auth ? <Auth/>:<Unauth/>}
-//         </>
-//     )
-// }
-// export default App;
-
-
-import { useContext } from "react";
-import Auth from "./Auth";
-import Unauth from "./Unauth";
-import { MyContext } from "./LoginContext";
+import { useState,useEffect } from "react";
 const App=()=>{
-    const{user}=useContext(MyContext)
+    const[count,setCount]=useState(0);
+    useEffect(()=>{
+        setCount(count+1)
+    })
     return(
         <>
-        <h1>Login App!!</h1>
-         {user.auth ? <Auth/>:<Unauth/>}
+        <h1>Count:{count}</h1>
         </>
     )
 }
 export default App;
-
-
