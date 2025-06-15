@@ -7,7 +7,7 @@ const App=()=>{
            setCount(count+1)
         },2000)
        
-    })
+    },[])
     return(
         <>
         <h1>Count:{count}</h1>
