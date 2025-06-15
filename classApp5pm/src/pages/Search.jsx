@@ -4,10 +4,11 @@ import { useState } from "react";
 const Search=()=>{
     const[name,setName]=useState("");
     const[mydata,setMydata]=useState([]);
-
     const handleSearch=async()=>{
         let api=`http://localhost:3000/record/?name=${name}`;
         const response=await axios.get(api);
+        console.log(response.data)
+        setMydata(response.data)
     }
     let sno=0;
     const ans=mydata.map((key)=>{
@@ -29,7 +30,7 @@ const Search=()=>{
          <h1>Search Data!!!</h1>
          Enter Name: <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/><br/><br/>
          <button onClick={handleSearch}>Search</button><br/><br/>
-         <table>
+         <table border="1" width="500px">
             <tr>
                 <th>Sno</th>
                 <th>Name</th>
