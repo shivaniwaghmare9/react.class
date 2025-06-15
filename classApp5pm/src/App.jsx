@@ -1,11 +1,14 @@
 
 import { useState } from "react";
 const App=()=>{
-    const [name,setName]=useState("Shivani");
+    const [color,setColor]=useState("red");
     return(
         <>
-        <h1>USeState : {name}</h1>
-        <button onClick={()=>{setName("Priyaa")}}>Click</button>
+        <h1 style={{color:color}}>USeState : {color}</h1>
+        <button onClick={()=>{setColor("green")}}>Green</button>
+        <button onClick={()=>{setColor("yellow")}}>Yellow</button>
+        <button onClick={()=>{setColor("blue")}}>Blue</button>
+        <button onClick={()=>{setColor("orange")}}>Oragne</button>
         </>
     )
 }
