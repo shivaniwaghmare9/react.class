@@ -1,16 +1,13 @@
 
-import { useState,useEffect } from "react";
+
 const App=()=>{
-    const[count,setCount]=useState(0)
-    useEffect(()=>{
-        setTimeout(()=>{
-           setCount(count+1)
-        },2000)
-       
-    },[])
+    const show=(nm,ct)=>{
+          alert("Hello "  + nm  +  ct)
+    }
     return(
         <>
-        <h1>Count:{count}</h1>
+          <h1>Events!!</h1>
+          <button onClick={()=>{show("shivani","bhopal")}}>click</button>
         </>
     )
 }
