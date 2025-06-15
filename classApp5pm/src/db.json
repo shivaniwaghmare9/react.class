@@ -3,23 +3,10 @@
     {
       "id": "1",
       "name": "Shivani",
-      "city": "indore",
       "rollno": 123,
+      "city": "indore",
       "fees": 34000
-    },
-    {
-      "id": "4783",
-      "name": "mahi",
-      "city": "pune",
-      "rollno": "122",
-      "fees": "80000"
-    },
-    {
-      "id": "22c0",
-      "name": "preetam",
-      "city": "banglore",
-      "rollno": "125",
-      "fees": "45000"
     }
+    
   ]
 }
