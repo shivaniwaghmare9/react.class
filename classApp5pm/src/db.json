@@ -1,12 +1,18 @@
-
 {
-    "record":[
-        {
-            "id":1,
-            "name":"Shivani",
-            "city":"indore",
-            "rollno":123,
-            "fees":34000
-        }
-    ]
+  "record": [
+    {
+      "id": "1",
+      "name": "Shivani",
+      "city": "indore",
+      "rollno": 123,
+      "fees": 34000
+    },
+    {
+      "id": "4783",
+      "name": "mahi",
+      "city": "pune",
+      "rollno": "122",
+      "fees": "80000"
+    }
+  ]
 }
