@@ -2,7 +2,7 @@
 
 const App=()=>{
     const show=(nm,ct)=>{
-          alert("Hello "  + nm  +  ct)
+          alert(`Hello i am  ${nm} i am from ${ct}`)
     }
     return(
         <>
