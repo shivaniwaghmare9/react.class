@@ -1,6 +1,13 @@
 
-
+import { useState } from "react";
 const Contact=()=>{
+    const[student,setStudent]=useState({
+        name:"",rollno:"",physics:"",chemistry:"",maths:"",english:"",hindi:""});
+        const[result,setResult]=useState(null)
+        const calculateSubmit=()=>{
+            
+        }
+
     return(
         <>
         <div className="form">
@@ -12,7 +19,7 @@ const Contact=()=>{
            <input type="number" name="maths" placeholder="Maths"/><br/><br/>
            <input type="number" name="english" placeholder="English"/><br/><br/>
            <input type="number" name="hindi" placeholder="Hindi"/><br/><br/>
-           <button>Calculate</button>
+           <button onClick={calculateSubmit}>Calculate</button>
         </div>
         </>
     )
