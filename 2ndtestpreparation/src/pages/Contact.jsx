@@ -15,23 +15,26 @@ const Contact=()=>{
           const marks=[Number(phy),Number(chem),Number(math),Number(eng),Number(hin)];
           const total=marks.reduce((acc,mark)=>acc+mark,0)
           const percentage=total/5
-        }
-        let division="";
+
+          let division="";
         if( percentage>=60){
             division="first division"
-        }
-        else if(percentage>=45){
+        }else if(percentage>=45){
             division="second division"
-        }
-        else if(percentage>=33){
+        } else if(percentage>=33){
             division="third division"
-        }
-        else{
+        }else{
             division="fail"
         }
-       setResult((
+
+
+       setResult({
+        total,
+        percentage:percentage.toFixed(2),
+        division
+       })
+        }
         
-       ))
     return(
         <>
         <div className="form">
@@ -44,6 +47,17 @@ const Contact=()=>{
            <input type="number" name="english" placeholder="English" onChange={handleChnage}/><br/><br/>
            <input type="number" name="hindi" placeholder="Hindi" onChange={handleChnage}/><br/><br/>
            <button onClick={calculateSubmit}>Calculate</button>
+
+           {result && (
+            <div>
+                <h3>Rsult</h3>
+                <h4>Total Marks:{result.total}</h4>
+                <h4>Percentage:{result.percentage}</h4>
+                <h4>Division:{result.division}</h4>
+            </div>
+           )
+
+           }
         </div>
         </>
     )
