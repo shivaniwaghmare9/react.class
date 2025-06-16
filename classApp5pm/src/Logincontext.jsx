@@ -2,7 +2,7 @@
 import { useState,createContext } from "react";
 const MyContext=createContext();
 const LoginContext=({children})=>{
-    const[user,setUser]=useState({name:"",auth:false});
+    const[user,setUser]=useState({name:"",auth:false})
     const login=(nm)=>{
         setUser({name:nm,auth:true})
     }
