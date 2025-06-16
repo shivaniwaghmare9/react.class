@@ -213,9 +213,8 @@
 // import EmpData from "./EmpData";
 // import EmpDesign from "./EmpDesign";
 // const App=()=>{
-//   let sno=0;
+
 //   const ans=EmpData.map((key)=> {
-//     sno++;
 //     return(
 //       <>
 //       <EmpDesign 
