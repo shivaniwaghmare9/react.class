@@ -1,61 +1,17 @@
 
 const App=()=>{
-    const Record=[
-        {
-        "name":"shivani",
-        "rollno":123,
-        "city":"bhopal",
-        "fees":34675
-        },
-        {
-        "name":"shivani",
-        "rollno":123,
-        "city":"bhopal",
-        "fees":34675
-        },
-        {
-        "name":"shivani",
-        "rollno":123,
-        "city":"bhopal",
-        "fees":34675
-        },
-        {
-        "name":"shivani",
-        "rollno":123,
-        "city":"bhopal",
-        "fees":34675
-        },
-        {
-        "name":"shivani",
-        "rollno":123,
-        "city":"bhopal",
-        "fees":34675
-        }
-    ]
+    const Record=["PHP","Html","Java","Mern"]
     const ans=Record.map((key)=>{
         return(
             <>
-            <tr>
-                <td>{key.name}</td>
-                <td>{key.rollno}</td>
-                <td>{key.city}</td>
-                <td>{key.fees}</td>
-            </tr>
+            <li>{key}</li>
             </>
         )
     })
     return(
         <>
         <h1>Arrray!!</h1><br/><br/>
-        <table border="1" width="500px">
-            <tr>
-                <th>Name</th>
-                <th>Rollno</th>
-                <th>City</th>
-                <th>Fees</th>
-            </tr>
-            {ans}
-        </table>
+         <ul>{ans}</ul>
 
         </>
     )
