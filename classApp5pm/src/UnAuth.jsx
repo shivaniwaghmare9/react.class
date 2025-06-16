@@ -1,13 +1,14 @@
 
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import { MyContext } from "./Logincontext";
 const UnAuth=()=>{
-   const{name,login}=useContext(MyContext);
+  const[user,setUser]=useState("")
+   const{login}=useContext(MyContext);
     return(
         <>
-          <h1>Login System!!</h1>
-          Enter Name: <input type="text" value={name}/><br/><br/>
-          <button onClick={login}>Login</button>
+          
+          Enter Name: <input type="text" value={user} onChange={(e)=>{setUser(e.target.value)}}/><br/><br/>
+          <button onClick={()=>{login(user)}}>Login</button>
         </>
     )
 }

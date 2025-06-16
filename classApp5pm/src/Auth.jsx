@@ -4,7 +4,7 @@ const Auth=()=>{
     const{name,logout}=useContext(MyContext)
     return(
         <>
-           <h1>Welcome to :{name}</h1>
+           <h1>Welcome to :{name.user}</h1>
            <button onClick={logout}>Logout</button>
         </>
     )
