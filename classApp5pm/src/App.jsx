@@ -2,6 +2,7 @@
 import { useState } from "react";
 const App=()=>{
     const[student,setStudent]=useState({phy:"",chem:"",math:"",engli:"",hindi:""})
+    const[result,setResult]=useState()
     const handleInout=(e)=>{
         let name=e.target.name;
         let value=e.targte.value;
@@ -12,7 +13,25 @@ const App=()=>{
         const marks=student.reduce((acc,mark)=> acc+mark);
         const total=marks/5
 
-        let  division=""
+        let  division="";
+        if(division>=75){
+            division("first division")
+        }else if(division>=60){
+            division("second division")
+        }else if(division>=45){
+            division("third division")
+        }
+        else{
+            division("fail")
+        }
+        percentage
+       
+        setResult(()=>{
+            total,
+            percentage: percentage.Tofixed(2),
+            division;
+        })
+
     }
 
     return(
