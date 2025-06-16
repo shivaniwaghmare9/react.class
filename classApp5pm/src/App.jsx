@@ -1,35 +1,36 @@
 
 import { useState } from "react";
 const App=()=>{
-    const[student,setStudent]=useState({phy:"",chem:"",math:"",engli:"",hindi:""})
-    const[result,setResult]=useState()
+    const[student,setStudent]=useState({name:"",rollno:"", phy:"",chem:"",math:"",engli:"",hindi:""})
+    const[result,setResult]=useState(null)
     const handleInout=(e)=>{
         let name=e.target.name;
         let value=e.targte.value;
         setStudent(Values=>({...Values,[name]:value}))
     }
     const handleSubmit=()=>{
-        const[phy,chem,math,engli,hindi]=student;
-        const marks=student.reduce((acc,mark)=> acc+mark);
-        const total=marks/5
+        const{phy,chem,math,engli,hindi}=student;
+        const marks=[Number(phy),Number(chem),Number(math),Number(engli),Number(hindi)]
+        const total=marks.reduce((acc,mark)=> acc+mark);
+        const percentage=total/5
 
         let  division="";
-        if(division>=75){
+        if(percentage>=75){
             division("first division")
-        }else if(division>=60){
+        }else if(percentage>=60){
             division("second division")
-        }else if(division>=45){
+        }else if(percentage>=45){
             division("third division")
         }
         else{
             division("fail")
         }
-        percentage
        
-        setResult(()=>{
+       
+        setResult({
             total,
-            percentage: percentage.Tofixed(2),
-            division;
+            percentage: percentage.toFixed(2),
+            division
         })
 
     }
@@ -43,7 +44,15 @@ const App=()=>{
           Maths: <input type="text" name="math" onChange={handleInout} /><br/><br/>
           English: <input type="text" name="engli" onChange={handleInout} /><br/><br/>
           Hindi: <input type="text" name="hindi" onChange={handleInout} /><br/><br/>
-          <button onClick={handleSubmit}>Calculate</button>
+          <button onClick={handleSubmit}>Calculate</button><br/><br/>
+          {result && (
+            <>
+            <h1>Result</h1>
+            <h2>Total marks:{result.total}</h2>
+            <h2>Percentage:{result.percentage}</h2>
+            <h2>Division:{result.division}</h2>
+            </>
+          )}
         </>
     )
 }
