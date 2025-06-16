@@ -24,7 +24,7 @@ const App=()=>{
     <h1>Todo App!!</h1>
     Enter Task: <input type="text" value={val} onChange={(e)=>{setVal(e.target.value)}} /><br/><br/>
     <button onClick={()=>{dispatch(addTask({task:val}))}}>Add</button><br/>
-    <table>
+    <table border="1" width="500px">
       <tr>
         <th>Sno</th>
         <th>Task</th>
