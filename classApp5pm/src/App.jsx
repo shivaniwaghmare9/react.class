@@ -38,6 +38,7 @@ const App=()=>{
 
     return(
         <>
+        <h1>Student Record!!</h1>
           Name: <input type="text" name="name" onChange={handleInput}/><br/><br/>
           Roll: <input type="text" name="roll" onChange={handleInput} /><br/><br/>
           Physics: <input type="text" name="phy" onChange={handleInput} /><br/><br/>
@@ -50,7 +51,7 @@ const App=()=>{
             <>
             <h1>Result</h1>
             <h2>Total marks:{result.total}</h2>
-            <h2>Percentage:{result.percentage}</h2>
+            <h2>Percentage:{result.percentage}%</h2>
             <h2>Division:{result.division}</h2>
             </>
           )}
