@@ -3,25 +3,25 @@ const EmpData=[
     {
         "name":"shivani",
         "rollno":123,
-        "city":bhopal,
+        "city":"bhopal",
         "fees":23567
     },
     {
         "name":"shivani",
         "rollno":123,
-        "city":bhopal,
+        "city":"bhopal",
         "fees":23567
     },
     {
         "name":"shivani",
         "rollno":123,
-        "city":bhopal,
+        "city":"bhopal",
         "fees":23567
     },
     {
         "name":"shivani",
         "rollno":123,
-        "city":bhopal,
+        "city":"bhopal",
         "fees":23567
     }
 ]
