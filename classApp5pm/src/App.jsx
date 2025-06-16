@@ -6,6 +6,7 @@ const App=()=>{
     return(
         <>
          <h1>Props Drilling use Context api!!{user}</h1>
+         <button onClick={()=>{setUser("ram")}}>click</button>
          <MyContext.Provider value={{user,setUser}}>
             <Compo1 />
          </MyContext.Provider>
