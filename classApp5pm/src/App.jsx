@@ -1,16 +1,15 @@
-import Compo1 from "./Compo1";
+import Cybrom from "./Cybrom";
 import { useState,createContext } from "react";
-const MyContext=createContext()
+const MyContext=createContext();
 const App=()=>{
-     const[user,setUser]=useState("shivani")
+    const[name,setName]=useState("shivani")
     return(
         <>
-         <h1>Props Drilling use Context api!!{user}</h1>
-         <button onClick={()=>{setUser("ram")}}>click</button>
-         <MyContext.Provider value={{user,setUser}}>
-            <Compo1 />
-         </MyContext.Provider>
-         
+        <h1>App!!</h1>
+        <MyContext.Provider value={{name}}>
+         <Cybrom/>
+        </MyContext.Provider>
+        
         </>
     )
 }
