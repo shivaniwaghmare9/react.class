@@ -1,19 +1,30 @@
-
+import EmpData from "./EmpData";
 const App=()=>{
-    const Record=["PHP","Html","Java","Mern"]
-    const ans=Record.map((key)=>{
+    const ans=EmpData.map((key)=>{
         return(
             <>
-            <h1>{key}</h1>
+            <tr>
+                <td>{key.name}</td>
+                <td>{key.rollno}</td>
+                <td>{key.city}</td>
+                <td>{key.fees}</td>
+            </tr>
             </>
         )
     })
     return(
         <>
-        <h1>Arrray!!</h1><br/><br/>
-         <ol>{ans}</ol>
-
+         <h1>data!!</h1>
+         <table>
+            <tr>
+                <th>Name</th>
+                <th>Rollno</th>
+                <th>City</th>
+                <th>Fees</th>
+            </tr>
+            {ans}
+         </table>
         </>
-    )
-}
+    )}
+
 export default App;
