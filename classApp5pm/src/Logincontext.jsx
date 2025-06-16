@@ -6,9 +6,12 @@ const LoginContex=({children})=>{
     const login=(nm)=>{
         setName({name:nm,auth:true})
     }
+    const logout=()=>{
+        setName({name:"",auth:false})
+    }
     return(
         <>
-         <MyContext.Provider value={{name}}>
+         <MyContext.Provider value={{name,login,logout}}>
             {children}
          </MyContext.Provider>
         </>
