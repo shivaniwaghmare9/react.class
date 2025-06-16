@@ -6,9 +6,9 @@ const Design=(props)=>{
      <tr>
         <td>{sno}</td>
         <td>{props.nm}</td>
-        <td>{props.rollno}</td>
-        <td>{props.city}</td>
-        <td>{props.fees}</td>
+        <td>{props.roll}</td>
+        <td>{props.ct}</td>
+        <td>{props.fee}</td>
      </tr>
         </>
     )

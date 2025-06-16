@@ -1,14 +1,14 @@
 import EmpData from "./EmpData";
+import Design from "./EmpDesign";
 const App=()=>{
     const ans=EmpData.map((key)=>{
         return(
             <>
-            <tr>
-                <td>{key.name}</td>
-                <td>{key.rollno}</td>
-                <td>{key.city}</td>
-                <td>{key.fees}</td>
-            </tr>
+            <Design
+        nm={key.name}
+        roll={key.rollno}
+        ct={key.city}
+        fee={key.fees}/>
             </>
         )
     })
@@ -17,6 +17,7 @@ const App=()=>{
          <h1>data!!</h1>
          <table border="1" width="500px">
             <tr>
+                <th>Sno</th>
                 <th>Name</th>
                 <th>Rollno</th>
                 <th>City</th>
