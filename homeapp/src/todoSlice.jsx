@@ -22,12 +22,16 @@ const todoSlice=createSlice({
                     return true;
                 }
             })
-        }
+        },
         // RemoveTask:(state,actions)=>{
         //     console.log(actions.payload)
         //     state.task=state.task.filter(items=>items.id!=actions.payload.id)
         // }
+       ReByIndex:(state,actions)=>{
+        state.task.splice(actions.payload.id,1);
+        console.log(actions.payload.id)
+       }
     }
 })
-export const{addTask,RemoveTask}=todoSlice.actions;
+export const{addTask,RemoveTask,ReByIndex}=todoSlice.actions;
 export default todoSlice.reducer;
