@@ -1,60 +1,8 @@
 
-import { useState } from "react";
 const App=()=>{
-    const[student,setStudent]=useState({name:"",roll:"", phy:"",chem:"",math:"",engli:"",hindi:""})
-    const[result,setResult]=useState(null)
-    const handleInput=(e)=>{
-        let name=e.target.name;
-        let value=e.target.value;
-        setStudent(Values=>({...Values,[name]:value}))
-        console.log(student)
-    }
-    const handleSubmit=()=>{
-        const{phy,chem,math,engli,hindi}=student;
-        const marks=[Number(phy),Number(chem),Number(math),Number(engli),Number(hindi)]
-        const total=marks.reduce((acc,mark)=>acc+mark,0);
-        const percentage=total/5
-
-        let  division="";
-        if(percentage>=75){
-            division="first division"
-        }else if(percentage>=60){
-            division="second division"
-        }else if(percentage>=45){
-            division="third division"
-        }
-        else{
-            division="fail"
-        }
-       
-       
-        setResult({
-            total,
-            percentage: percentage.toFixed(2),
-            division
-        })
-
-    }
-
     return(
         <>
-        <h1>Student Record!!</h1>
-          Name: <input type="text" name="name" onChange={handleInput}/><br/><br/>
-          Roll: <input type="text" name="roll" onChange={handleInput} /><br/><br/>
-          Physics: <input type="text" name="phy" onChange={handleInput} /><br/><br/>
-          Chemistry: <input type="text" name="chem" onChange={handleInput} /><br/><br/>
-          Maths: <input type="text" name="math" onChange={handleInput} /><br/><br/>
-          English: <input type="text" name="engli" onChange={handleInput} /><br/><br/>
-          Hindi: <input type="text" name="hindi" onChange={handleInput} /><br/><br/>
-          <button onClick={handleSubmit}>Calculate</button><br/><br/>
-          {result && (
-            <>
-            <h1>Result</h1>
-            <h2>Total marks:{result.total}</h2>
-            <h2>Percentage:{result.percentage}%</h2>
-            <h2>Division:{result.division}</h2>
-            </>
-          )}
+         <h1>Todo List</h1>
         </>
     )
 }
