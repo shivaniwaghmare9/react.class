@@ -1,15 +1,30 @@
 
-import { useContext } from "react";
-import { MyContext } from "./Logincontext";
-import Auth from "./Auth";
-import Unauth from "./UnAuth";
-
+import { useState } from "react";
 const App=()=>{
-    const{user}=useContext(MyContext)
+    const[student,setStudent]=useState({phy:"",chem:"",math:"",engli:"",hindi:""})
+    const handleInout=(e)=>{
+        let name=e.target.name;
+        let value=e.targte.value;
+        setStudent(Values=>({...Values,[name]:value}))
+    }
+    const handleSubmit=()=>{
+        const[phy,chem,math,engli,hindi]=student;
+        const marks=student.reduce((acc,mark)=> acc+mark);
+        const total=marks/5
+
+        let  division=""
+    }
+
     return(
         <>
-        <h1>Login system!!</h1>
-        {user.auth ? <Auth/>: <Unauth/>}
+          Name: <input type="text" name="name" onChange={handleInout}/><br/><br/>
+          Roll: <input type="text" name="roll" onChange={handleInout} /><br/><br/>
+          Physics: <input type="text" name="phy" onChange={handleInout} /><br/><br/>
+          Chemistry: <input type="text" name="chem" onChange={handleInout} /><br/><br/>
+          Maths: <input type="text" name="math" onChange={handleInout} /><br/><br/>
+          English: <input type="text" name="engli" onChange={handleInout} /><br/><br/>
+          Hindi: <input type="text" name="hindi" onChange={handleInout} /><br/><br/>
+          <button onClick={handleSubmit}>Calculate</button>
         </>
     )
 }
