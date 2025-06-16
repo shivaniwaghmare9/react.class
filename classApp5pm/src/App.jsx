@@ -4,7 +4,7 @@ const App=()=>{
     const ans=Record.map((key)=>{
         return(
             <>
-            <li>{key}</li>
+            <h1>{key}</h1>
             </>
         )
     })
