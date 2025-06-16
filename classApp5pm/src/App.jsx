@@ -11,7 +11,7 @@ const App=()=>{
     return(
         <>
         <h1>Arrray!!</h1><br/><br/>
-         <ul>{ans}</ul>
+         <ol>{ans}</ol>
 
         </>
     )
