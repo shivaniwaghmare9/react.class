@@ -1,12 +1,17 @@
 import Compo1 from "./Compo1";
-import { useState } from "react";
+import { useState,createContext } from "react";
+const MyContext=createContext()
 const App=()=>{
-     const[user,setUSer]=useState("shivani")
+     const[user,setUser]=useState("shivani")
     return(
         <>
-         <h1>Props Drilling!!{user}</h1>
-         <Compo1 user={user}/>
+         <h1>Props Drilling use Context api!!{user}</h1>
+         <MyContext.Provider value={{user,setUser}}>
+            <Compo1 />
+         </MyContext.Provider>
+         
         </>
     )
 }
 export default App;
+export {MyContext}
