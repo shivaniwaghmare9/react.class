@@ -6,7 +6,9 @@ const App=()=>{
         <>
         <h1>App!!</h1>
         
-         <Cybrom/>
+         <Cybrom>
+            we learn to mern full stack course
+         </Cybrom>
         
         
         </>
