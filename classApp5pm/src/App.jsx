@@ -1,29 +1,62 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Layout from "./Layout";
-import Home from "./pages/Home";
-import Insert from "./pages/Insert";
-import Display from "./pages/Display";
-import Update from "./pages/Update";
-import Edit from "./pages/Edit";
-import Search from "./pages/Search";
- 
+
 const App=()=>{
+    const Record=[
+        {
+        "name":"shivani",
+        "rollno":123,
+        "city":"bhopal",
+        "fees":34675
+        },
+        {
+        "name":"shivani",
+        "rollno":123,
+        "city":"bhopal",
+        "fees":34675
+        },
+        {
+        "name":"shivani",
+        "rollno":123,
+        "city":"bhopal",
+        "fees":34675
+        },
+        {
+        "name":"shivani",
+        "rollno":123,
+        "city":"bhopal",
+        "fees":34675
+        },
+        {
+        "name":"shivani",
+        "rollno":123,
+        "city":"bhopal",
+        "fees":34675
+        }
+    ]
+    const ans=Record.map((key)=>{
+        return(
+            <>
+            <tr>
+                <td>{key.name}</td>
+                <td>{key.rollno}</td>
+                <td>{key.city}</td>
+                <td>{key.fees}</td>
+            </tr>
+            </>
+        )
+    })
     return(
         <>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout/>}>
-               <Route index element={<Home/>}/> 
-               <Route path="home" element={<Home/>}/>
-               <Route path="insert" element={<Insert/>}/>
-               <Route path="display" element={<Display/>}/>
-               <Route path="update" element={<Update/>}/>
-               <Route path="search" element={<Search/>}/>
-               <Route path="edit/:id" element={<Edit/>}/>
-               
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <h1>Arrray!!</h1><br/><br/>
+        <table border="1" width="500px">
+            <tr>
+                <th>Name</th>
+                <th>Rollno</th>
+                <th>City</th>
+                <th>Fees</th>
+            </tr>
+            {ans}
+        </table>
+
         </>
     )
 }
