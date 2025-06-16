@@ -11,9 +11,22 @@ const todoSlice=createSlice({
             state.task.push(actions.payload)
         },
         RemoveTask:(state,actions)=>{
-            console.log(actions.payload)
-            state.task=state.task.filter(items=>items.id!=actions.payload.id)
+            console.log(actions.payload.id)
+            state.task=state.task.filter(function(key){
+                if(key.id==actions.payload.id)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            })
         }
+        // RemoveTask:(state,actions)=>{
+        //     console.log(actions.payload)
+        //     state.task=state.task.filter(items=>items.id!=actions.payload.id)
+        // }
     }
 })
 export const{addTask,RemoveTask}=todoSlice.actions;
