@@ -1,29 +1,30 @@
 
 import { useState } from "react";
 const App=()=>{
-    const[student,setStudent]=useState({name:"",rollno:"", phy:"",chem:"",math:"",engli:"",hindi:""})
+    const[student,setStudent]=useState({name:"",roll:"", phy:"",chem:"",math:"",engli:"",hindi:""})
     const[result,setResult]=useState(null)
-    const handleInout=(e)=>{
+    const handleInput=(e)=>{
         let name=e.target.name;
-        let value=e.targte.value;
+        let value=e.target.value;
         setStudent(Values=>({...Values,[name]:value}))
+        console.log(student)
     }
     const handleSubmit=()=>{
         const{phy,chem,math,engli,hindi}=student;
         const marks=[Number(phy),Number(chem),Number(math),Number(engli),Number(hindi)]
-        const total=marks.reduce((acc,mark)=> acc+mark);
+        const total=marks.reduce((acc,mark)=>acc+mark,0);
         const percentage=total/5
 
         let  division="";
         if(percentage>=75){
-            division("first division")
+            division="first division"
         }else if(percentage>=60){
-            division("second division")
+            division="second division"
         }else if(percentage>=45){
-            division("third division")
+            division="third division"
         }
         else{
-            division("fail")
+            division="fail"
         }
        
        
@@ -37,13 +38,13 @@ const App=()=>{
 
     return(
         <>
-          Name: <input type="text" name="name" onChange={handleInout}/><br/><br/>
-          Roll: <input type="text" name="roll" onChange={handleInout} /><br/><br/>
-          Physics: <input type="text" name="phy" onChange={handleInout} /><br/><br/>
-          Chemistry: <input type="text" name="chem" onChange={handleInout} /><br/><br/>
-          Maths: <input type="text" name="math" onChange={handleInout} /><br/><br/>
-          English: <input type="text" name="engli" onChange={handleInout} /><br/><br/>
-          Hindi: <input type="text" name="hindi" onChange={handleInout} /><br/><br/>
+          Name: <input type="text" name="name" onChange={handleInput}/><br/><br/>
+          Roll: <input type="text" name="roll" onChange={handleInput} /><br/><br/>
+          Physics: <input type="text" name="phy" onChange={handleInput} /><br/><br/>
+          Chemistry: <input type="text" name="chem" onChange={handleInput} /><br/><br/>
+          Maths: <input type="text" name="math" onChange={handleInput} /><br/><br/>
+          English: <input type="text" name="engli" onChange={handleInput} /><br/><br/>
+          Hindi: <input type="text" name="hindi" onChange={handleInput} /><br/><br/>
           <button onClick={handleSubmit}>Calculate</button><br/><br/>
           {result && (
             <>
