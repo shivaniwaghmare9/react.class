@@ -15,7 +15,7 @@ const App=()=>{
     return(
         <>
          <h1>data!!</h1>
-         <table>
+         <table border="1" width="500px">
             <tr>
                 <th>Name</th>
                 <th>Rollno</th>
