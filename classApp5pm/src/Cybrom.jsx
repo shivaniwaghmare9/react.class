@@ -1,10 +1,10 @@
-import Bhopal from "./Bhopal";
 
-const Cybrom=()=>{
+
+const Cybrom=({children})=>{
     return(
         <>
         <h1>Welcome to cybrom!!</h1>
-        <Bhopal/>
+        {children}
         </>
     )
 }
