@@ -6,9 +6,7 @@ const App=()=>{
         <>
         <h1>App!!</h1>
         
-         <Cybrom>
-            we learn mern!!
-         </Cybrom>
+         <Cybrom/>
         
         
         </>
