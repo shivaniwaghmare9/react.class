@@ -10,8 +10,8 @@ const coinSlice=createSlice({
     },
     reducers:{
         flipCount:(state)=>{
-            state.coin=Math.random()<0.5?"Heads":"Tails"
-            state.coin += 1;
+            state.coin=Math.random()< 0.5? "Heads":"Tails"
+            state.count += 1;
             if(state.coin === "Heads")
             {
                 state.headCount += 1;
