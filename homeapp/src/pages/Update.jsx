@@ -38,10 +38,10 @@ const  Update=()=>{
                 <td>{key.qty}</td>
                 <td>{key.price}</td>
                 <td>
-                    <button onClick={()=>{dataEdit(key.id)}}>update</button>
+                    <span onClick={()=>{dataEdit(key.id)}}>update</span>
                 </td>
                 <td>
-                    <button onClick={()=>{dataDelete(key.id)}}>Delete</button>
+                    <span onClick={()=>{dataDelete(key.id)}}>Delete</span>
                 </td>
              </tr>
             </>
