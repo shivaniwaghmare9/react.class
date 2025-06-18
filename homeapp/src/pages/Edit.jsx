@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { data, useParams } from "react-router-dom";
 const Edit=()=>{
     const{id}=useParams();
     const[mydata,setMydata]=useState({});
@@ -15,15 +15,17 @@ const Edit=()=>{
     }
     useEffect(()=>{
         loadData()
-    },)
+    },[])
    const handleInput=(e)=>{
      let name=e.taget.name;
      let value=e.target.value;
      setMydata(Values=>({...Values,[name]:value}))
      console.log(mydata)
    }
-   const handleSubmit=()=>{
-    let api=``
+   const handleSubmit=async()=>{
+    let api=`http://localhost:3000/product/${id}`
+    const response=await axios.put(api.mydata);
+    alert("data successefully updated")
    }
     return(
         <>
