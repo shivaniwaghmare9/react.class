@@ -16,31 +16,39 @@ const Edit=()=>{
     useEffect(()=>{
         loadData()
     },)
-
+   const handleInput=(e)=>{
+     let name=e.taget.name;
+     let value=e.target.value;
+     setMydata(Values=>({...Values,[name]:value}))
+     console.log(mydata)
+   }
+   const handleSubmit=()=>{
+    let api=``
+   }
     return(
         <>
           <Form>
       <Form.Group className="mb-3" >
         <Form.Label>Customber name</Form.Label>
-        <Form.Control type="text" name="name" onChange={handleInput}/>
+        <Form.Control type="text" name="name" value={mydata.name} onChange={handleInput}/>
       </Form.Group>
 
       <Form.Group className="mb-3" >
         <Form.Label>Product no</Form.Label>
-        <Form.Control type="text" name="productno" onChange={handleInput}/>
+        <Form.Control type="text" name="productno" value={mydata.productno} onChange={handleInput}/>
       </Form.Group>
 
       <Form.Group className="mb-3" >
         <Form.Label>Product name</Form.Label>
-        <Form.Control type="text" name="productname" onChange={handleInput}/>
+        <Form.Control type="text" name="productname" value={mydata.productname} onChange={handleInput}/>
       </Form.Group>
       <Form.Group className="mb-3" >
         <Form.Label>Product QTY</Form.Label>
-        <Form.Control type="text" name="qty"onChange={handleInput} />
+        <Form.Control type="text" name="qty" value={mydata.qty}onChange={handleInput} />
       </Form.Group>
       <Form.Group className="mb-3" >
         <Form.Label>Product Price</Form.Label>
-        <Form.Control type="text" name="price" onChange={handleInput}/>
+        <Form.Control type="text" name="price" value={mydata.price} onChange={handleInput}/>
       </Form.Group>
       
       <Button variant="primary" type="button" onClick={handleSubmit}>
