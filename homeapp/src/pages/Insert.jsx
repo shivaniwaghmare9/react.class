@@ -15,6 +15,7 @@ const Insert=()=>{
         let api="http://localhost:3000/product";
         const response=await axios.post(api,input);
         console.log(response.data);
+        setInput(response.data)
         alert("data succesfully inserted!")
     }
     return(
@@ -44,7 +45,7 @@ const Insert=()=>{
         <Form.Control type="text" name="price" onChange={handleInput}/>
       </Form.Group>
       
-      <Button variant="primary" type="submit" onChange={handleSubmit}>
+      <Button variant="primary" type="button" onClick={handleSubmit}>
         Submit
       </Button>
     </Form>
