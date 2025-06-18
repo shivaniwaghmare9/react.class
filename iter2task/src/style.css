@@ -1,0 +1,36 @@
+
+.head{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0.4rem;
+    
+}
+#cardData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    border: none;
+    width: 200px;
+}
+
+#cardbtn{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(28, 134, 179);
+    border: none;
+}
+#cardbtn:hover{
+    background-color: rgba(28, 134, 179, 0.763);
+    color: black;
+}
+.txt{
+    background-color: azure;
+}
