@@ -6,6 +6,7 @@ import Display from "./pages/Display";
 import Search from "./pages/Search";
 import Update from "./pages/Update";
 import Edit from "./pages/Edit";
+import Total from "./pages/Total";
 
 const App=()=>{
   return(
@@ -20,6 +21,7 @@ const App=()=>{
             <Route path="search" element={<Search/>}/>
             <Route path="update" element={<Update/>}/>
             <Route path="edit/:id" element={<Edit/>}/>
+            <Route path="qnty" element={<Total/>}/>
             </Route>
          </Routes>
      </BrowserRouter>
