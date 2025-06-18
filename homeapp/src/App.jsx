@@ -7,6 +7,7 @@ import Search from "./pages/Search";
 import Update from "./pages/Update";
 import Edit from "./pages/Edit";
 import Total from "./pages/Total";
+import Contact from "./pages/Contact";
 
 const App=()=>{
   return(
@@ -22,6 +23,7 @@ const App=()=>{
             <Route path="update" element={<Update/>}/>
             <Route path="edit/:id" element={<Edit/>}/>
             <Route path="qnty" element={<Total/>}/>
+            <Route path="contact" element={<Contact/>}/>
             </Route>
          </Routes>
      </BrowserRouter>

@@ -9,28 +9,12 @@
       "price": 1200
     },
     {
-      "id": "d68c",
+      "id": "80f8",
       "name": "shivani makode",
       "productno": "18",
       "productname": "watch",
-      "qty": "6",
-      "price": "1245"
-    },
-    {
-      "id": "418c",
-      "name": "shivani makode",
-      "productno": "12",
-      "productname": "laptop",
-      "qty": "6",
-      "price": "1245"
-    },
-    {
-      "id": "5cab",
-      "name": "shivani makode",
-      "productno": "12",
-      "productname": "headphones",
-      "qty": "6",
-      "price": "1245"
+      "qty": "1",
+      "price": "5321"
     }
   ]
 }

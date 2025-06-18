@@ -15,10 +15,13 @@ const Total=()=>{
     useEffect(()=>{
         loadData();
     },[])
-    let totalcount=0;
-    let sno=0;
+    
+    const totalQty= mydata.reduce((acc,key)=> acc +key.qty,0);
+    let  totalcount=0;
+   let sno=0;
     const ans=mydata.map((key)=>{
         sno++;
+        
         totalcount+=key.qty*key.price
         return(
             <>
@@ -32,6 +35,8 @@ const Total=()=>{
                 <td>
                     {key.qty*key.price}
                 </td>
+                
+                    
              </tr>
             </>
         )
@@ -40,6 +45,7 @@ const Total=()=>{
         <>
         <h1>Display data!!</h1>
         <h2>Total:{totalcount}</h2>
+        <h3>TotalProduct:{totalQty}</h3>
         <Table striped bordered hover>
       <thead>
         <tr>

@@ -32,7 +32,7 @@ const Search=()=>{
          <h1>Search product</h1>
          Enter Product Name: <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}}/><br/><br/>
          <button onClick={handleSearch}>Search</button><br/><br/>
-         <Table striped bordered hover>
+         <Table striped bordered hover variant="light">
       <thead>
         <tr>
           <th>Sno</th>

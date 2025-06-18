@@ -50,7 +50,7 @@ const  Update=()=>{
     return(
         <>
         <h1>Display data!!</h1>
-        <Table striped bordered hover>
+        <Table striped bordered hover variant="dark">
       <thead>
         <tr>
           <th>Sno</th>
