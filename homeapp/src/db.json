@@ -3,26 +3,11 @@
     {
       "id": "1",
       "name": "Shivani",
-      "product no": 12,
-      "product name": "mobile",
+      "productno": 12,
+      "productname": "mobile",
       "qty": 3,
       "price": 1200
-    },
-    {
-      "id": "069f",
-      "name": "hhhhhhh",
-      "no": "hhhhhh",
-      "product name": "hh",
-      "qty": "hhh",
-      "price": "hh"
-    },
-    {
-      "id": "9fb8",
-      "name": "hhhhhhh",
-      "no": "hhhhhh",
-      "product name": "hh",
-      "qty": "hhh",
-      "price": "hh"
     }
+      
   ]
 }

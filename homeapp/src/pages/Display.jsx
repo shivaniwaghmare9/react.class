@@ -19,12 +19,12 @@ const  Display=()=>{
         return(
             <>
              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{sno}</td>
+                <td>{key.name}</td>
+                <td>{key.productno}</td>
+                <td>{key.productname}</td>
+                <td>{key.qty}</td>
+                <td>{key.price}</td>
              </tr>
             </>
         )
@@ -35,14 +35,16 @@ const  Display=()=>{
         <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Sno</th>
+          <th>Customber Name</th>
+          <th>Product NO</th>
+          <th>Product Name</th>
+          <th>Product Qty</th>
+          <th>Net Price</th>
         </tr>
       </thead>
       <tbody>
-
+        {ans}
       </tbody>
       </Table>
 
