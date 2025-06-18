@@ -17,14 +17,14 @@ const Edit=()=>{
         loadData()
     },[])
    const handleInput=(e)=>{
-     let name=e.taget.name;
+     let name=e.target.name;
      let value=e.target.value;
      setMydata(Values=>({...Values,[name]:value}))
      console.log(mydata)
    }
    const handleSubmit=async()=>{
     let api=`http://localhost:3000/product/${id}`
-    const response=await axios.put(api.mydata);
+    const response=await axios.put(api,mydata);
     alert("data successefully updated")
    }
     return(
