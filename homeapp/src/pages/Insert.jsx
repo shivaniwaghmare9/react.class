@@ -29,12 +29,12 @@ const Insert=()=>{
 
       <Form.Group className="mb-3" >
         <Form.Label>Product no</Form.Label>
-        <Form.Control type="text" name="no" onChange={handleInput}/>
+        <Form.Control type="text" name="productno" onChange={handleInput}/>
       </Form.Group>
 
       <Form.Group className="mb-3" >
         <Form.Label>Product name</Form.Label>
-        <Form.Control type="text" name="product name" onChange={handleInput}/>
+        <Form.Control type="text" name="productname" onChange={handleInput}/>
       </Form.Group>
       <Form.Group className="mb-3" >
         <Form.Label>Product QTY</Form.Label>
