@@ -44,8 +44,8 @@ const App=()=>{
   const dispatch=useDispatch();
   return(
     <>
-     <h1>Toolkit</h1>
-     <button onClick={()=>{dispatch(bgClrChange())}}>Click</button><br/><br/>
+     <h1 align="center">React redux toolkit!!</h1>
+     <button onClick={()=>{dispatch(bgClrChange())}} style={{backgroundColor:"blue",border:"none"}}>Click</button><br/><br/>
      <div style={{width:"200px",height:"200px",backgroundColor:myclr}}>
 
      </div>
