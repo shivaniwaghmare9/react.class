@@ -3,7 +3,7 @@ import { useSelector,useDispatch } from "react-redux";
 import { bglClrChange } from "./colorSlice";
 import { useState } from "react";
 const App=()=>{
-  cosnt[clr,setClr]=useState("")
+  const[clr,setClr]=useState("")
   const myclr=useSelector(state=>state.mycolor.color)
   const dispatch=useDispatch();
   return(
