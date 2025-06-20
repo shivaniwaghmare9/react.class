@@ -48,7 +48,7 @@ const Contact=()=>{
            <input type="number" name="english" placeholder="English" onChange={handleChange}/><br/><br/>
            <input type="number" name="hindi" placeholder="Hindi" onChange={handleChange}/><br/><br/>
            <button onClick={calculateSubmit}>Calculate</button>
-
+     
         </div>
         {result && (
             <div id="result">

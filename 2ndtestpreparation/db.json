@@ -78,6 +78,20 @@
       "rollno": "120",
       "city": "pune",
       "fees": "80000"
+    },
+    {
+      "id": "fb71",
+      "name": "mahi",
+      "rollno": "122",
+      "city": "indore",
+      "fees": "12334"
+    },
+    {
+      "id": "11c3",
+      "name": "shivani makode",
+      "rollno": "120",
+      "city": "banglore",
+      "fees": "78660"
     }
   ]
 }
