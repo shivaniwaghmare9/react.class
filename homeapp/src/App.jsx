@@ -1,5 +1,9 @@
 
+import { useSelector,useDispatch } from "react-redux";
+import { bglClrChange } from "./colorSlice";
 const App=()=>{
+  const myclr=useSelector(state=>state.mycolor.color)
+  const dispatch=useDispatch();
   return(
     <>
     <h3>React redux toolkit!!</h3><br/>
