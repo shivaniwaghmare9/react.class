@@ -8,7 +8,7 @@ const App=()=>{
   const dispatch=useDispatch();
   return(
     <>
-    <h3>React redux toolkit!!</h3><br/>
+    <h3 align="center">React redux toolkit!!</h3><br/>
     Enter Color: <input type="text" value={clr} onChange={(e)=>{setClr(e.target.value)}}/><br/><br/>
     <button onClick={()=>{dispatch(bglClrChange(clr))}}>Click</button><br/><br/>
     <div style={{width:"200px",height:"200px",backgroundColor:myclr}}>
