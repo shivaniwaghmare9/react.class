@@ -11,3 +11,5 @@ const colorSlice=createSlice({
         }
     }
 })
+export const{bglClrChange}=colorSlice.actions;
+export default colorSlice.reducer;
