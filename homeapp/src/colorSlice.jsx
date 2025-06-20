@@ -6,8 +6,8 @@ const colorSlice=createSlice({
         color:"blue"
     },
     reducers:{
-        bglClrChange:(state)=>{
-            state.color="darkred"
+        bglClrChange:(state,actions)=>{
+            state.color=(actions.payload)
         }
     }
 })
