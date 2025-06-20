@@ -32,15 +32,15 @@
 //=============================================(2NDTEXT)======================================================================================================
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./Layout";
-import Home from "./pages/Home";
-import Insert from "./pages/Insert";
-import Display from "./pages/Display";
-import Search from "./pages/Search";
-import Update from "./pages/Update";
-import Edit from "./pages/Edit";
-import Total from "./pages/Total";
-import Contact from "./pages/Contact";
+import Layout from "./Layout2";
+import Home from "./pagess/Home";
+import Insert from "./pagess/Insert";
+import Display from "./pagess/Display";
+import Search from "./pagess/Search";
+import Update from "./pagess/Update";
+import Edit from "./pagess/Edit";
+import Total from "./pagess/Total";
+import Contact from "./pagess/Contact";
 
 const App=()=>{
   return(
