@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import { useState,useEffect } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { toast,ToastContainer } from 'react-toastify';
 const  Update=()=>{
     const[mydata,setMydata]=useState([])
     const navigate=useNavigate();
@@ -19,7 +20,7 @@ const  Update=()=>{
         let api=`http://localhost:3000/product/${id}`
         const response=await axios.delete(api,mydata);
         console.log(response.data)
-        alert("data successfully deleted")
+        toast.warning("data successfully deleted")
         loadData();
     }
     const dataEdit=(id)=>{
@@ -67,7 +68,7 @@ const  Update=()=>{
         {ans}
       </tbody>
       </Table>
-
+     <ToastContainer/>
         </>
     )
 }

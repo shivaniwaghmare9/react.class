@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { data, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
+import { ToastContainer,toast } from 'react-toastify';
 const Edit=()=>{
     const{id}=useParams();
     const[mydata,setMydata]=useState({});
@@ -25,7 +26,7 @@ const Edit=()=>{
    const handleSubmit=async()=>{
     let api=`http://localhost:3000/product/${id}`
     const response=await axios.put(api,mydata);
-    alert("data successefully updated")
+    toast.info("data successefully updated")
    }
     return(
         <>
@@ -57,6 +58,7 @@ const Edit=()=>{
         Submit
       </Button>
     </Form>
+    <ToastContainer/>
         </>
     )
 }

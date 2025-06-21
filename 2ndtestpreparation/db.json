@@ -114,18 +114,10 @@
     {
       "id": "238e",
       "name": "shivani",
-      "productno": "20",
+      "productno": "1002",
       "productname": "laptop",
       "qty": "5",
       "price": "75000"
-    },
-    {
-      "id": "9e11",
-      "name": "riyaa",
-      "productno": "009",
-      "productname": "headphones",
-      "qty": "3",
-      "price": "3000"
     }
   ]
 }
