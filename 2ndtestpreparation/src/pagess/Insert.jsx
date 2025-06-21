@@ -17,6 +17,13 @@ const Insert=()=>{
         console.log(response.data);
         setInput(response.data)
         alert("data succesfully inserted!")
+        setInput({
+          name:"",
+          productno:"",
+          productname:"",
+          qty:"",
+          price:""
+        })
         
     }
     return(
