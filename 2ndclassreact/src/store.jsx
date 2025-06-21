@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-const store=createSlice({
-    reducers:{
-
+import { configureStore } from "@reduxjs/toolkit";
+import myReducer from "./TodoSlices/counterSlice"
+const store=configureStore({
+    reducer:{
+        mycounter:myReducer
     }
 })
 export default store;
