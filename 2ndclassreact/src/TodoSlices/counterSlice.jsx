@@ -10,7 +10,14 @@ const counterSlice=createSlice({
             state.count++
         },
         Decrement:(state)=>{
-            state.count--
+            if(state.count==count)
+            {
+                alert("not less than zero")
+            }
+            else
+            {
+                state.count--;
+            }
         }
     }
 })
