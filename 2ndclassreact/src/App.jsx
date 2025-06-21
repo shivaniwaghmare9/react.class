@@ -320,6 +320,7 @@ import MapTable from "./bootpages/TablewithMap";
 import Event from "./bootpages/Event";
 import Contact from "./bootpages/Contact";
 import Context from "./bootpages/Context";
+import ToolKit from "./bootpages/ToolKit";
 const App=()=>{
   return(
     <>
@@ -332,6 +333,7 @@ const App=()=>{
           <Route path="map" element={<MapTable/>}/>
           <Route path="event" element={<Event/>}/>
           <Route path="context" element={<Context/>}/>
+          <Route path="toolkit" element={<ToolKit/>}/>
           <Route path="contact" element={<Contact/>}/>
 
           </Route>
