@@ -6,10 +6,10 @@ const colorSlice=createSlice({
         color:"red"
     },
     reducers:{
-        bglClrChange:(state,actions)=>{
+        bgClrChange:(state,actions)=>{
             state.color=(actions.payload)
         }
     }
 })
-export const{bglClrChange}=colorSlice.actions;
+export const{bgClrChange}=colorSlice.actions;
 export default colorSlice.reducer;
