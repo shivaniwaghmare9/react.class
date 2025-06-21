@@ -9,6 +9,8 @@ const ToolKit=()=>{
         <>
            <h3>Counter App!!</h3>
            <h4>Count:{work}</h4>
+           <button onClick={()=>{dispatch(Increment())}}>Increment</button>
+           <button onClick={()=>{dispatch(Decrement())}}>Decrement</button>
         </>
     )
 }
