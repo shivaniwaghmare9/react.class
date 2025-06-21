@@ -84,6 +84,9 @@ const Total=()=>{
         const totalQuantity= product.reduce((sum,key)=>sum +parseInt(key.qty),0)
 
          const totalSellingPrice= product.reduce((sum,key)=>sum +parseInt(key.qty)*parseInt(key.price),0)
+
+         setTotalQty(totalQuantity);
+         setTotalPrice(totalSellingPrice.toFixed(2));
        })
   },[])   
   return(
