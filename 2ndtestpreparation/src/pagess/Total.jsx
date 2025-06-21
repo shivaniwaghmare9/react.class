@@ -77,13 +77,20 @@ const Total=()=>{
   const[totalQty,setTotalQty]=useState(0);
   const[totalPrice,setTotalPrice]=useState(0);
   useEffect(()=>{
+       axios.get("http://localhost:3000/product")
+       .then((res)=>{
+        const product=res.data;
 
-  },[])
+        const totalQuantity= product.reduce((sum,key)=>sum +parseInt(key.qty),0)
+
+         const totalSellingPrice= product.reduce((sum,key)=>sum +parseInt(key.qty)*parseInt(key.price),0)
+       })
+  },[])   
   return(
     <>
      <h3>Inventory Totals</h3>
-     <h4><b>Total Quantity:</b></h4>
-     <h4><b>Total Selling Price:</b></h4>
+     <p><b>Total Quantity:{totalQty}</b></p>
+     <p><b>Total Selling Price:{totalPrice}</b></p>
     </>
   )
 }
