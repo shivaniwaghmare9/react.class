@@ -16,6 +16,7 @@ const Topnav=()=>{
             <Nav.Link as={Link} to="map">ArrayMap</Nav.Link>
             <Nav.Link as={Link} to="event">Events</Nav.Link>
             <Nav.Link as={Link} to="context">Context</Nav.Link>
+            <Nav.Link as={Link} to="toolkit">ToolKit</Nav.Link>
             <Nav.Link as={Link} to="contact">Contact</Nav.Link>
            
           </Nav>
