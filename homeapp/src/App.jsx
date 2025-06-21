@@ -1,7 +1,7 @@
 
 import { useSelector,useDispatch } from "react-redux"
 import { useState } from "react"
-import { addTask,taskDelete } from "./todoSlice"
+import { addTask,taskDelete,removeByIndex } from "./todoSlice"
 const App=()=>{
   const[txt,setTxt]=useState("")
   const data=useSelector(state=>state.todo.task);
@@ -9,7 +9,7 @@ const App=()=>{
    console.log(data);
    let sno=0;
 
-   const ans=data.map((key)=>{
+   const ans=data.map((key,index)=>{
     sno++;
     return(
       <>
@@ -18,6 +18,9 @@ const App=()=>{
         <td>{key.work}</td>
         <td>
           <span onClick={()=>{dispatch(taskDelete({id:key.id}))}}>delete</span>
+        </td>
+        <td>
+          <span onClick={()=>{dispatch(removeByIndex({id:index}))}}>remove</span>
         </td>
        </tr>
       </>
@@ -34,6 +37,7 @@ const App=()=>{
         <th>Sno</th>
         <th>Task</th>
         <th>Delete</th>
+        <th>Remove</th>
       </tr>
       {ans}
      </table>
