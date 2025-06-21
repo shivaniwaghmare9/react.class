@@ -27,7 +27,7 @@ const App=()=>{
     <>
      <h3>Todo App!!</h3>
      Enetr Task: <input type="text" value={txt} onChange={(e)=>{setTxt(e.target.value)}}/><br/><br/>
-     <button onClick={()=>{dispatch(addTask({work:txt}))}}>Add Task</button><br/><br/>
+     <button onClick={()=>{dispatch(addTask({id:Date.now(),work:txt}))}}>Add Task</button><br/><br/>
      <hr />
      <table border="1" width="500px">
       <tr>
