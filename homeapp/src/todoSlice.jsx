@@ -23,8 +23,11 @@ const todoSlice=createSlice({
                     return true;
                 }
             })
+        },
+        removeByIndex:(state,actions)=>{
+              state.task.splice(actions.payload.id,1)
         }
     }
 })
-export const{addTask,taskDelete}=todoSlice.actions;
+export const{addTask,taskDelete,removeByIndex}=todoSlice.actions;
 export default todoSlice.reducer;
