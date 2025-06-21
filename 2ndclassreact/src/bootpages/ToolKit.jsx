@@ -86,7 +86,7 @@ const ToolKit=()=>{
         <h1>Todo App!!</h1>
         Enter Task: <input type="text" value={txtval} onChange={(e)=>{setTxtVal(e.target.value)}}/><br/><br/>
         <button onClick={()=>{dispatch(addTask({work:txtval}))}}>Add</button><br/><br/>
-        <table>
+        <table border="1" width="400px">
             <tr>
                 <th>SNO</th>
                 <th>TASK</th>
