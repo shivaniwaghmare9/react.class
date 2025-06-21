@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const colorSlice=createSlice({
     name:"mycolor",
     initialState:{
-        color:"olive"
+        color:"red"
     },
     reducers:{
         bglClrChange:(state,actions)=>{
