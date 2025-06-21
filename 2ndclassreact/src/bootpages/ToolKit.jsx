@@ -68,11 +68,31 @@ const ToolKit=()=>{
     const[txtval,setTxtVal]=useState("");
     const data=useSelector(state=>state.todo.task)
     const dispatch=useDispatch();
+    console.log(data);
+    let sno=0;
+    const ans=data.map((key)=>{
+        sno++;
+        return(
+            <>
+            <tr>
+                <td>{sno}</td>
+                <td>{key.work}</td>
+            </tr>
+            </>
+        )
+    })
     return(
         <>
         <h1>Todo App!!</h1>
         Enter Task: <input type="text" value={txtval} onChange={(e)=>{setTxtVal(e.target.value)}}/><br/><br/>
-        <button onClick={()=>{dispatch(addTask({work:txtval}))}}>Add</button>
+        <button onClick={()=>{dispatch(addTask({work:txtval}))}}>Add</button><br/><br/>
+        <table>
+            <tr>
+                <th>SNO</th>
+                <th>TASK</th>
+            </tr>
+            {ans}
+        </table>
         </>
     )
 }
