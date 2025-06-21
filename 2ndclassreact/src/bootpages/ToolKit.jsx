@@ -49,7 +49,7 @@ const ToolKit=()=>{
         <>
          <h3>Change Color!!</h3>
          Enter Color: <input type="text" value={myclr} onChange={(e)=>{setClr(e.target.value)}}/><br/><br/>
-         <button onClick={()=>{dispatch(changeClr())}}>Change</button><br/><br/>
+         <button onClick={()=>{dispatch(changeClr(myclr))}}>Change</button><br/><br/>
          <div style={{width:"200px",height:"200px",backgroundColor:clr}}>
 
          </div>
