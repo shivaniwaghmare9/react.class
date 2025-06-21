@@ -38,7 +38,7 @@ const  Update=()=>{
                 <td>{key.qty}</td>
                 <td>{key.price}</td>
                 <td>
-                    <span onClick={()=>{dataEdit(key.id)}}>update</span>
+                    <span onClick={()=>{dataEdit(key.id)}}>edit</span>
                 </td>
                 <td>
                     <span onClick={()=>{dataDelete(key.id)}}>Delete</span>
@@ -59,6 +59,7 @@ const  Update=()=>{
           <th>Product Name</th>
           <th>Product Qty</th>
           <th>Net Price</th>
+          <th>Update</th>
           <th>Delete</th>
         </tr>
       </thead>
