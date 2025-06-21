@@ -61,10 +61,18 @@
 
 //=================================================================TODO=====================================================
 
+import { useSelector,useDispatch } from "react-redux";
+import { addTask } from "../TodoSlices/todoSlice";
+import { useState } from "react";
 const ToolKit=()=>{
+    const[txtval,setTxtVal]=useState("");
+    const data=useSelector(state=>state.todo.task)
+    const dispatch=useDispatch();
     return(
         <>
         <h1>Todo App!!</h1>
+        Enter Task: <input type="text" value={txtval} onChange={(e)=>{setTxtVal(e.target.value)}}/><br/><br/>
+        <button onClick={()=>{dispatch(addTask({work:txtval}))}}>Add</button>
         </>
     )
 }
