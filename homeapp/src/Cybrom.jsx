@@ -6,6 +6,7 @@ const Cybrom=()=>{
     return(
         <>
           <h1>Welcome to:{user}</h1>
+          {children}
         </>
     )
 }
