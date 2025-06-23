@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 import { MyContext } from "./UserContext";
-const Cybrom=()=>{
+const Cybrom=({children})=>{
     const{user,setUser}=useContext(MyContext)
     return(
         <>

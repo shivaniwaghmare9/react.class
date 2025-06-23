@@ -5,7 +5,7 @@ const App=()=>{
     <>
     <h1>ToDo List!!</h1>
     <Cybrom>
-      <h5><br>we learn java </br></h5>
+      <b>we learn java </b>
     </Cybrom>
     </>
   )
