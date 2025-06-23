@@ -13,3 +13,4 @@ const UserContext=({children})=>{
     )
 }
 export default UserContext;
+export {MyContext};
